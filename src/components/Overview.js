@@ -4,7 +4,7 @@ class Overview extends React.Component {
   render() {
     return (
       <div>
-        Overview
+        More details to come
       </div>
     )
   }

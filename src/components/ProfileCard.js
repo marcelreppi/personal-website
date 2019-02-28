@@ -7,7 +7,6 @@ import homepageIcon from '../img/homepage.png'
 import speakIcon from '../img/speak.png'
 import githubIcon from '../img/github.png'
 import linkedinIcon from '../img/linkedin.png'
-import { Container, Row, Col } from 'reactstrap';
 
 import '../styles/ProfileCard.css'
 
@@ -19,7 +18,7 @@ class ProfileCard extends React.Component {
     return (
       <div className="profile-card">
         <div className="profile-pic-container">
-          <img className="profile-pic" src={profilePic} alt="profile picture"></img>
+          <img className="profile-pic" src={profilePic} alt=""></img>
         </div>
         <h3 className="name">Marcel Reppenhagen</h3>
         <h5 className="profession">Information Systems Management Student @ TU Berlin</h5>
@@ -36,10 +35,14 @@ class ProfileCard extends React.Component {
           icon={mailIcon}
           info="marcelreppi@gmail.com">
         </PersonalDetail>
-        <PersonalDetail 
-          icon={homepageIcon}
-          info="reppenhagen.space">
-        </PersonalDetail>
+        <div className="detail">
+          <span className="info-icon">
+            <img className="info-icon-img" src={homepageIcon} alt="location"></img>
+          </span>
+          <span className="info">
+            <a href="http://www.reppenhagen.space">reppenhagen.space</a>
+          </span>  
+        </div>
         <PersonalDetail 
           icon={speakIcon}
           info="German, English, Hebrew">
@@ -48,12 +51,12 @@ class ProfileCard extends React.Component {
         <div className="footer">
           <span className="footer-item">
             <a href="https://github.com/marcelreppi">
-              <img className="footer-icon" src={githubIcon}></img>
+              <img className="footer-icon" src={githubIcon} alt=""></img>
             </a>
           </span>
           <span>
             <a href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/">
-              <img className="footer-icon" src={linkedinIcon}></img>
+              <img className="footer-icon" src={linkedinIcon} alt=""></img>
             </a>
           </span>
         </div>
