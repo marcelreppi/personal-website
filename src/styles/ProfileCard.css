@@ -1,0 +1,48 @@
+.profile-card {
+  padding: 10px;
+  background-color: white;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(168, 168, 168);
+  border-radius: 5px;
+}
+
+.personal-details {
+  padding: 0px;
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.profile-pic {
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+}
+
+.name {
+  text-align: center;
+}
+
+.profession {
+  text-align: center;
+  color: rgb(92, 92, 92);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item {
+  padding-right: 10px;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+}
+
