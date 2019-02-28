@@ -1,10 +1,23 @@
 .detail {
-  display: table;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 40px auto;
 }
 
 .info {
-  display: table-cell;
   vertical-align: middle;
+}
+
+.break-word {
+  -ms-word-break: break-all;
+  -ms-word-wrap: break-all;
+  -webkit-word-break: break-word;
+  -webkit-word-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 .info-icon {

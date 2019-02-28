@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col } from 'reactstrap';
 
 import '../styles/PersonalDetail.css'
 
@@ -15,7 +16,7 @@ export default (props) => {
       <span className="info-icon">
         <img className="info-icon-img" src={props.icon} alt=""></img>
       </span>
-      <span className="info">
+      <span className="info break-word">
         {info}
       </span>  
     </div>
