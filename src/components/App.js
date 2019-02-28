@@ -12,10 +12,10 @@ class App extends Component {
       <div className="App">
         <Container fluid={true}>
           <Row>
-            <Col md="3">
+            <Col lg="3">
               <ProfileCard></ProfileCard>
             </Col>
-            <Col md="9">
+            <Col lg="9">
               <Overview></Overview>
             </Col>
           </Row>
