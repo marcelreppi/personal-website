@@ -17,12 +17,13 @@ class ProfileCard extends React.Component {
 
   render() {
     return (
-      <div className="profile-card">
+      <div className="section-container">
         <div className="profile-pic-container">
           <img className="profile-pic" src={profilePic} alt=""></img>
         </div>
-        <h3 className="name">Marcel Reppenhagen</h3>
-        <h5 className="profession">Information Systems Management Student @ TU Berlin</h5>
+        <div className="name"><b>Marcel Reppenhagen</b></div>
+        <div className="profession">Information Systems Management<br/>Student @ TU Berlin</div>
+        
         <hr></hr>
         <PersonalDetail 
           icon={locationIcon}
@@ -34,16 +35,14 @@ class ProfileCard extends React.Component {
         </PersonalDetail>
         <PersonalDetail 
           icon={mailIcon}
-          info="marcelreppi@gmail.com">
+          info="marcelreppi@gmail.com"
+          link="mailto:marcelreppi@gmail.com">
         </PersonalDetail>
-        <div className="detail">
-          <span className="info-icon">
-            <img className="info-icon-img" src={homepageIcon} alt="location"></img>
-          </span>
-          <span className="info">
-            <a href="http://www.reppenhagen.space">reppenhagen.space</a>
-          </span>  
-        </div>
+        <PersonalDetail 
+          icon={homepageIcon}
+          info="reppenhagen.space"
+          link="http://www.reppenhagen.space">
+        </PersonalDetail>
         <PersonalDetail 
           icon={speakIcon}
           info="German, English, Hebrew">

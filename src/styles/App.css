@@ -1,17 +1,22 @@
+@font-face {
+  font-family: metropolis;
+  src: url("../static/fonts/Metropolis-Regular.otf")
+}
+
+@font-face {
+  font-family: metropolis-medium;
+  src: url("../static/fonts/Metropolis-Medium.otf")
+}
+
+@font-face {
+  font-family: metropolis-bold;
+  src: url("../static/fonts/Metropolis-Bold.otf")
+}
+
 .App {
   background-color: rgb(243, 243, 243);
   padding-top: 10px;
   padding-bottom: 10px;
   min-height: 100vh;
+  font-family: metropolis;
 }
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */

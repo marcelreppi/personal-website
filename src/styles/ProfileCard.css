@@ -1,10 +1,12 @@
-.profile-card {
+.section-container {
   padding: 10px;
   background-color: white;
   border: 1px;
   border-style: solid;
   border-color: rgb(168, 168, 168);
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
 }
 
 .personal-details {
@@ -25,11 +27,15 @@
 
 .name {
   text-align: center;
+  font-size: 42px;
+  color: #234ef3;
+  font-family: metropolis-medium;
 }
 
 .profession {
   text-align: center;
-  color: rgb(92, 92, 92);
+  font-size: 22px;
+  font-family: metropolis-medium;
 }
 
 .footer {

@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import '../styles/App.css';
 
 import ProfileCard from './ProfileCard.js'
-import Overview from './Overview.js'
+import Resume from './Resume.js'
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
               <ProfileCard></ProfileCard>
             </Col>
             <Col lg="9">
-              <Overview></Overview>
+              <Resume></Resume>
             </Col>
           </Row>
         </Container>

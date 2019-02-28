@@ -1,0 +1,30 @@
+.resume-container {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.resume-title {
+  font-family: metropolis-bold;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #234ef3;
+}
+
+.resume-section {
+  font-size: 20px;
+  font-family: metropolis-medium;
+  letter-spacing: 1px;
+  color: #234ef3;
+}
+
+.resume-section::after {
+  margin: 10px 0;
+  content: '';
+  width: 150px;
+  border-bottom: 3px solid #234ef3;
+  display: block;
+}
+
+.resume-content {
+  margin-bottom: 30px;
+}
