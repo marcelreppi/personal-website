@@ -7,6 +7,7 @@ import homepageIcon from '../img/homepage.png'
 import speakIcon from '../img/speak.png'
 import githubIcon from '../img/github.png'
 import linkedinIcon from '../img/linkedin.png'
+import twitterIcon from '../img/twitter.png'
 
 import '../styles/ProfileCard.css'
 
@@ -54,7 +55,12 @@ class ProfileCard extends React.Component {
               <img className="footer-icon" src={githubIcon} alt=""></img>
             </a>
           </span>
-          <span>
+          <span className="footer-item">
+            <a href="https://twitter.com/marcelreppi">
+              <img className="footer-icon" src={twitterIcon} alt=""></img>
+            </a>
+          </span>
+          <span className="footer-item">
             <a href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/">
               <img className="footer-icon" src={linkedinIcon} alt=""></img>
             </a>
