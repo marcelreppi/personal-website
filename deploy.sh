@@ -1,1 +1,1 @@
-aws s3 sync ./build s3://reppenhagen.space/
+aws s3 sync ./build s3://www.reppenhagen.space/
