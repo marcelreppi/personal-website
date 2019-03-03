@@ -1,16 +1,9 @@
 import React from 'react'
 
-import PersonalDetail from './PersonalDetail.js'
 import LifeChapter from './LifeChapter.js'
 
 import degreeIcon from '../static/img/degree.png'
 import tutorIcon from '../static/img/tutor.png'
-import locationIcon from '../static/img/location.png'
-import phoneIcon from '../static/img/phone.png'
-import mailIcon from '../static/img/mail.png'
-import homepageIcon from '../static/img/homepage.png'
-import speakIcon from '../static/img/speak.png'
-
 
 import '../styles/Resume.css'
 
