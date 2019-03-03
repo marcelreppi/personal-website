@@ -10,28 +10,31 @@ export default (props) => {
   return (
     <div className="life-chapter">
       <div className="chapter-basics">
-        <span className="info-icon">
-          <img className="info-icon-img" src={props.icon} alt=""></img>
+        <span className="icon-container">
+          <img className="icon-img" src={props.icon} alt=""></img>
         </span>
-        <b className="info">{props.title}</b>
-        <span className="info-icon">
-          <img className="info-icon-img" src={locationIcon} alt=""></img>
+        <b>{props.title}</b>
+        <span className="icon-container">
+          <img className="icon-img" src={locationIcon} alt=""></img>
         </span>
-        <div className="info">{props.location}</div>
-        <span className="info-icon">
-          <img className="info-icon-img" src={durationIcon} alt=""></img>
+        <div>{props.location}</div>
+        <span className="icon-container">
+          <img className="icon-img" src={durationIcon} alt=""></img>
         </span>
-        <div className="info">{props.duration}</div>
+        <div>{props.duration}</div>
       </div>
-      {
-        props.details ? 
-          <ul>
-            { props.details.map( d => {
-              return <li>{d}</li>
-            }) }
-          </ul>
-        : null
-      }
+      <div className="chapter-details">
+        {
+          props.details ? 
+            <ul>
+              { props.details.map( d => {
+                return <li>{d}</li>
+              }) }
+            </ul>
+          : null
+        }
+      </div>
+      
     </div>
   )
 }

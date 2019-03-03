@@ -2,10 +2,7 @@
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 40px auto;
-}
-
-.info {
-  vertical-align: middle;
+  margin-bottom: 5px;
 }
 
 .break-word {
@@ -18,15 +15,4 @@
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-}
-
-.info-icon {
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.info-icon-img {
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
 }

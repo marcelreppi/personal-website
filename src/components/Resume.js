@@ -1,24 +1,47 @@
 import React from 'react'
 
+import PersonalDetail from './PersonalDetail.js'
 import LifeChapter from './LifeChapter.js'
 
 import degreeIcon from '../static/img/degree.png'
 import tutorIcon from '../static/img/tutor.png'
+import locationIcon from '../static/img/location.png'
+import phoneIcon from '../static/img/phone.png'
+import mailIcon from '../static/img/mail.png'
+import homepageIcon from '../static/img/homepage.png'
+import speakIcon from '../static/img/speak.png'
+
 
 import '../styles/Resume.css'
 
 export default () => (
-  <div className="section-container resume-container">
-    <div className="resume-title">Resumé</div>
-    <hr></hr>
-    <div className="resume-section">About</div>
+  <div className="section-container">
+    <div className="section-title">Resumé</div>
+    {/* <div className="resume-section">Personal Information</div>
     <div className="resume-content">
-      Hi, I'm Marcel :)<br/>
-      My hometown is Berlin, where I currently pursue my masters degree
-      in <b>Infomation Systems Management</b> at the <b>Technical University of Berlin</b>.
-      I am a curious student with a passion for programming, web technologies and cloud computing.
-      I love exploring today's technologies and continously learn new things.
-    </div>
+      <PersonalDetail 
+        icon={locationIcon}
+        info="Nürnberger Straße 38, 10777 Berlin">
+      </PersonalDetail>
+      <PersonalDetail 
+        icon={phoneIcon}
+        info="0172/3831303">
+      </PersonalDetail>
+      <PersonalDetail 
+        icon={mailIcon}
+        info="marcelreppi@gmail.com"
+        link="mailto:marcelreppi@gmail.com">
+      </PersonalDetail>
+      <PersonalDetail 
+        icon={homepageIcon}
+        info="reppenhagen.space"
+        link="http://www.reppenhagen.space">
+      </PersonalDetail>
+      <PersonalDetail 
+        icon={speakIcon}
+        info="German, English, Hebrew">
+      </PersonalDetail>
+    </div> */}
     <div className="resume-section">Education</div>
     <div className="resume-content">
       <LifeChapter

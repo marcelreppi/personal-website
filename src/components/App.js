@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
+import { Route, Switch } from "react-router-dom";
 
 import '../styles/App.css';
 
-import ProfileCard from './ProfileCard.js'
+import NavBar from './NavBar.js'
+import Home from './Home.js'
+import About from './About.js'
 import Resume from './Resume.js'
+import Projects from './Projects.js'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="app-container">
-          <div className="grid-item g1">
-            <ProfileCard></ProfileCard>
-          </div>
-          <div className="grid-item g2">
-            <Resume></Resume>
-          </div>
+        <NavBar></NavBar>
+        <div className="main-content-container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/projects" component={Projects} />
+          </Switch>
         </div>
-        {/* <div className="col-lg-3 fixed">
-          <ProfileCard></ProfileCard>
-        </div>
-        <div className="col-lg-9 pull-right">
-          <Resume></Resume>
-        </div> */}
+        
       </div>
     );
   }

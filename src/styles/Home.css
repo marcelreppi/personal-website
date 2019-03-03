@@ -1,0 +1,67 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting {
+  text-align: center;
+  font-size: 42px;
+  color: #234ef3;
+  font-family: metropolis-medium;
+  hyphens: auto;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 22px;
+  font-family: metropolis-medium;
+  line-height: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.social-icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: minmax(0px, auto) repeat(2, minmax(100px, 250px)) minmax(0px, auto);;
+  grid-template-rows: repeat(2, auto);
+}
+
+.contact-location {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.contact-homepage {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.contact-mail {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.contact-phone {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

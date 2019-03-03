@@ -12,10 +12,10 @@ export default (props) => {
 
   return (
     <div className="detail">
-      <span className="info-icon">
-        <img className="info-icon-img" src={props.icon} alt=""></img>
+      <span className="icon-container">
+        <img className="icon-img" src={props.icon} alt=""></img>
       </span>
-      <span className="info break-word">
+      <span className="break-word">
         {info}
       </span>  
     </div>
