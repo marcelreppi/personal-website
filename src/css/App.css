@@ -14,27 +14,30 @@
 }
 
 .App {
+  --app-font-size: 16px;
   padding: 10px;
   font-family: metropolis;
+  font-size: var(--app-font-size);
 }
 
 .main-content-container {
-  --main-content-padding: 50px;
-  padding-top: var(--main-content-padding);
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0px;
 }
 
 .section-title {
   text-align: center;
-  font-size: 42px;
+  font-size: 34px;
   color: #234ef3;
   font-family: metropolis-medium;
   hyphens: auto;
-  margin-bottom: var(--main-content-padding);
-  /* margin-top: 20px; */
+  margin-bottom: 50px;
 }
 
 .section-container {
-  padding: 0px 80px;
+  padding: 0px 40px;
 }
 
 .icon-container {

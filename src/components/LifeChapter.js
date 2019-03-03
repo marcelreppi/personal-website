@@ -3,7 +3,7 @@ import React from 'react'
 import locationIcon from '../static/img/location.png'
 import durationIcon from '../static/img/duration.png'
 
-import '../styles/LifeChapter.css'
+import '../css/LifeChapter.css'
 
 export default (props) => {
   console.log(props)

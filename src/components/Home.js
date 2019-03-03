@@ -10,11 +10,11 @@ import phoneIcon from '../static/img/phone.png'
 import mailIcon from '../static/img/mail.png'
 import homepageIcon from '../static/img/homepage.png'
 
-import '../styles/Home.css'
+import '../css/Home.css'
 
 export default () => {
   return (
-    <div className="home-container">
+    <div className="section-container">
       <div className="greeting">Hi, I'm Marcel</div>
       <div className="intro">Information Systems Management<br/>Master Student @ Technical University of Berlin</div>
       <div className="social-links">

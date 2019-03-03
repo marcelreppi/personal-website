@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/PersonalDetail.css'
+import '../css/PersonalDetail.css'
 
 export default (props) => {
   let info

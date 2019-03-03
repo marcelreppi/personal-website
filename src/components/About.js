@@ -2,7 +2,7 @@ import React from 'react'
 
 import profilePic from '../static/img/profilepic1.jpg'
 
-import '../styles/About.css'
+import '../css/About.css'
 
 export default () => {
   return (

@@ -5,36 +5,11 @@ import LifeChapter from './LifeChapter.js'
 import degreeIcon from '../static/img/degree.png'
 import tutorIcon from '../static/img/tutor.png'
 
-import '../styles/Resume.css'
+import '../css/Resume.css'
 
 export default () => (
   <div className="section-container">
     <div className="section-title">Resumé</div>
-    {/* <div className="resume-section">Personal Information</div>
-    <div className="resume-content">
-      <PersonalDetail 
-        icon={locationIcon}
-        info="Nürnberger Straße 38, 10777 Berlin">
-      </PersonalDetail>
-      <PersonalDetail 
-        icon={phoneIcon}
-        info="0172/3831303">
-      </PersonalDetail>
-      <PersonalDetail 
-        icon={mailIcon}
-        info="marcelreppi@gmail.com"
-        link="mailto:marcelreppi@gmail.com">
-      </PersonalDetail>
-      <PersonalDetail 
-        icon={homepageIcon}
-        info="reppenhagen.space"
-        link="http://www.reppenhagen.space">
-      </PersonalDetail>
-      <PersonalDetail 
-        icon={speakIcon}
-        info="German, English, Hebrew">
-      </PersonalDetail>
-    </div> */}
     <div className="resume-section">Education</div>
     <div className="resume-content">
       <LifeChapter

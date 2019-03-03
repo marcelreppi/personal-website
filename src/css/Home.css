@@ -1,16 +1,10 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .greeting {
   text-align: center;
-  font-size: 42px;
+  font-size: 36px;
   color: #234ef3;
   font-family: metropolis-medium;
   hyphens: auto;
   margin-bottom: 40px;
-  margin-top: 60px;
 }
 
 .intro {
