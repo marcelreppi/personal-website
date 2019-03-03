@@ -1,1 +1,2 @@
-aws s3 sync ./build s3://www.reppenhagen.space/
+npm run build
+aws s3 sync ./build s3://reppenhagen-space
