@@ -14,9 +14,40 @@
 }
 
 .App {
-  background-color: rgb(243, 243, 243);
+  background: rgb(243, 243, 243);
   padding-top: 10px;
   padding-bottom: 10px;
   min-height: 100vh;
   font-family: metropolis;
 }
+
+.app-container {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    grid-template-columns: 100%;
+  }
+}
+
+.grid-item {
+  margin: 0 10px 20px 10px;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* .g2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+} */

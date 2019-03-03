@@ -13,15 +13,15 @@ export default (props) => {
         <span className="info-icon">
           <img className="info-icon-img" src={props.icon} alt=""></img>
         </span>
-        <b className="chapter-title">{props.title}</b>
+        <b className="info">{props.title}</b>
         <span className="info-icon">
           <img className="info-icon-img" src={locationIcon} alt=""></img>
         </span>
-        <div>{props.location}</div>
+        <div className="info">{props.location}</div>
         <span className="info-icon">
           <img className="info-icon-img" src={durationIcon} alt=""></img>
         </span>
-        <div>{props.duration}</div>
+        <div className="info">{props.duration}</div>
       </div>
       {
         props.details ? 
