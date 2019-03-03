@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PersonalDetail from './PersonalDetail.js'
+import PersonalDetail from '../components/PersonalDetail.js'
 
 import githubIcon from '../static/img/github.png'
 import linkedinIcon from '../static/img/linkedin.png'

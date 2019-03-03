@@ -1,6 +1,6 @@
 import React from 'react'
 
-import LifeChapter from './LifeChapter.js'
+import LifeChapter from '../components/LifeChapter.js'
 
 import degreeIcon from '../static/img/degree.png'
 import tutorIcon from '../static/img/tutor.png'

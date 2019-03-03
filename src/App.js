@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
 
-import '../css/App.css';
+import './css/App.css';
 
-import NavBar from './NavBar.js'
-import Home from './Home.js'
-import About from './About.js'
-import Resume from './Resume.js'
-import Projects from './Projects.js'
+import NavBar from './components/NavBar.js'
+import Home from './pages/Home.js'
+import About from './pages/About.js'
+import Resume from './pages/Resume.js'
+import Projects from './pages/Projects.js'
 
 
 class App extends Component {
