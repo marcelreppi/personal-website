@@ -1,10 +1,7 @@
-.greeting {
-  text-align: center;
-  font-size: 36px;
-  color: #234ef3;
-  font-family: metropolis-medium;
-  hyphens: auto;
-  margin-bottom: 40px;
+.home-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .intro {
@@ -58,4 +55,12 @@
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+@media (max-width: 480px) {
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

@@ -15,7 +15,6 @@
 
 .App {
   --app-font-size: 16px;
-  padding: 10px;
   font-family: metropolis;
   font-size: var(--app-font-size);
 }
@@ -34,6 +33,7 @@
   font-family: metropolis-medium;
   hyphens: auto;
   margin-bottom: 50px;
+  padding: 5px;
 }
 
 .section-container {

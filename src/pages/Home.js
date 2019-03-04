@@ -1,4 +1,5 @@
 import React from 'react'
+import Typed from 'react-typed';
 
 import PersonalDetail from '../components/PersonalDetail.js'
 
@@ -14,8 +15,13 @@ import '../css/Home.css'
 
 export default () => {
   return (
-    <div className="section-container">
-      <div className="greeting">Hi, I'm Marcel</div>
+    <div className="section-container home-container">
+      {/* <div className="greeting">Hi, I'm Marcel</div> */}
+      <Typed 
+        strings={["Hi, I'm Marcel :)"]} 
+        typeSpeed={100} 
+        className="section-title"
+      />
       <div className="intro">Information Systems Management<br/>Master Student @ Technical University of Berlin</div>
       <div className="social-links">
         <span className="icon-container">

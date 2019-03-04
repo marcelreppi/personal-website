@@ -5,6 +5,45 @@
   /* border: 2px solid black; */
 }
 
+.navbar-mobile-container {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.navbar-mobile-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.navbar-mobile-content {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+}
+
+.navbar-mobile-item {
+  padding: 15px;
+}
+
+.menu-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.exit-icon {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
 .navbar-item {
   /* border: 2px solid red; */
   text-align: center;

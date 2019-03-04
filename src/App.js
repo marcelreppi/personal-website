@@ -8,6 +8,7 @@ import Home from './pages/Home.js'
 import About from './pages/About.js'
 import Resume from './pages/Resume.js'
 import Projects from './pages/Projects.js'
+import Error404 from './pages/404.js'
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/projects" component={Projects} />
+            <Route path="/" component={Error404} />
           </Switch>
         </div>
         

@@ -15,13 +15,13 @@ export default () => (
       <LifeChapter
         title="Master Information Systems Management (Wirtschaftsinformatik)"
         duration="04/2018 - today"
-        location="Technische Universität Berlin"
+        location="Technical University of Berlin"
         icon={degreeIcon}>
       </LifeChapter>
       <hr></hr>
       <LifeChapter
         title="Bachelor Wirtschaftsinformatik (Information Systems Management)"
-        location="Technische Universität Berlin"
+        location="Technical University of Berlin"
         duration="10/2014 - 03/2018"
         details={[
           "Final grade: 1,8",
@@ -53,7 +53,7 @@ export default () => (
     <div className="resume-content">
       <LifeChapter
         title="Student Tutor"
-        location="Technische Universität Berlin"
+        location="Technical University of Berlin"
         duration="04/2016 - 04/2017"
         details={[
           "Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)",
@@ -68,7 +68,7 @@ export default () => (
       <div className="interest">Traveling</div>
       <div className="interest">Programming</div>
       <div className="interest">Wakeboarding</div>
-      <div className="interest">Longboard</div>
+      <div className="interest">Longboarding</div>
       <div className="interest">Board Games</div>
       <div className="interest">Origami</div>
       <div className="interest">Running</div>
