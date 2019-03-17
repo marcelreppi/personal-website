@@ -1,7 +1,7 @@
 import React from 'react'
 import profilePic from '../static/img/profilepic1.jpg'
-import locationIcon from '../static/img/location.png'
-import phoneIcon from '../static/img/phone.png'
+// import locationIcon from '../static/img/location.png'
+// import phoneIcon from '../static/img/phone.png'
 import mailIcon from '../static/img/mail.png'
 import homepageIcon from '../static/img/homepage.png'
 import speakIcon from '../static/img/speak.png'
@@ -22,14 +22,14 @@ export default () => (
     <div className="profession">Information Systems Management<br/>Student @ TU Berlin</div>
     
     <hr></hr>
-    <PersonalDetail 
+    {/* <PersonalDetail 
       icon={locationIcon}
       info="Nürnberger Straße 38, 10777 Berlin">
-    </PersonalDetail>
-    <PersonalDetail 
+    </PersonalDetail> */}
+    {/* <PersonalDetail 
       icon={phoneIcon}
       info="0172/3831303">
-    </PersonalDetail>
+    </PersonalDetail> */}
     <PersonalDetail 
       icon={mailIcon}
       info="marcelreppi@gmail.com"

@@ -1,2 +1,2 @@
 npm run build
-aws s3 sync ./build s3://reppenhagen-space
+aws s3 sync ./build s3://www.mazeltoe.de
