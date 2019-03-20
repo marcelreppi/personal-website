@@ -19,6 +19,12 @@
   font-size: var(--app-font-size);
 }
 
+@media (min-width: 480px) {
+  .App {
+    margin-top: 80px;
+  }
+}
+
 .main-content-container {
   display: block;
   max-width: 900px;
