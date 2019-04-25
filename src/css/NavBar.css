@@ -1,7 +1,7 @@
 .navbar-container {
   display: grid;
   grid-template-columns: minmax(0px, auto) repeat(4, minmax(100px, 250px)) minmax(0px, auto);
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* border: 2px solid black; */
 }
 

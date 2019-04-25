@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react"
 
-import '../css/Projects.css'
+import "../css/Projects.css"
 
 export default () => {
   return (
-    <div>
+    <React.Fragment>
       <div className="section-title">Projects</div>
-      <div className="section-container projects-container">
-        Coming soon!
-      </div>
-    </div>
+      <div className="projects-container">Coming soon!</div>
+    </React.Fragment>
   )
 }

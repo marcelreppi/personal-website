@@ -1,17 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react"
+import { Link } from "react-router-dom"
 
-import menuIcon from '../static/img/menu.png'
-import xIcon from '../static/img/x.png'
+import menuIcon from "../static/img/menu.png"
+import xIcon from "../static/img/x.png"
 
-import '../css/NavBar.css'
+import "../css/NavBar.css"
 
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       mobile: false,
-      showMobileMenu: false
+      showMobileMenu: false,
     }
   }
 
@@ -20,7 +20,7 @@ class NavBar extends React.Component {
       mobile: window.innerWidth <= 480,
     })
 
-    window.addEventListener('resize', this.handleScreenSize)
+    window.addEventListener("resize", this.handleScreenSize)
   }
 
   handleScreenSize = () => {
@@ -31,17 +31,25 @@ class NavBar extends React.Component {
 
   toggleMobileMenu = () => {
     this.setState({
-      showMobileMenu: !this.state.showMobileMenu
+      showMobileMenu: !this.state.showMobileMenu,
     })
   }
 
   regularNavBar = () => {
     return (
       <div className="navbar-container">
-        <Link to="/" className="navbar-item nav-home">Home</Link>
-        <Link to="/about" className="navbar-item nav-about">About</Link>
-        <Link to="/resume" className="navbar-item nav-resume">Resumé</Link>
-        <Link to="/projects" className="navbar-item nav-projects">Projects</Link>
+        <Link to="/" className="navbar-item nav-home">
+          Home
+        </Link>
+        <Link to="/about" className="navbar-item nav-about">
+          About
+        </Link>
+        <Link to="/resume" className="navbar-item nav-resume">
+          Resumé
+        </Link>
+        <Link to="/projects" className="navbar-item nav-projects">
+          Projects
+        </Link>
       </div>
     )
   }
@@ -49,7 +57,12 @@ class NavBar extends React.Component {
   mobileNavBar = () => {
     return (
       <div className="navbar-mobile-container">
-        <img className="menu-icon" src={menuIcon} alt="" onClick={this.toggleMobileMenu}></img>
+        <img
+          className="menu-icon"
+          src={menuIcon}
+          alt=""
+          onClick={this.toggleMobileMenu}
+        />
       </div>
     )
   }
@@ -57,11 +70,40 @@ class NavBar extends React.Component {
   mobileMenuContent = () => {
     return (
       <div className="navbar-mobile-content">
-        <img className="menu-icon exit-icon" src={xIcon} alt="" onClick={this.toggleMobileMenu}></img>
-        <Link to="/" className="navbar-mobile-item navbar-item nav-home" onClick={this.toggleMobileMenu}>Home</Link>
-        <Link to="/about" className="navbar-mobile-item navbar-item nav-about" onClick={this.toggleMobileMenu}>About</Link>
-        <Link to="/resume" className="navbar-mobile-item navbar-item nav-resume" onClick={this.toggleMobileMenu}>Resumé</Link>
-        <Link to="/projects" className="navbar-mobile-item navbar-item nav-projects" onClick={this.toggleMobileMenu}>Projects</Link>
+        <img
+          className="menu-icon exit-icon"
+          src={xIcon}
+          alt=""
+          onClick={this.toggleMobileMenu}
+        />
+        <Link
+          to="/"
+          className="navbar-mobile-item navbar-item nav-home"
+          onClick={this.toggleMobileMenu}
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="navbar-mobile-item navbar-item nav-about"
+          onClick={this.toggleMobileMenu}
+        >
+          About
+        </Link>
+        <Link
+          to="/resume"
+          className="navbar-mobile-item navbar-item nav-resume"
+          onClick={this.toggleMobileMenu}
+        >
+          Resumé
+        </Link>
+        <Link
+          to="/projects"
+          className="navbar-mobile-item navbar-item nav-projects"
+          onClick={this.toggleMobileMenu}
+        >
+          Projects
+        </Link>
       </div>
     )
   }
@@ -74,16 +116,14 @@ class NavBar extends React.Component {
     }
   }
 
-
   render() {
     return (
-      <div>
+      <React.Fragment>
         {this.showCorrectNavBar()}
-        {this.state.showMobileMenu ? 
-          this.mobileMenuContent() : null }
-      </div>
+        {this.state.showMobileMenu ? this.mobileMenuContent() : null}
+      </React.Fragment>
     )
-  } 
+  }
 }
 
 export default NavBar

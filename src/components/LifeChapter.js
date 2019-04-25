@@ -1,40 +1,36 @@
-import React from 'react'
+import React from "react"
 
-import locationIcon from '../static/img/location.png'
-import durationIcon from '../static/img/duration.png'
+import locationIcon from "../static/img/location.png"
+import durationIcon from "../static/img/duration.png"
 
-import '../css/LifeChapter.css'
+import "../css/LifeChapter.css"
 
-export default (props) => {
-  console.log(props)
+export default props => {
   return (
-    <div className="life-chapter">
-      <div className="chapter-basics">
+    <React.Fragment>
+      <div className="chapter-overview">
         <span className="icon-container">
-          <img className="icon-img" src={props.icon} alt=""></img>
+          <img className="icon-img" src={props.icon} alt="" />
         </span>
         <b>{props.title}</b>
         <span className="icon-container">
-          <img className="icon-img" src={locationIcon} alt=""></img>
+          <img className="icon-img" src={locationIcon} alt="" />
         </span>
         <div>{props.location}</div>
         <span className="icon-container">
-          <img className="icon-img" src={durationIcon} alt=""></img>
+          <img className="icon-img" src={durationIcon} alt="" />
         </span>
         <div>{props.duration}</div>
       </div>
       <div className="chapter-details">
-        {
-          props.details ? 
-            <ul>
-              { props.details.map( d => {
-                return <li>{d}</li>
-              }) }
-            </ul>
-          : null
-        }
+        {props.details ? (
+          <ul>
+            {props.details.map((d, i) => {
+              return <li key={i}>{d}</li>
+            })}
+          </ul>
+        ) : null}
       </div>
-      
-    </div>
+    </React.Fragment>
   )
 }
