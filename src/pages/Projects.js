@@ -39,7 +39,11 @@ export default () => {
         </div>
         <div className="coming-soon">
           <p>More coming soon!</p>
-          <p>☝( ◠‿◠ )☝</p>
+          <p>
+            <span role="img" aria-label="show-up">
+              ☝( ◠‿◠ )☝
+            </span>
+          </p>
           <p>＼（＾▽＾）／</p>
           <p>◕‿◕</p>
         </div>
