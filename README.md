@@ -1,5 +1,5 @@
-# My personal website
+# Personal Website
 
-This is the code for my personal website running on reppenhagen.space
+Source code for my personal website running on [reppenhagen.space](https://www.reppenhagen.space/)
 
-Made with React
+Made with ❤️ and React 😊
