@@ -1,6 +1,6 @@
 import React from "react"
 
-import profilePic from "../static/img/profilepic1.jpg"
+import profilePic from "../static/img/profilepic.jpg"
 
 import "../css/About.css"
 
@@ -22,34 +22,30 @@ export default () => {
           </span>
         </p>
         <p>
-          I am a curious student with a passion for programming, web
-          technologies and{" "}
+          I am a curious student with a passion for programming, web technologies and{" "}
           <span role="img" aria-label="cloud">
             ☁️
           </span>
-          -computing . I love exploring today's ever-evolving technologies and
-          continously learn new things.{" "}
+          -computing . I love exploring today's ever-evolving technologies and continously learn new
+          things.{" "}
           <span role="img" aria-label="book">
             💡
           </span>
         </p>
         <p>
           My hometown is Berlin, where I currently pursue my masters degree in{" "}
-          <b>Infomation Systems Management</b> at the{" "}
-          <b>Technical University of Berlin</b>.{" "}
+          <b>Infomation Systems Management</b> at the <b>Technical University of Berlin</b>.{" "}
           <span role="img" aria-label="student">
             👨‍🎓
           </span>
         </p>
         <p>
-          In my freetime I like to get outside, go running, hang out with
-          friends or cruise on my longboard. If the weather allows, I
-          occasionally go wakeboarding too.{" "}
+          In my freetime I like to get outside, go running, hang out with friends or cruise on my
+          longboard. If the weather allows, I occasionally go wakeboarding too.{" "}
           <span role="img" aria-label="surfer">
             🏄‍
           </span>
-          <br />I also enjoy playing the piano or destroying friendships with
-          board games.{" "}
+          <br />I also enjoy playing the piano or destroying friendships with board games.{" "}
           <span role="img" aria-label="laughing-smiley">
             😄
           </span>
