@@ -52,3 +52,8 @@
   width: 20px;
   height: 20px;
 }
+
+.no-scroll {
+  overflow: hidden;
+  position:fixed;
+}

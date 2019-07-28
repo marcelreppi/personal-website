@@ -9,16 +9,13 @@
   display: flex;
   flex-direction: row-reverse;
   padding-right: 20px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .navbar-mobile-content {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-}
-
-.navbar-mobile-content {
+  padding-top: 20px;
   width: 100%;
   height: 100%;
   z-index: 1;

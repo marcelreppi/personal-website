@@ -10,29 +10,14 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      mobile: false,
       showMobileMenu: false,
     }
   }
 
-  componentDidMount() {
-    this.setState({
-      mobile: window.innerWidth <= 480,
-    })
-
-    window.addEventListener("resize", this.handleScreenSize)
-  }
-
-  handleScreenSize = () => {
-    this.setState({
-      mobile: window && window.innerWidth <= 480,
-    })
-  }
-
   toggleMobileMenu = () => {
-    this.setState({
-      showMobileMenu: !this.state.showMobileMenu,
-    })
+    const showMobileMenu = !this.state.showMobileMenu
+    this.props.setMobileMenuOpen(showMobileMenu)
+    this.setState({ showMobileMenu })
   }
 
   regularNavBar = () => {
@@ -57,12 +42,7 @@ class NavBar extends React.Component {
   mobileNavBar = () => {
     return (
       <div className="navbar-mobile-container">
-        <img
-          className="menu-icon"
-          src={menuIcon}
-          alt=""
-          onClick={this.toggleMobileMenu}
-        />
+        <img className="menu-icon" src={menuIcon} alt="" onClick={this.toggleMobileMenu} />
       </div>
     )
   }
@@ -70,12 +50,7 @@ class NavBar extends React.Component {
   mobileMenuContent = () => {
     return (
       <div className="navbar-mobile-content">
-        <img
-          className="menu-icon exit-icon"
-          src={xIcon}
-          alt=""
-          onClick={this.toggleMobileMenu}
-        />
+        <img className="menu-icon exit-icon" src={xIcon} alt="" onClick={this.toggleMobileMenu} />
         <Link
           to="/"
           className="navbar-mobile-item navbar-item nav-home"
@@ -109,7 +84,7 @@ class NavBar extends React.Component {
   }
 
   showCorrectNavBar = () => {
-    if (this.state.mobile) {
+    if (this.props.isMobile) {
       return this.mobileNavBar()
     } else {
       return this.regularNavBar()
