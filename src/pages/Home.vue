@@ -4,7 +4,8 @@
     <!-- <vue-typed-js :strings="['Hi']" :typeSpeed="100" class="section-title">
       <div class="typing"></div>
     </vue-typed-js> -->
-    <VueTyper text="Hi, I'm Marcel" :repeat="0" :type-delay="150" class="section-title"></VueTyper>
+    <VueTyper text="Hi, I'm Marcel" :repeat="0" :type-delay="150"></VueTyper>
+
     <div class="intro">
       Information Systems Management
       <br />
@@ -74,7 +75,17 @@ export default {
   line-height: 30px;
 }
 
-.vue-typer .custom.char.typed {
+.vue-typer {
+  text-align: center;
+  font-family: metropolis-medium;
+  hyphens: auto;
+  margin-bottom: 50px;
+  padding: 5px;
+  height: 50px;
+}
+
+.custom.char.typed {
+  font-size: 34px;
   color: #234ef3;
 }
 
