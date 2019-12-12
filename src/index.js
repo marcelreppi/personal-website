@@ -1,20 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
-import * as serviceWorker from './serviceWorker';
+import Vue from "vue"
 
-import App from './App.js';
+import router from "./router"
+import App from "./App.vue"
 
-import './css/index.css';
+Vue.config.devtools = false
+Vue.config.productionTip = false
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>, 
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.register();
+new Vue({
+  el: "#root",
+  router,
+  render: h => h(App),
+})
