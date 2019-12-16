@@ -14,8 +14,8 @@
       <router-link to="/resume" class="navbar-item nav-resume">
         Resumé
       </router-link>
-      <router-link to="/projects" class="navbar-item nav-projects">
-        Projects
+      <router-link to="/portfolio" class="navbar-item nav-portfolio">
+        Portfolio
       </router-link>
     </div>
 
@@ -43,11 +43,11 @@
         Resumé
       </router-link>
       <router-link
-        to="/projects"
-        class="navbar-mobile-item navbar-item nav-projects"
+        to="/portfolio"
+        class="navbar-mobile-item navbar-item nav-portfolio"
         @click.native="toggleMobileMenu"
       >
-        Projects
+        Portfolio
       </router-link>
     </div>
   </div>
@@ -144,7 +144,7 @@ export default {
   grid-column-end: 5;
 }
 
-.nav-projects {
+.nav-portfolio {
   grid-column-start: 5;
   grid-column-end: 6;
 }

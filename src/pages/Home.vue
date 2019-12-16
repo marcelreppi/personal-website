@@ -4,7 +4,12 @@
     <!-- <vue-typed-js :strings="['Hi']" :typeSpeed="100" class="section-title">
       <div class="typing"></div>
     </vue-typed-js> -->
-    <VueTyper text="Hi, I'm Marcel" :repeat="0" :type-delay="150"></VueTyper>
+    <VueTyper
+      text="Hi, I'm Marcel"
+      :repeat="0"
+      :type-delay="150"
+      caret-animation="smooth"
+    ></VueTyper>
 
     <div class="intro">
       Information Systems Management
@@ -81,10 +86,19 @@ export default {
   hyphens: auto;
   margin-bottom: 50px;
   padding: 5px;
-  height: 50px;
+  height: 40px;
 }
 
-.custom.char.typed {
+.vue-typer .custom.caret.complete,
+.vue-typer .custom.caret.typing {
+  width: 3px;
+  font-size: 34px;
+  background-color: #234ef3;
+  display: inline-block !important;
+  margin-left: 5px;
+}
+
+.vue-typer .custom.char.typed {
   font-size: 34px;
   color: #234ef3;
 }

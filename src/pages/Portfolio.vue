@@ -1,8 +1,10 @@
 <template>
   <div>
-    <div class="section-title">Projects</div>
-    <div class="projects-container">
-      <div class="project-section">Published npm packages</div>
+    <div class="section-title">Portfolio</div>
+    <div class="portfolio-container">
+      <div class="portfolio-section">Research</div>
+
+      <div class="portfolio-section">Published npm packages</div>
       <div class="npm-packages-container">
         <div class="npm-package">
           <div class="package-name">
@@ -32,6 +34,7 @@
           </a>
         </div>
       </div>
+
       <div class="coming-soon">
         <p>More coming soon!</p>
         <p>
@@ -51,12 +54,12 @@ export default {}
 </script>
 
 <style>
-.projects-container {
+.portfolio-container {
   text-align: center;
   font-size: 20px;
 }
 
-.project-section {
+.portfolio-section {
   font-size: 22px;
   font-family: metropolis-medium;
   letter-spacing: 1px;
@@ -64,10 +67,10 @@ export default {}
   text-align: left;
 }
 
-.project-section::after {
+.portfolio-section::after {
   margin: 10px 0 30px 0;
   content: "";
-  width: 200px;
+  width: 120px;
   border-bottom: 3px solid #234ef3;
   display: block;
 }
@@ -85,17 +88,23 @@ export default {}
   flex-direction: column;
   padding: 30px;
   border-radius: 5px;
-  border: 1px #234df341 solid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .package-name {
   font-size: 22px;
-  /* font-weight: bold; */
   background-color: #ca3736;
   border-radius: 2px;
-  padding: 20px;
   margin-bottom: 20px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: font-size 0.1s;
+}
+
+.package-name:hover {
+  font-size: 24px;
 }
 
 .package-link {
