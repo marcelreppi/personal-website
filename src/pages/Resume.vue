@@ -1,165 +1,197 @@
 <template>
   <div>
-    <div class="section-title">Resumé</div>
+    <div class="page-title">Resumé</div>
 
     <div class="resume-section">Experience</div>
     <div class="resume-content">
       <div class="chapter-overview">
         <span class="icon-container">
-          <img class="icon-img" :src="workIcon" alt="" />
+          <img class="icon-img" :src="workIcon" alt />
         </span>
-        <b>Mobile/Web Developer at <a href="https://sensafety.org/">SenSafety</a></b>
+        <span class="medium-font">
+          Mobile/Web Developer at
+          <a href="https://sensafety.org/">SenSafety</a>
+        </span>
         <span class="icon-container">
-          <img class="icon-img" :src="locationIcon" alt="" />
+          <img class="icon-img" :src="locationIcon" alt />
         </span>
         <div>Technical University of Berlin</div>
         <span class="icon-container">
-          <img class="icon-img" :src="durationIcon" alt="" />
+          <img class="icon-img" :src="durationIcon" alt />
         </span>
         <div>04/2019 - 10/2019</div>
       </div>
-      <ul class="chapter-details">
-        <li>Mobile crowdsourcing platform for perceived safety of urban citizens</li>
-        <li>
-          Agile development in a multi-cultural team on a user-centered, modern and performant
-          application
-        </li>
-        <li>App development with React Native and Firebase</li>
-        <li>
-          Implementation of
-          <a href="https://sensafety.org/statistics.html"> statistics dashboard and live map</a>
-          with real-time popups
-        </li>
-      </ul>
+
+      <div class="chapter-details">
+        <DetailSwitch>
+          <ul>
+            <li>Mobile crowdsourcing platform for perceived safety of urban citizens</li>
+            <li>
+              Agile development in a multi-cultural team on a user-centered, modern and performant
+              application
+            </li>
+            <li>App development with React Native and Firebase</li>
+            <li>
+              Implementation of
+              <a
+                href="https://sensafety.org/statistics.html"
+              >statistics dashboard and live map</a>
+              with real-time popups
+            </li>
+          </ul>
+        </DetailSwitch>
+      </div>
 
       <hr />
 
       <div class="chapter-overview">
         <span class="icon-container">
-          <img class="icon-img" :src="tutorIcon" alt="" />
+          <img class="icon-img" :src="tutorIcon" alt />
         </span>
-        <b>Student Tutor</b>
+        <span class="medium-font">Student Tutor</span>
         <span class="icon-container">
-          <img class="icon-img" :src="locationIcon" alt="" />
+          <img class="icon-img" :src="locationIcon" alt />
         </span>
         <div>Technical University of Berlin</div>
         <span class="icon-container">
-          <img class="icon-img" :src="durationIcon" alt="" />
+          <img class="icon-img" :src="durationIcon" alt />
         </span>
         <div>04/2016 - 04/2017</div>
       </div>
 
-      <ul>
-        <li>Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)</li>
-        <li>
-          Technische Grundlagen der Informatik für Wirtschaftsinformatiker (Technical Foundations of
-          Computer Science)
-        </li>
-      </ul>
+      <div class="chapter-details">
+        <DetailSwitch>
+          <ul>
+            <li>Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)</li>
+            <li>
+              Technische Grundlagen der Informatik für Wirtschaftsinformatiker (Technical Foundations of
+              Computer Science)
+            </li>
+          </ul>
+        </DetailSwitch>
+      </div>
     </div>
 
     <div class="resume-section">Publications</div>
-    <div class="resume-content publication-container">
-      <div class="publication-title">
+    <div class="resume-content">
+      <div class="chapter-overview">
+        <span class="icon-container">
+          <img class="icon-img" :src="publicationIcon" alt />
+        </span>
+        <span class="medium-font">Sensafety: Crowdsourcing the Urban Sense of Safety</span>
+      </div>
+
+      <div class="chapter-details">
         <a
           href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
-          >Sensafety: Crowdsourcing the Urban Sense of Safety</a
-        >
+        >Link to the paper</a>
       </div>
-      <!-- <div>
-        Garzon, Sandro & Deva, Bersant. (2019). Sensafety: Crowdsourcing the Urban Sense of Safety.
-        </br>
-        Advances in Cartography and GIScience of the ICA. 2. 1-8. 10.5194/ica-adv-2-12-2019.
-      </div> -->
-      <div></div>
+      <hr />
+
+      <div class="chapter-overview">
+        <span class="icon-container">
+          <img class="icon-img" :src="publicationIcon" alt />
+        </span>
+        <span class="medium-font">Towards Application-Layer Purpose-Based Access Control</span>
+      </div>
     </div>
 
     <div class="resume-section">Education</div>
     <div class="resume-content">
       <div class="chapter-overview">
         <span class="icon-container">
-          <img class="icon-img" :src="degreeIcon" alt="" />
+          <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <b>Master Information Systems Management (Wirtschaftsinformatik)</b>
+        <span class="medium-font">Master Information Systems Management (Wirtschaftsinformatik)</span>
         <span class="icon-container">
-          <img class="icon-img" :src="locationIcon" alt="" />
+          <img class="icon-img" :src="locationIcon" alt />
         </span>
         <div>Technical University of Berlin</div>
         <span class="icon-container">
-          <img class="icon-img" :src="durationIcon" alt="" />
+          <img class="icon-img" :src="durationIcon" alt />
         </span>
         <div>04/2018 - today</div>
       </div>
 
+      <div class="chapter-details">
+        <DetailSwitch>
+          <ul>
+            <li>Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic Charging”</li>
+          </ul>
+        </DetailSwitch>
+      </div>
+
       <hr />
 
       <div class="chapter-overview">
         <span class="icon-container">
-          <img class="icon-img" :src="degreeIcon" alt="" />
+          <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <b>Bachelor Wirtschaftsinformatik (Information Systems Management)</b>
+        <span class="medium-font">Bachelor Wirtschaftsinformatik (Information Systems Management)</span>
         <span class="icon-container">
-          <img class="icon-img" :src="locationIcon" alt="" />
+          <img class="icon-img" :src="locationIcon" alt />
         </span>
         <div>Technical University of Berlin</div>
         <span class="icon-container">
-          <img class="icon-img" :src="durationIcon" alt="" />
+          <img class="icon-img" :src="durationIcon" alt />
         </span>
         <div>10/2014 - 03/2018</div>
       </div>
 
-      <ul>
-        <li>Final grade: 1,8</li>
-        <li>
-          Certificate for being honoured as part of the best students in my year
-        </li>
-        <li>
-          Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability
-          Offering” (Grade: 1,3)
-        </li>
-      </ul>
+      <div class="chapter-details">
+        <DetailSwitch>
+          <ul>
+            <li>Final grade: 1,8</li>
+            <li>Certificate for being honoured as part of the best students in my year</li>
+            <li>
+              Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability
+              Offering” (Grade: 1,3)
+            </li>
+          </ul>
+        </DetailSwitch>
+      </div>
 
       <hr />
 
       <div class="chapter-overview">
         <span class="icon-container">
-          <img class="icon-img" :src="degreeIcon" alt="" />
+          <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <b>Abitur</b>
+        <span class="medium-font">Abitur</span>
         <span class="icon-container">
-          <img class="icon-img" :src="locationIcon" alt="" />
+          <img class="icon-img" :src="locationIcon" alt />
         </span>
-        <div>
-          Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))
-        </div>
+        <div>Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))</div>
         <span class="icon-container">
-          <img class="icon-img" :src="durationIcon" alt="" />
+          <img class="icon-img" :src="durationIcon" alt />
         </span>
         <div>2007 - 2013</div>
       </div>
 
-      <ul>
-        <li>Final grade: 1,3</li>
-        <li>
-          Major subjects: English and Physics
-        </li>
-      </ul>
+      <div class="chapter-details">
+        <DetailSwitch>
+          <ul>
+            <li>Final grade: 1,3</li>
+            <li>Major subjects: English and Physics</li>
+          </ul>
+        </DetailSwitch>
+      </div>
 
       <hr />
 
       <div class="chapter-overview">
         <span class="icon-container">
-          <img class="icon-img" :src="degreeIcon" alt="" />
+          <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <b>Quentin Blake Europeschool (Bilingual Primary School (German-English))</b>
+        <span
+          class="medium-font"
+        >Quentin Blake Europeschool (Bilingual Primary School (German-English))</span>
         <span class="icon-container">
-          <img class="icon-img" :src="locationIcon" alt="" />
+          <img class="icon-img" :src="locationIcon" alt />
         </span>
-        <div>
-          Berlin
-        </div>
+        <div>Berlin</div>
         <span class="icon-container">
-          <img class="icon-img" :src="durationIcon" alt="" />
+          <img class="icon-img" :src="durationIcon" alt />
         </span>
         <div>2001 - 2007</div>
       </div>
@@ -181,15 +213,22 @@
 
 <script>
 import workIcon from "../static/img/work.png"
+import publicationIcon from "../static/img/publication.png"
 import degreeIcon from "../static/img/degree.png"
 import tutorIcon from "../static/img/tutor.png"
 import locationIcon from "../static/img/location.png"
 import durationIcon from "../static/img/duration.png"
 
+import DetailSwitch from "../components/DetailSwitch.vue"
+
 export default {
+  components: {
+    DetailSwitch,
+  },
   data: function() {
     return {
       workIcon,
+      publicationIcon,
       degreeIcon,
       tutorIcon,
       locationIcon,
@@ -199,7 +238,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .resume-section {
   font-size: 20px;
   font-family: metropolis-medium;
@@ -219,6 +258,32 @@ export default {
   margin-bottom: 40px;
 }
 
+/* .detail-switch {
+  color: rgb(95, 95, 95);
+  display: flex;
+  align-items: center;
+}
+
+.detail-switch:hover {
+  cursor: pointer;
+}
+
+.detail-switch:hover > .switch-arrow {
+  transform: rotate(135deg);
+  margin-top: -6px;
+}
+
+.switch-arrow {
+  transition: all 0.5s;
+  margin-right: 8px;
+  margin-left: -5px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+} */
+
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -226,13 +291,8 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.publication-title {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.publication-container {
-  padding-left: 20px;
+ul {
+  padding-left: 10px;
 }
 
 li {
@@ -248,8 +308,16 @@ li {
   line-height: 22px;
   display: grid;
   grid-template-columns: 40px auto;
-  grid-template-rows: repeat(3, auto);
   row-gap: 10px;
+}
+
+.chapter-overview span:nth-child(2) {
+  font-size: 18px;
+}
+
+.chapter-details {
+  margin-top: 10px;
+  padding-left: 42px;
 }
 
 .interest-container {

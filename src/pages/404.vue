@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section-title">Error 404: Page not found!</div>
+    <div class="page-title">Error 404: Page not found!</div>
     <div class="section-container projects-container">
       <p>Whoops!</p>
       <p>

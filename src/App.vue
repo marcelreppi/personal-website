@@ -56,6 +56,14 @@ export default {
   font-size: var(--app-font-size);
 }
 
+.medium-font {
+  font-family: metropolis-medium;
+}
+
+.bold-font {
+  font-family: metropolis-bold;
+}
+
 @media (min-width: 480px) {
   .app {
     margin-top: 100px;
@@ -69,7 +77,7 @@ export default {
   padding: 50px 40px;
 }
 
-.section-title {
+.page-title {
   text-align: center;
   font-size: 34px;
   color: #234ef3;
@@ -82,6 +90,9 @@ export default {
 .icon-container {
   padding-right: 10px;
   padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-img {

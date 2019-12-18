@@ -1,35 +1,29 @@
 <template>
   <div class="home-container">
-    <!-- <Typed strings={["Hi, I'm Marcel"]} typeSpeed={100} class="section-title" /> -->
-    <!-- <vue-typed-js :strings="['Hi']" :typeSpeed="100" class="section-title">
+    <!-- <Typed strings={["Hi, I'm Marcel"]} typeSpeed={100} class="page-title" /> -->
+    <!-- <vue-typed-js :strings="['Hi']" :typeSpeed="100" class="page-title">
       <div class="typing"></div>
-    </vue-typed-js> -->
-    <VueTyper
-      text="Hi, I'm Marcel"
-      :repeat="0"
-      :type-delay="150"
-      caret-animation="smooth"
-    ></VueTyper>
+    </vue-typed-js>-->
+    <VueTyper text="Hi, I'm Marcel" :repeat="0" :type-delay="150" caret-animation="smooth"></VueTyper>
 
     <div class="intro">
       Information Systems Management
-      <br />
-      Master Student @ Technical University of Berlin
+      <br />Master Student @ Technical University of Berlin
     </div>
     <div class="social-links">
       <span class="icon-container">
         <a href="https://github.com/marcelreppi">
-          <img class="social-icon-img" src="../static/img/github.png" alt="" />
+          <img class="social-icon-img" src="../static/img/github.png" alt />
         </a>
       </span>
       <span class="icon-container">
         <a href="https://twitter.com/marcelreppi">
-          <img class="social-icon-img" src="../static/img/twitter.png" alt="" />
+          <img class="social-icon-img" src="../static/img/twitter.png" alt />
         </a>
       </span>
       <span class="icon-container">
         <a href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/">
-          <img class="social-icon-img" src="../static/img/linkedin.png" alt="" />
+          <img class="social-icon-img" src="../static/img/linkedin.png" alt />
         </a>
       </span>
     </div>
@@ -37,7 +31,7 @@
       <div class="contact-details-item">
         <div class="detail">
           <span class="icon-container">
-            <img class="icon-img" src="../static/img/mail.png" alt="" />
+            <img class="icon-img" src="../static/img/mail.png" alt />
           </span>
           <span class="break-word">
             <a href="mailto:marcelreppi@gmail.com">marcelreppi@gmail.com</a>
@@ -47,7 +41,7 @@
       <div class="contact-details-item">
         <div class="detail">
           <span class="icon-container">
-            <img class="icon-img" src="../static/img/homepage.png" alt="" />
+            <img class="icon-img" src="../static/img/homepage.png" alt />
           </span>
           <span class="break-word">
             <a href="https://www.reppenhagen.space">reppenhagen.space</a>

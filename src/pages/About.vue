@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="section-title">About</div>
+    <div class="page-title">About</div>
     <div class="profile-pic-container">
       <img src="../static/img/profilepic.jpg" alt class="profile-pic" />
     </div>
