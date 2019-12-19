@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="isMobile" class="navbar-mobile-container">
-      <img class="menu-icon" src="../static/img/menu.png" alt="" @click="toggleMobileMenu" />
+      <img class="menu-icon" :src="MenuIcon" alt="" @click="toggleMobileMenu" />
     </div>
 
     <div v-else class="navbar-container">
@@ -20,7 +20,7 @@
     </div>
 
     <div v-if="showMobileMenu" class="navbar-mobile-content">
-      <img class="menu-icon exit-icon" src="../static/img/x.png" @click="toggleMobileMenu" />
+      <img class="menu-icon exit-icon" :src="XIcon" @click="toggleMobileMenu" />
       <router-link
         to="/"
         class="navbar-mobile-item navbar-item nav-home"
@@ -54,10 +54,15 @@
 </template>
 
 <script>
+import MenuIcon from "../static/images/menu.png"
+import XIcon from "../static/images/menu.png"
+
 export default {
   data: function() {
     return {
       showMobileMenu: false,
+      MenuIcon,
+      XIcon,
     }
   },
   props: {

@@ -2,7 +2,7 @@
   <div>
     <div class="page-title">About</div>
     <div class="profile-pic-container">
-      <img src="../static/img/profilepic.jpg" alt class="profile-pic" />
+      <img :src="ProfilePic" alt class="profile-pic" />
     </div>
     <div class="about-content">
       <p>
@@ -43,7 +43,15 @@
 </template>
 
 <script>
-export default {}
+import ProfilePic from "../static/images/profilepic.jpg"
+
+export default {
+  data: function() {
+    return {
+      ProfilePic,
+    }
+  },
+}
 </script>
 
 <style>

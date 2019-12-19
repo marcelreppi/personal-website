@@ -83,12 +83,12 @@
 <script>
 import { Carousel, Slide } from "vue-carousel"
 
-import SenSafetyLogo from "../static/img/sensafety-logo.png"
-import SenSafetyPicture1 from "../static/img/sen-1.jpg"
-import SenSafetyPicture2 from "../static/img/sen-2.jpg"
-import SenSafetyPicture3 from "../static/img/sen-3.jpg"
-import SenSafetyPicture4 from "../static/img/sen-4.jpg"
-import SenSafetyPicture5 from "../static/img/sen-5.jpg"
+import SenSafetyLogo from "../static/images/sensafety-logo.png"
+import SenSafetyPicture1 from "../static/images/sen-1.jpg"
+import SenSafetyPicture2 from "../static/images/sen-2.jpg"
+import SenSafetyPicture3 from "../static/images/sen-3.jpg"
+import SenSafetyPicture4 from "../static/images/sen-4.jpg"
+import SenSafetyPicture5 from "../static/images/sen-5.jpg"
 
 export default {
   components: {

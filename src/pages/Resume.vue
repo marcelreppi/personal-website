@@ -33,9 +33,7 @@
             <li>App development with React Native and Firebase</li>
             <li>
               Implementation of
-              <a
-                href="https://sensafety.org/statistics.html"
-              >statistics dashboard and live map</a>
+              <a href="https://sensafety.org/statistics.html">statistics dashboard and live map</a>
               with real-time popups
             </li>
           </ul>
@@ -64,8 +62,8 @@
           <ul>
             <li>Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)</li>
             <li>
-              Technische Grundlagen der Informatik für Wirtschaftsinformatiker (Technical Foundations of
-              Computer Science)
+              Technische Grundlagen der Informatik für Wirtschaftsinformatiker (Technical
+              Foundations of Computer Science)
             </li>
           </ul>
         </DetailSwitch>
@@ -84,7 +82,8 @@
       <div class="chapter-details">
         <a
           href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
-        >Link to the paper</a>
+          >Link to the paper</a
+        >
       </div>
       <hr />
 
@@ -102,7 +101,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Master Information Systems Management (Wirtschaftsinformatik)</span>
+        <span class="medium-font"
+          >Master Information Systems Management (Wirtschaftsinformatik)</span
+        >
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -116,7 +117,10 @@
       <div class="chapter-details">
         <DetailSwitch>
           <ul>
-            <li>Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic Charging”</li>
+            <li>
+              Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic
+              Charging”
+            </li>
           </ul>
         </DetailSwitch>
       </div>
@@ -127,7 +131,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Bachelor Wirtschaftsinformatik (Information Systems Management)</span>
+        <span class="medium-font"
+          >Bachelor Wirtschaftsinformatik (Information Systems Management)</span
+        >
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -161,7 +167,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
-        <div>Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))</div>
+        <div>
+          Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))
+        </div>
         <span class="icon-container">
           <img class="icon-img" :src="durationIcon" alt />
         </span>
@@ -183,9 +191,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span
-          class="medium-font"
-        >Quentin Blake Europeschool (Bilingual Primary School (German-English))</span>
+        <span class="medium-font"
+          >Quentin Blake Europeschool (Bilingual Primary School (German-English))</span
+        >
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -212,12 +220,12 @@
 </template>
 
 <script>
-import workIcon from "../static/img/work.png"
-import publicationIcon from "../static/img/publication.png"
-import degreeIcon from "../static/img/degree.png"
-import tutorIcon from "../static/img/tutor.png"
-import locationIcon from "../static/img/location.png"
-import durationIcon from "../static/img/duration.png"
+import workIcon from "../static/images/work.png"
+import publicationIcon from "../static/images/publication.png"
+import degreeIcon from "../static/images/degree.png"
+import tutorIcon from "../static/images/tutor.png"
+import locationIcon from "../static/images/location.png"
+import durationIcon from "../static/images/duration.png"
 
 import DetailSwitch from "../components/DetailSwitch.vue"
 
