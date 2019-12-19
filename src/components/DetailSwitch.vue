@@ -2,7 +2,7 @@
   <div>
     <div class="detail-switch" @click="onDetailClick">
       <div class="arrow" ref="arrow"></div>
-      <div>More details</div>
+      <div>{{ switchWord }} details</div>
     </div>
     <slot v-if="showSlot"></slot>
   </div>
@@ -13,6 +13,7 @@ export default {
   data: function() {
     return {
       showSlot: false,
+      switchWord: "More",
     }
   },
   methods: {
@@ -22,9 +23,11 @@ export default {
       if (this.showSlot) {
         this.$refs.arrow.style.marginTop = "-6px"
         this.$refs.arrow.style.transform = "rotate(135deg)"
+        this.switchWord = "Less"
       } else {
         this.$refs.arrow.style.marginTop = "0px"
         this.$refs.arrow.style.transform = "rotate(45deg)"
+        this.switchWord = "More"
       }
     },
   },
