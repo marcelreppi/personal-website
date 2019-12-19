@@ -1,22 +1,14 @@
 <template>
   <div>
     <div v-if="isMobile" class="navbar-mobile-container">
-      <img class="menu-icon" :src="MenuIcon" alt="" @click="toggleMobileMenu" />
+      <img class="menu-icon" :src="MenuIcon" alt @click="toggleMobileMenu" />
     </div>
 
     <div v-else class="navbar-container">
-      <router-link to="/" class="navbar-item nav-home">
-        Home
-      </router-link>
-      <router-link to="/about" class="navbar-item nav-about">
-        About
-      </router-link>
-      <router-link to="/resume" class="navbar-item nav-resume">
-        Resumé
-      </router-link>
-      <router-link to="/portfolio" class="navbar-item nav-portfolio">
-        Portfolio
-      </router-link>
+      <router-link to="/" class="navbar-item nav-home">Home</router-link>
+      <router-link to="/about" class="navbar-item nav-about">About</router-link>
+      <router-link to="/resume" class="navbar-item nav-resume">Resumé</router-link>
+      <router-link to="/portfolio" class="navbar-item nav-portfolio">Portfolio</router-link>
     </div>
 
     <div v-if="showMobileMenu" class="navbar-mobile-content">
@@ -25,37 +17,29 @@
         to="/"
         class="navbar-mobile-item navbar-item nav-home"
         @click.native="toggleMobileMenu"
-      >
-        Home
-      </router-link>
+      >Home</router-link>
       <router-link
         to="/about"
         class="navbar-mobile-item navbar-item nav-about"
         @click.native="toggleMobileMenu"
-      >
-        About
-      </router-link>
+      >About</router-link>
       <router-link
         to="/resume"
         class="navbar-mobile-item navbar-item nav-resume"
         @click.native="toggleMobileMenu"
-      >
-        Resumé
-      </router-link>
+      >Resumé</router-link>
       <router-link
         to="/portfolio"
         class="navbar-mobile-item navbar-item nav-portfolio"
         @click.native="toggleMobileMenu"
-      >
-        Portfolio
-      </router-link>
+      >Portfolio</router-link>
     </div>
   </div>
 </template>
 
 <script>
 import MenuIcon from "../static/images/menu.png"
-import XIcon from "../static/images/menu.png"
+import XIcon from "../static/images/x.png"
 
 export default {
   data: function() {
