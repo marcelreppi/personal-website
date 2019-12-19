@@ -19,7 +19,6 @@ module.exports = {
   devServer: {
     open: true,
     hot: true,
-    writeToDisk: true,
     historyApiFallback: true,
   },
   module: {

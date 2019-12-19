@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="page-title">About</div>
+    <h1 class="page-title">About</h1>
     <div class="profile-pic-container">
       <img :src="ProfilePic" alt class="profile-pic" />
     </div>

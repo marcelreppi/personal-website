@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="page-title">Portfolio</div>
+    <h1 class="page-title">Portfolio</h1>
     <div class="portfolio-container">
-      <div class="portfolio-section">
+      <section class="portfolio-section">
         <div class="section-title">Projects</div>
         <div class="card-container">
           <div class="card">
@@ -34,9 +34,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="portfolio-section">
+      <section class="portfolio-section">
         <div class="section-title">Published npm packages</div>
         <div class="card-container">
           <div class="card">
@@ -62,16 +62,16 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="coming-soon">
+      <section class="coming-soon">
         <p>More is coming!</p>
         <p>
           <span role="img" aria-label="show-up">☝( ◠‿◠ )☝</span>
         </p>
         <p>＼（＾▽＾）／</p>
         <p>◕‿◕</p>
-      </div>
+      </section>
     </div>
   </div>
 </template>

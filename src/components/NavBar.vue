@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <nav>
     <div v-if="isMobile" class="navbar-mobile-container">
       <img class="menu-icon" :src="MenuIcon" alt @click="toggleMobileMenu" />
     </div>
@@ -34,7 +34,7 @@
         @click.native="toggleMobileMenu"
       >Portfolio</router-link>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>

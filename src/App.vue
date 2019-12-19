@@ -83,8 +83,9 @@ export default {
   color: #234ef3;
   font-family: metropolis-medium;
   hyphens: auto;
-  margin-bottom: 50px;
+  margin: 0px 0px 50px 0px;
   padding: 5px;
+  font-weight: 500;
 }
 
 .icon-container {

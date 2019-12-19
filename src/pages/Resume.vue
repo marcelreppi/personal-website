@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="page-title">Resumé</div>
+    <h1 class="page-title">Resumé</h1>
 
-    <div class="resume-section">Experience</div>
-    <div class="resume-content">
+    <section class="resume-section">
+      <div class="section-title">Experience</div>
       <div class="chapter-overview">
         <span class="icon-container">
           <img class="icon-img" :src="workIcon" alt />
@@ -33,7 +33,9 @@
             <li>App development with React Native and Firebase</li>
             <li>
               Implementation of
-              <a href="https://sensafety.org/statistics.html">statistics dashboard and live map</a>
+              <a
+                href="https://sensafety.org/statistics.html"
+              >statistics dashboard and live map</a>
               with real-time popups
             </li>
           </ul>
@@ -68,10 +70,10 @@
           </ul>
         </DetailSwitch>
       </div>
-    </div>
+    </section>
 
-    <div class="resume-section">Publications</div>
-    <div class="resume-content">
+    <section class="resume-section">
+      <div class="section-title">Publications</div>
       <div class="chapter-overview">
         <span class="icon-container">
           <img class="icon-img" :src="publicationIcon" alt />
@@ -82,8 +84,7 @@
       <div class="chapter-details">
         <a
           href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
-          >Link to the paper</a
-        >
+        >Link to the paper</a>
       </div>
       <hr />
 
@@ -93,17 +94,15 @@
         </span>
         <span class="medium-font">Towards Application-Layer Purpose-Based Access Control</span>
       </div>
-    </div>
+    </section>
 
-    <div class="resume-section">Education</div>
-    <div class="resume-content">
+    <section class="resume-section">
+      <div class="section-title">Education</div>
       <div class="chapter-overview">
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font"
-          >Master Information Systems Management (Wirtschaftsinformatik)</span
-        >
+        <span class="medium-font">Master Information Systems Management (Wirtschaftsinformatik)</span>
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -131,9 +130,7 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font"
-          >Bachelor Wirtschaftsinformatik (Information Systems Management)</span
-        >
+        <span class="medium-font">Bachelor Wirtschaftsinformatik (Information Systems Management)</span>
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -167,9 +164,7 @@
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
-        <div>
-          Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))
-        </div>
+        <div>Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))</div>
         <span class="icon-container">
           <img class="icon-img" :src="durationIcon" alt />
         </span>
@@ -191,9 +186,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font"
-          >Quentin Blake Europeschool (Bilingual Primary School (German-English))</span
-        >
+        <span
+          class="medium-font"
+        >Quentin Blake Europeschool (Bilingual Primary School (German-English))</span>
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -203,19 +198,21 @@
         </span>
         <div>2001 - 2007</div>
       </div>
-    </div>
+    </section>
 
-    <div class="resume-section">Interests</div>
-    <div class="resume-content interest-container">
-      <div class="interest">Piano</div>
-      <div class="interest">Traveling</div>
-      <div class="interest">Programming</div>
-      <div class="interest">Wakeboarding</div>
-      <div class="interest">Longboarding</div>
-      <div class="interest">Board Games</div>
-      <div class="interest">Origami</div>
-      <div class="interest">Running</div>
-    </div>
+    <section class="resume-section">
+      <div class="section-title">Interests</div>
+      <div class="interest-container">
+        <div class="interest">Piano</div>
+        <div class="interest">Traveling</div>
+        <div class="interest">Programming</div>
+        <div class="interest">Wakeboarding</div>  
+        <div class="interest">Longboarding</div>
+        <div class="interest">Board Games</div>
+        <div class="interest">Origami</div>
+        <div class="interest">Running</div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -247,14 +244,14 @@ export default {
 </script>
 
 <style scoped>
-.resume-section {
+.section-title {
   font-size: 20px;
   font-family: metropolis-medium;
   letter-spacing: 1px;
   color: #234ef3;
 }
 
-.resume-section::after {
+.section-title::after {
   margin: 10px 0 30px 0;
   content: "";
   width: 150px;
@@ -262,7 +259,7 @@ export default {
   display: block;
 }
 
-.resume-content {
+.resume-section {
   margin-bottom: 40px;
 }
 

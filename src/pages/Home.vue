@@ -1,20 +1,11 @@
 <template>
   <div class="home-container">
-    <!-- <Typed strings={["Hi, I'm Marcel"]} typeSpeed={100} class="page-title" /> -->
-    <!-- <vue-typed-js :strings="['Hi']" :typeSpeed="100" class="page-title">
-      <div class="typing"></div>
-    </vue-typed-js>-->
-    <VueTyper
-      text="Hi, I'm Marcel"
-      :repeat="0"
-      :type-delay="150"
-      caret-animation="smooth"
-    ></VueTyper>
+    <VueTyper text="Hi, I'm Marcel" :repeat="0" :type-delay="150" caret-animation="smooth"></VueTyper>
 
-    <div class="intro">
+    <h2 class="intro">
       Information Systems Management
       <br />Master Student @ Technical University of Berlin
-    </div>
+    </h2>
     <div class="social-links">
       <span class="icon-container">
         <a href="https://github.com/marcelreppi">
@@ -92,6 +83,8 @@ export default {
   font-size: 22px;
   font-family: metropolis-medium;
   line-height: 30px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .vue-typer {
