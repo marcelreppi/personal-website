@@ -1,5 +1,6 @@
 const { join } = require("path")
 const CopyPlugin = require("copy-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { VueLoaderPlugin } = require("vue-loader")
 const TerserPlugin = require("terser-webpack-plugin")
 const { HotModuleReplacementPlugin } = require("webpack")
@@ -14,7 +15,8 @@ module.exports = {
   entry: join(__dirname, "src", "index.js"),
   output: {
     path: join(__dirname, "build"),
-    filename: "app.bundle.js",
+    filename: "js/app.bundle.js",
+    chunkFilename: "js/[name].bundle.js",
   },
   devServer: {
     open: true,
@@ -45,15 +47,15 @@ module.exports = {
         options: {
           mozjpeg: {
             progressive: true,
-            quality: 65,
+            quality: 50,
           },
           // optipng.enabled: false will disable optipng
           optipng: {
             enabled: false,
           },
           pngquant: {
-            quality: [0.65, 0.9],
-            speed: 4,
+            quality: [0.3, 0.65],
+            speed: 6,
           },
         },
       },
@@ -94,7 +96,11 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new CopyPlugin([{ from: "./public/*", to: "./", flatten: true }]),
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+      favicon: "./public/favicon.png",
+    }),
+    new CopyPlugin([{ from: "./public/_redirects", to: "./" }]),
     new HotModuleReplacementPlugin(),
   ],
 }

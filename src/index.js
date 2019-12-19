@@ -4,6 +4,8 @@ import VueCarousel from "vue-carousel"
 import router from "./router"
 import App from "./App.vue"
 
+import "./index.css"
+
 Vue.config.devtools = false
 Vue.config.productionTip = false
 
