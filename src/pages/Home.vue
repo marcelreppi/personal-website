@@ -13,13 +13,13 @@
         </a>
       </span>
       <span class="icon-container">
-        <a href="https://twitter.com/marcelreppi">
-          <img class="social-icon-img" :src="TwitterIcon" alt />
+        <a href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/">
+          <img class="social-icon-img" :src="LinkedInIcon" alt />
         </a>
       </span>
       <span class="icon-container">
-        <a href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/">
-          <img class="social-icon-img" :src="LinkedInIcon" alt />
+        <a href="https://twitter.com/marcelreppi">
+          <img class="social-icon-img" :src="TwitterIcon" alt />
         </a>
       </span>
     </div>
@@ -145,10 +145,8 @@ export default {
 }
 
 .detail {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 40px auto;
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .break-word {
@@ -162,5 +160,11 @@ export default {
   -moz-hyphens: auto;
   hyphens: auto;
   overflow: auto;
+}
+
+@media (max-width: 480px) {
+  .detail {
+    margin-bottom: 15px;
+  }
 }
 </style>

@@ -73,14 +73,12 @@ export default {
 .navbar-mobile-container {
   display: flex;
   flex-direction: row-reverse;
-  padding-right: 20px;
-  padding-top: 20px;
+  margin-bottom: -20px;
 }
 
 .navbar-mobile-content {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -99,11 +97,14 @@ export default {
 .menu-icon {
   width: 50px;
   height: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 .exit-icon {
-  margin-bottom: 30px;
-  padding-left: 20px;
+  /* margin-bottom: 30px; */
+  /* padding-left: 20px; */
+  align-self: flex-end;
 }
 
 .navbar-item {

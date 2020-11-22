@@ -7,28 +7,50 @@
         <div class="card-container">
           <div class="card">
             <a href="https://sensafety.org">
-              <div class="sen-header centered">
-                <img class="sen-logo" :src="SenSafetyLogo" />
+              <div class="card-header sen-header centered">
+                <img :src="SenSafetyLogo" />
               </div>
             </a>
             <div>Mobile crowdsourcing platform for perceived safety of urban citizens</div>
-            <div class="centered">
-              <Carousel class="carousel" :per-page="1">
+            <div class="carousel">
+              <Carousel :autoplay="true" :loop="true" :per-page="1">
                 <Slide>
-                  <img class="sen-picture" :src="SenSafetyPicture1" alt />
+                  <img class="carousel-pic" :src="SenSafetyPicture1" />
                 </Slide>
                 <Slide>
-                  <img class="sen-picture" :src="SenSafetyPicture2" alt />
+                  <img class="carousel-pic" :src="SenSafetyPicture2" />
                 </Slide>
                 <Slide>
-                  <img class="sen-picture" :src="SenSafetyPicture3" alt />
+                  <img class="carousel-pic" :src="SenSafetyPicture3" />
                 </Slide>
+                <Slide>
+                  <img class="carousel-pic" :src="SenSafetyPicture4" />
+                </Slide>
+                <Slide>
+                  <img class="carousel-pic" :src="SenSafetyPicture5" />
+                </Slide>
+              </Carousel>
+            </div>
+          </div>
 
+          <div class="card">
+            <a href="https://moodlebuddy.com/">
+              <div class="card-header mb-header centered">
+                <!-- <img :src="MoodleBuddyIcon" /> -->
+                MoodleBuddy
+              </div>
+            </a>
+            <div>Cross-platform browser plugin that offers mass download and notification functionality for the <b>Moodle</b> learning management platform.</div>
+            <div class="carousel">
+              <Carousel :autoplay="true" :loop="true" :per-page="1">
                 <Slide>
-                  <img class="sen-picture" :src="SenSafetyPicture4" alt />
+                  <img class="carousel-pic" :src="MoodleBuddyPicture1" alt />
                 </Slide>
                 <Slide>
-                  <img class="sen-picture" :src="SenSafetyPicture5" alt />
+                  <img class="carousel-pic" :src="MoodleBuddyPicture2" alt />
+                </Slide>
+                <Slide>
+                  <img class="carousel-pic" :src="MoodleBuddyPicture3" alt />
                 </Slide>
               </Carousel>
             </div>
@@ -86,6 +108,11 @@ import SenSafetyPicture3 from "../static/images/sen-3.jpg"
 import SenSafetyPicture4 from "../static/images/sen-4.jpg"
 import SenSafetyPicture5 from "../static/images/sen-5.jpg"
 
+import MoodleBuddyIcon from "../static/images/mb.png"
+import MoodleBuddyPicture1 from "../static/images/mb-course.png"
+import MoodleBuddyPicture2 from "../static/images/mb-course-detail.png"
+import MoodleBuddyPicture3 from "../static/images/mb-dashboard.png"
+
 export default {
   components: {
     Carousel,
@@ -99,26 +126,74 @@ export default {
       SenSafetyPicture3,
       SenSafetyPicture4,
       SenSafetyPicture5,
+      MoodleBuddyIcon,
+      MoodleBuddyPicture1,
+      MoodleBuddyPicture2,
+      MoodleBuddyPicture3,
     }
   },
 }
 </script>
 
 <style>
-.sen-header {
-  background: rgb(100, 85, 232);
-  background: linear-gradient(90deg, rgba(100, 85, 232, 1) 0%, rgba(150, 71, 219, 1) 100%);
+.card-header {
   margin: -30px -30px 20px -30px;
   border-radius: 5px 5px 0 0;
   padding: 5px 0px 5px 0px;
+  height: 50px;
 }
 
-.sen-picture {
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+}
+
+.sen-header {
+  background: linear-gradient(90deg, rgba(100, 85, 232, 1) 0%, rgba(150, 71, 219, 1) 100%);
+}
+
+.sen-header > img {
+  width: 30%;
+}
+
+.mb-header > img {
+  margin-right: 10px;
+}
+
+.carousel-pic {
   height: 300px;
 }
 
+.mb-header {
+  background: #c50e20;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
 .carousel {
-  width: 200px;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-self: flex-end;
+  justify-self: center;
   margin-top: 20px;
 }
 
@@ -134,10 +209,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.sen-logo {
-  width: 30%;
 }
 
 .portfolio-container {
@@ -174,22 +245,6 @@ export default {
 
 .publication-container {
   padding-left: 20px;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 20px;
-}
-
-.card {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .package-desc {
@@ -243,6 +298,14 @@ export default {
 
   .sen-logo {
     width: 50%;
+  }
+
+  .carousel {
+    width: 250px;
+  }
+
+  .carousel-pic {
+    height: 200px;
   }
 }
 </style>

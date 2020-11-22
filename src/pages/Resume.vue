@@ -34,7 +34,7 @@
             <li>
               Implementation of
               <a
-                href="https://sensafety.org/statistics.html"
+                href="https://sensafety.org/map.html"
               >statistics dashboard and live map</a>
               with real-time popups
             </li>
@@ -94,6 +94,13 @@
         </span>
         <span class="medium-font">Towards Application-Layer Purpose-Based Access Control</span>
       </div>
+
+      <div class="chapter-details">
+        <a
+          href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
+        >Link to the paper</a>
+      </div>
+      <hr />
     </section>
 
     <section class="resume-section">
@@ -102,7 +109,7 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Master Information Systems Management (Wirtschaftsinformatik)</span>
+        <span class="medium-font">Master Information Systems Management (Grade: 1.2)</span>
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -116,9 +123,10 @@
       <div class="chapter-details">
         <DetailSwitch>
           <ul>
+            <!-- <li>Final grade: 1.2</li> -->
             <li>
               Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic
-              Charging”
+              Charging” (Grade: 1.0)
             </li>
           </ul>
         </DetailSwitch>
@@ -130,7 +138,7 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Bachelor Wirtschaftsinformatik (Information Systems Management)</span>
+        <span class="medium-font">Bachelor Wirtschaftsinformatik (Grade: 1.8)</span>
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -144,11 +152,11 @@
       <div class="chapter-details">
         <DetailSwitch>
           <ul>
-            <li>Final grade: 1,8</li>
+            <!-- <li>Final grade: 1.8</li> -->
             <li>Certificate for being honoured as part of the best students in my year</li>
             <li>
               Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability
-              Offering” (Grade: 1,3)
+              Offering” (Grade: 1.3)
             </li>
           </ul>
         </DetailSwitch>
@@ -160,7 +168,7 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Abitur</span>
+        <span class="medium-font">Abitur (Grade: 1.3)</span>
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -174,7 +182,7 @@
       <div class="chapter-details">
         <DetailSwitch>
           <ul>
-            <li>Final grade: 1,3</li>
+            <!-- <li>Final grade: 1.3</li> -->
             <li>Major subjects: English and Physics</li>
           </ul>
         </DetailSwitch>
@@ -211,6 +219,7 @@
         <div class="interest">Board Games</div>
         <div class="interest">Origami</div>
         <div class="interest">Running</div>
+        <div class="interest">Rope Jumping</div>
       </div>
     </section>
   </div>
