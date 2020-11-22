@@ -78,14 +78,14 @@
         <span class="icon-container">
           <img class="icon-img" :src="publicationIcon" alt />
         </span>
-        <span class="medium-font">Sensafety: Crowdsourcing the Urban Sense of Safety</span>
+        <span class="medium-font">What if Distance-based Tolls Depend on Urban Air Quality? <br> Simulation of an Air Pollution-based Road Charging Scheme in Berlin</span>
       </div>
 
-      <div class="chapter-details">
+      <!-- <div class="chapter-details">
         <a
-          href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
+          href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
         >Link to the paper</a>
-      </div>
+      </div> -->
       <hr />
 
       <div class="chapter-overview">
@@ -98,6 +98,20 @@
       <div class="chapter-details">
         <a
           href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
+        >Link to the paper</a>
+      </div>
+      <hr />
+
+      <div class="chapter-overview">
+        <span class="icon-container">
+          <img class="icon-img" :src="publicationIcon" alt />
+        </span>
+        <span class="medium-font">Sensafety: Crowdsourcing the Urban Sense of Safety</span>
+      </div>
+
+      <div class="chapter-details">
+        <a
+          href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
         >Link to the paper</a>
       </div>
       <hr />
