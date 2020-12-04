@@ -101,6 +101,7 @@ module.exports = {
       favicon: "./public/favicon.png",
     }),
     new CopyPlugin([{ from: "./public/_redirects", to: "./" }]),
+    new CopyPlugin([{ from: "./public/cv.pdf", to: "./static/cv.pdf" }]),
     new HotModuleReplacementPlugin(),
   ],
 }

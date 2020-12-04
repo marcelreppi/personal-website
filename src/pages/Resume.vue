@@ -3,7 +3,7 @@
     <h1 class="page-title">Resumé</h1>
 
     <div id="download">
-      <a href="public/cv.pdf" target="_blank">Download</a>
+      <a href="static/cv.pdf" target="_blank">Download</a>
     </div>
     
     <section class="resume-section">
