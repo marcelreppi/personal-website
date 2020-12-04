@@ -282,53 +282,27 @@ export default {
 
 #download > a {
   text-decoration: none;
-  color: #234ef3;
+  color: var(--highlight-color);
 }
 
 .section-title {
   font-size: 20px;
   font-family: metropolis-medium;
   letter-spacing: 1px;
-  color: #234ef3;
+  color: var(--highlight-color);
 }
 
 .section-title::after {
   margin: 10px 0 30px 0;
   content: "";
   width: 150px;
-  border-bottom: 3px solid #234ef3;
+  border-bottom: 3px solid var(--highlight-color);
   display: block;
 }
 
 .resume-section {
   margin-bottom: 40px;
 }
-
-/* .detail-switch {
-  color: rgb(95, 95, 95);
-  display: flex;
-  align-items: center;
-}
-
-.detail-switch:hover {
-  cursor: pointer;
-}
-
-.detail-switch:hover > .switch-arrow {
-  transform: rotate(135deg);
-  margin-top: -6px;
-}
-
-.switch-arrow {
-  transition: all 0.5s;
-  margin-right: 8px;
-  margin-left: -5px;
-  width: 6px;
-  height: 6px;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  transform: rotate(45deg);
-} */
 
 hr {
   margin-top: 20px;
@@ -379,6 +353,6 @@ li {
   border-radius: 5px;
   border: 2px;
   border-style: solid;
-  border-color: #234ef3;
+  border-color: var(--highlight-color);
 }
 </style>

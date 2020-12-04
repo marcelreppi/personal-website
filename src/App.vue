@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --highlight-color: #234ef3;
+}
+
 @font-face {
   font-family: metropolis;
   src: url("./static/fonts/Metropolis-Regular.otf");
@@ -80,7 +84,7 @@ export default {
 .page-title {
   text-align: center;
   font-size: 34px;
-  color: #234ef3;
+  color: var(--highlight-color);
   font-family: metropolis-medium;
   hyphens: auto;
   margin: 0px 0px 50px 0px;

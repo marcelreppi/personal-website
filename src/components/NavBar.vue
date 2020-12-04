@@ -116,7 +116,7 @@ export default {
 }
 
 .navbar-item:hover {
-  color: #234ef3;
+  color: var(--highlight-color);
 }
 
 .nav-home {

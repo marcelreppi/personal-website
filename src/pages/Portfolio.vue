@@ -226,7 +226,7 @@ a {
   margin: 10px 0 30px 0;
   content: "";
   width: 120px;
-  border-bottom: 3px solid #234ef3;
+  border-bottom: 3px solid var(--highlight-color);
   display: block;
 }
 
@@ -234,7 +234,7 @@ a {
   font-size: 22px;
   font-family: metropolis-medium;
   letter-spacing: 1px;
-  color: #234ef3;
+  color: var(--highlight-color);
   text-align: left;
 }
 

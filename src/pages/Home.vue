@@ -100,14 +100,14 @@ export default {
 .vue-typer .custom.caret.typing {
   width: 3px;
   font-size: 34px;
-  background-color: #234ef3;
+  background-color: var(--highlight-color);
   display: inline-block !important;
   margin-left: 5px;
 }
 
 .vue-typer .custom.char.typed {
   font-size: 34px;
-  color: #234ef3;
+  color: var(--highlight-color);
 }
 
 .social-links {
