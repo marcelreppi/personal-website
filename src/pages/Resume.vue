@@ -2,6 +2,10 @@
   <div>
     <h1 class="page-title">Resumé</h1>
 
+    <div id="download">
+      <a href="public/cv.pdf" target="_blank">Download</a>
+    </div>
+    
     <section class="resume-section">
       <div class="section-title">Experience</div>
       <div class="chapter-overview">
@@ -267,6 +271,20 @@ export default {
 </script>
 
 <style scoped>
+#download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  --gap: 40px;
+  margin-top: calc(var(--gap) * -1);
+  margin-bottom: var(--gap);
+}
+
+#download > a {
+  text-decoration: none;
+  color: #234ef3;
+}
+
 .section-title {
   font-size: 20px;
   font-family: metropolis-medium;
