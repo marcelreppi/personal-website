@@ -280,6 +280,10 @@ export default {
   margin-bottom: var(--gap);
 }
 
+#download:hover {
+  text-decoration: underline;
+}
+
 #download > a {
   text-decoration: none;
   color: var(--highlight-color);
