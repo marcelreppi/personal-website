@@ -135,7 +135,7 @@
         <span class="icon-container">
           <img class="icon-img" :src="durationIcon" alt />
         </span>
-        <div>04/2018 - today</div>
+        <div>04/2018 - 10/2020</div>
       </div>
 
       <div class="chapter-details">
