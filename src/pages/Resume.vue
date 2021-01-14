@@ -5,7 +5,7 @@
     <div id="download">
       <a href="static/cv.pdf" target="_blank">Download</a>
     </div>
-    
+
     <section class="resume-section">
       <div class="section-title">Experience</div>
       <div class="chapter-overview">
@@ -29,17 +29,20 @@
       <div class="chapter-details">
         <DetailSwitch>
           <ul>
-            <li>Mobile crowdsourcing platform for perceived safety of urban citizens</li>
             <li>
-              Agile development in a multi-cultural team on a user-centered, modern and performant
-              application
+              Mobile crowdsourcing platform for perceived safety of urban
+              citizens
+            </li>
+            <li>
+              Agile development in a multi-cultural team on a user-centered,
+              modern and performant application
             </li>
             <li>App development with React Native and Firebase</li>
             <li>
               Implementation of
-              <a
-                href="https://sensafety.org/map.html"
-              >statistics dashboard and live map</a>
+              <a href="https://sensafety.org/map.html"
+                >statistics dashboard and live map</a
+              >
               with real-time popups
             </li>
           </ul>
@@ -66,10 +69,13 @@
       <div class="chapter-details">
         <DetailSwitch>
           <ul>
-            <li>Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)</li>
             <li>
-              Technische Grundlagen der Informatik für Wirtschaftsinformatiker (Technical
-              Foundations of Computer Science)
+              Geschäftsprozesse & IT-Dienste (Business Processes and
+              IT-Services)
+            </li>
+            <li>
+              Technische Grundlagen der Informatik für Wirtschaftsinformatiker
+              (Technical Foundations of Computer Science)
             </li>
           </ul>
         </DetailSwitch>
@@ -82,7 +88,11 @@
         <span class="icon-container">
           <img class="icon-img" :src="publicationIcon" alt />
         </span>
-        <span class="medium-font">What if Distance-based Tolls Depend on Urban Air Quality? <br> Simulation of an Air Pollution-based Road Charging Scheme in Berlin</span>
+        <span class="medium-font"
+          >What if Distance-based Tolls Depend on Urban Air Quality? <br />
+          Simulation of an Air Pollution-based Road Charging Scheme in
+          Berlin</span
+        >
       </div>
 
       <!-- <div class="chapter-details">
@@ -96,13 +106,16 @@
         <span class="icon-container">
           <img class="icon-img" :src="publicationIcon" alt />
         </span>
-        <span class="medium-font">Towards Application-Layer Purpose-Based Access Control</span>
+        <span class="medium-font"
+          >Towards Application-Layer Purpose-Based Access Control</span
+        >
       </div>
 
       <div class="chapter-details">
         <a
           href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
-        >Link to the paper</a>
+          >Link to the paper</a
+        >
       </div>
       <hr />
 
@@ -110,13 +123,16 @@
         <span class="icon-container">
           <img class="icon-img" :src="publicationIcon" alt />
         </span>
-        <span class="medium-font">Sensafety: Crowdsourcing the Urban Sense of Safety</span>
+        <span class="medium-font"
+          >Sensafety: Crowdsourcing the Urban Sense of Safety</span
+        >
       </div>
 
       <div class="chapter-details">
         <a
           href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
-        >Link to the paper</a>
+          >Link to the paper</a
+        >
       </div>
       <hr />
     </section>
@@ -127,7 +143,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Master Information Systems Management (Grade: 1.2)</span>
+        <span class="medium-font"
+          >Master Information Systems Management (Grade: 1.2)</span
+        >
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -143,8 +161,8 @@
           <ul>
             <!-- <li>Final grade: 1.2</li> -->
             <li>
-              Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic
-              Charging” (Grade: 1.0)
+              Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll
+              System with Dynamic Charging” (Grade: 1.0)
             </li>
           </ul>
         </DetailSwitch>
@@ -156,7 +174,9 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span class="medium-font">Bachelor Wirtschaftsinformatik (Grade: 1.8)</span>
+        <span class="medium-font"
+          >Bachelor Wirtschaftsinformatik (Grade: 1.8)</span
+        >
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
@@ -171,10 +191,13 @@
         <DetailSwitch>
           <ul>
             <!-- <li>Final grade: 1.8</li> -->
-            <li>Certificate for being honoured as part of the best students in my year</li>
             <li>
-              Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability
-              Offering” (Grade: 1.3)
+              Certificate for being honoured as part of the best students in my
+              year
+            </li>
+            <li>
+              Bachelors Thesis: „Creation of a Lightweight Microservice for
+              Semantic Capability Offering” (Grade: 1.3)
             </li>
           </ul>
         </DetailSwitch>
@@ -190,7 +213,10 @@
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
-        <div>Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual Highschool (German-English))</div>
+        <div>
+          Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual
+          Highschool (German-English))
+        </div>
         <span class="icon-container">
           <img class="icon-img" :src="durationIcon" alt />
         </span>
@@ -212,9 +238,10 @@
         <span class="icon-container">
           <img class="icon-img" :src="degreeIcon" alt />
         </span>
-        <span
-          class="medium-font"
-        >Quentin Blake Europeschool (Bilingual Primary School (German-English))</span>
+        <span class="medium-font"
+          >Quentin Blake Europeschool (Bilingual Primary School
+          (German-English))</span
+        >
         <span class="icon-container">
           <img class="icon-img" :src="locationIcon" alt />
         </span>
