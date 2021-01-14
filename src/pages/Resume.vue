@@ -254,12 +254,46 @@
     </section>
 
     <section class="resume-section">
+      <div class="section-title">Skills</div>
+      <div class="interest-container">
+        <div class="interest">Fullstack Development</div>
+        <div class="interest">NodeJS</div>
+        <div class="interest">TypeScript</div>
+        <div class="interest">Python</div>
+        <div class="interest">React</div>
+        <div class="interest">Vue</div>
+        <div class="interest">DevOps</div>
+        <div class="interest">Docker</div>
+        <div class="interest">GitHub Actions</div>
+        <div class="interest">AWS</div>
+        <div class="interest">PostgreSQL</div>
+        <div class="interest">MySQL</div>
+        <div class="interest">MongoDB</div>
+        <div class="interest">Traffic Simulation with SUMO</div>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <div class="section-title">Traits</div>
+      <div class="interest-container">
+        <div class="interest">Highly motivated</div>
+        <div class="interest">Adaptable</div>
+        <div class="interest">Fast learner</div>
+        <div class="interest">Passionate</div>
+        <div class="interest">Team spirit</div>
+        <div class="interest">
+          Agile, independent and determined way of working
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section">
       <div class="section-title">Interests</div>
       <div class="interest-container">
         <div class="interest">Piano</div>
         <div class="interest">Traveling</div>
         <div class="interest">Programming</div>
-        <div class="interest">Wakeboarding</div>  
+        <div class="interest">Wakeboarding</div>
         <div class="interest">Longboarding</div>
         <div class="interest">Board Games</div>
         <div class="interest">Origami</div>
@@ -380,7 +414,7 @@ li {
   background: rgb(255, 255, 255);
   margin-bottom: 15px;
   margin-right: 15px;
-  padding: 3px 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   border: 2px;
   border-style: solid;
