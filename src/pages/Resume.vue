@@ -270,6 +270,7 @@
         <div class="interest">MySQL</div>
         <div class="interest">MongoDB</div>
         <div class="interest">Traffic Simulation with SUMO</div>
+        <div class="interest">Alexa Skills</div>
       </div>
     </section>
 
