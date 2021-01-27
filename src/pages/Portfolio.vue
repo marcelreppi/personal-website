@@ -53,7 +53,9 @@
               management platform.
             </div>
             <div class="shields">
-              <div>
+              <a
+                href="https://chrome.google.com/webstore/detail/moodle-buddy/nomahjpllnbcpbggnpiehiecfbjmcaeo"
+              >
                 <img
                   src="https://img.shields.io/chrome-web-store/v/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                   alt="Version"
@@ -66,8 +68,10 @@
                   src="https://img.shields.io/chrome-web-store/rating/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                   alt="Ratings"
                 />
-              </div>
-              <div>
+              </a>
+              <a
+                href="https://addons.mozilla.org/en-US/firefox/addon/moodle-buddy/"
+              >
                 <img
                   src="https://img.shields.io/amo/v/moodle-buddy"
                   alt="Version"
@@ -80,7 +84,7 @@
                   src="https://img.shields.io/amo/rating/moodle-buddy"
                   alt="Ratings"
                 />
-              </div>
+              </a>
             </div>
             <div class="carousel">
               <Carousel :autoplay="true" :loop="true" :per-page="1">
