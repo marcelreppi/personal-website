@@ -11,7 +11,14 @@
                 <img :src="SenSafetyLogo" />
               </div>
             </a>
-            <div>Mobile crowdsourcing platform for perceived safety of urban citizens</div>
+            <div>
+              Mobile crowdsourcing platform for perceived safety of urban
+              citizens.
+              <br />
+              The data is aggregated and can be used by municipalities to
+              evaluate how perceived safety changes over time and how additional
+              infrastructure impacts the perceived safety.
+            </div>
             <div class="carousel">
               <Carousel :autoplay="true" :loop="true" :per-page="1">
                 <Slide>
@@ -40,7 +47,41 @@
                 MoodleBuddy
               </div>
             </a>
-            <div>Cross-platform browser plugin that offers mass download and notification functionality for the <b>Moodle</b> learning management platform.</div>
+            <div>
+              Cross-platform browser plugin that offers mass download and
+              notification functionality for the <b>Moodle</b> learning
+              management platform.
+            </div>
+            <div class="shields">
+              <div>
+                <img
+                  src="https://img.shields.io/chrome-web-store/v/nomahjpllnbcpbggnpiehiecfbjmcaeo"
+                  alt="Version"
+                />
+                <img
+                  src="https://img.shields.io/chrome-web-store/users/nomahjpllnbcpbggnpiehiecfbjmcaeo"
+                  alt="Users"
+                />
+                <img
+                  src="https://img.shields.io/chrome-web-store/rating/nomahjpllnbcpbggnpiehiecfbjmcaeo"
+                  alt="Ratings"
+                />
+              </div>
+              <div>
+                <img
+                  src="https://img.shields.io/amo/v/moodle-buddy"
+                  alt="Version"
+                />
+                <img
+                  src="https://img.shields.io/amo/users/moodle-buddy"
+                  alt="Users"
+                />
+                <img
+                  src="https://img.shields.io/amo/rating/moodle-buddy"
+                  alt="Ratings"
+                />
+              </div>
+            </div>
             <div class="carousel">
               <Carousel :autoplay="true" :loop="true" :per-page="1">
                 <Slide>
@@ -62,8 +103,15 @@
         <div class="section-title">Published npm packages</div>
         <div class="card-container">
           <div class="card">
-            <a class="package-name" href="https://www.npmjs.com/package/shape2geohash">shape2geohash</a>
-            <div class="package-desc">Turns any GeoJSON shape into a list of geohashes</div>
+            <a
+              class="package-name"
+              href="https://www.npmjs.com/package/shape2geohash"
+            >
+              shape2geohash
+            </a>
+            <div class="package-desc">
+              Turns any GeoJSON shape into a list of geohashes
+            </div>
             <a href="https://nodei.co/npm/shape2geohash/">
               <img
                 class="npm-stats"
@@ -73,14 +121,23 @@
             </a>
           </div>
           <div class="card">
-            <a class="package-name" href="https://www.npmjs.com/package/purposize">purposize</a>
+            <a
+              class="package-name"
+              href="https://www.npmjs.com/package/purposize"
+            >
+              purposize
+            </a>
 
             <div class="package-desc">
-              <a href="http://docs.sequelizejs.com/">Sequelize</a> plugin to help with
-              GDPR-compliant data storage
+              <a href="http://docs.sequelizejs.com/">Sequelize</a>
+              plugin to help with GDPR-compliant data storage
             </div>
             <a href="https://nodei.co/npm/purposize/">
-              <img class="npm-stats" alt="package summary" src="https://nodei.co/npm/purposize.png" />
+              <img
+                class="npm-stats"
+                alt="package summary"
+                src="https://nodei.co/npm/purposize.png"
+              />
             </a>
           </div>
         </div>
@@ -161,7 +218,11 @@ export default {
 }
 
 .sen-header {
-  background: linear-gradient(90deg, rgba(100, 85, 232, 1) 0%, rgba(150, 71, 219, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(100, 85, 232, 1) 0%,
+    rgba(150, 71, 219, 1) 100%
+  );
 }
 
 .sen-header > img {
@@ -170,6 +231,10 @@ export default {
 
 .mb-header > img {
   margin-right: 10px;
+}
+
+.shields {
+  margin-top: 20px;
 }
 
 .carousel-pic {
