@@ -1,10 +1,15 @@
 <template>
   <div class="home-container">
-    <VueTyper text="Hi, I'm Marcel" :repeat="0" :type-delay="150" caret-animation="smooth"></VueTyper>
+    <VueTyper
+      text="Hi, I'm Marcel"
+      :repeat="0"
+      :type-delay="150"
+      caret-animation="smooth"
+    ></VueTyper>
 
     <h2 class="intro">
       Information Systems Management
-      <br />Master Student @ Technical University of Berlin
+      <br />Master Graduate from Technical University of Berlin
     </h2>
     <div class="social-links">
       <span class="icon-container">
