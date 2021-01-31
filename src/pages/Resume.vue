@@ -260,6 +260,7 @@
         <div class="interest">NodeJS</div>
         <div class="interest">TypeScript</div>
         <div class="interest">Python</div>
+        <div class="interest">Java</div>
         <div class="interest">React</div>
         <div class="interest">Vue</div>
         <div class="interest">DevOps</div>
@@ -306,20 +307,20 @@
 </template>
 
 <script>
-import workIcon from "../static/images/work.png";
-import publicationIcon from "../static/images/publication.png";
-import degreeIcon from "../static/images/degree.png";
-import tutorIcon from "../static/images/tutor.png";
-import locationIcon from "../static/images/location.png";
-import durationIcon from "../static/images/duration.png";
+import workIcon from "../static/images/work.png"
+import publicationIcon from "../static/images/publication.png"
+import degreeIcon from "../static/images/degree.png"
+import tutorIcon from "../static/images/tutor.png"
+import locationIcon from "../static/images/location.png"
+import durationIcon from "../static/images/duration.png"
 
-import DetailSwitch from "../components/DetailSwitch.vue";
+import DetailSwitch from "../components/DetailSwitch.vue"
 
 export default {
   components: {
     DetailSwitch,
   },
-  data: function () {
+  data: function() {
     return {
       workIcon,
       publicationIcon,
@@ -327,9 +328,9 @@ export default {
       tutorIcon,
       locationIcon,
       durationIcon,
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
