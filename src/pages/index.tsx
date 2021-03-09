@@ -11,7 +11,7 @@ import HomePageIcon from "../images/homepage.png"
 const IndexPage: React.FC = () => {
   return (
     <Layout>
-      <div className="container mx-auto flex flex-col items-center space-y-10">
+      <div className="flex flex-col items-center space-y-10">
         {/* Typer */}
         <Typist
           className="text-3.5xl text-highlight medium-font"
@@ -54,11 +54,11 @@ const IndexPage: React.FC = () => {
         </div>
 
         {/* Other Links */}
-        <div className="flex justify-center space-x-10">
+        <div className="flex flex-col space-y-3 sm:flex-row sm:justify-center sm:items-center sm:space-x-10 sm:space-y-0">
           <div className="flex items-center">
             <img className="w-5 h-5 mr-2" src={MailIcon} alt="Mail Icon" />
             <a
-              className="break-all underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              className="break-all link"
               href="mailto:marcelreppi@gmail.com"
             >
               marcelreppi@gmail.com
@@ -71,7 +71,7 @@ const IndexPage: React.FC = () => {
               alt="Homepage Icon"
             />
             <a
-              className="break-all underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+              className="break-all link"
               href="https://www.reppenhagen.space"
             >
               reppenhagen.space

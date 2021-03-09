@@ -4,23 +4,27 @@
 
 @font-face {
   font-family: metropolis;
-  src: url("../../../src/static/fonts/Metropolis-Regular.otf");
+  src: url("../fonts/Metropolis-Regular.otf");
 }
 
 @font-face {
   font-family: metropolis-medium;
-  src: url("../../../src/static/fonts/Metropolis-Medium.otf");
+  src: url("../fonts/Metropolis-Medium.otf");
 }
 
 @font-face {
   font-family: metropolis-bold;
-  src: url("../../../src/static/fonts/Metropolis-Bold.otf");
+  src: url("../fonts/Metropolis-Bold.otf");
 }
 
 html,
 body {
   font-family: metropolis;
   font-size: 16px;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 .medium-font {
@@ -34,4 +38,8 @@ body {
 .Cursor {
   margin-left: 1px;
   font-size: 2.2rem;
+}
+
+.link {
+  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600;
 }
