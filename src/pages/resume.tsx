@@ -3,13 +3,7 @@ import { Activity } from "../components/Activity"
 import { Layout } from "../components/Layout"
 import { PageTitle } from "../components/PageTitle"
 import ResumePDF from "../static/cv.pdf"
-
-const SectionTitle: React.FC = ({ children }) => (
-  <div className="text-highlight text-xl medium-font tracking-wider mb-8">
-    {children}
-    <div className="w-38 h-0.75 mt-1 bg-highlight"></div>
-  </div>
-)
+import { SectionTitle } from "../components/SectionTitle"
 
 const Badge: React.FC = ({ children }) => (
   <div className="border-highlight border-2 rounded-lg px-2 py-1 mr-3 mb-3">
@@ -24,7 +18,7 @@ export const Resume: React.FC = ({}) => {
       <div className="text-center -mt-12 mb-10">
         <a
           href={ResumePDF}
-          className="text-highlight"
+          className="text-highlight hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -33,7 +27,7 @@ export const Resume: React.FC = ({}) => {
       </div>
       <div className="space-y-10">
         <SectionTitle>Experience</SectionTitle>
-        <div className="space-y-5">
+        <div className="divide-y-1">
           <Activity
             type="work"
             title={
@@ -51,19 +45,39 @@ export const Resume: React.FC = ({}) => {
             }
             location="Technical University of Berlin"
             duration="04/2019 - 10/2019"
+            details={[
+              "Mobile crowdsourcing platform for perceived safety of urban citizens",
+              "Agile development in a multi-cultural team on a user-centered, modern and performant application",
+              "App development with React Native and Firebase",
+              <span>
+                Implementation of{" "}
+                <a
+                  href="https://sensafety.org/map.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                >
+                  statistics dashboard and live map
+                </a>{" "}
+                with real-time popups
+              </span>,
+            ]}
           />
-          <hr></hr>
           <Activity
             type="tutor"
             title="Student Tutor"
             location="Technical University of Berlin"
             duration="04/2016 - 04/2017"
+            details={[
+              "Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)",
+              "Technische Grundlagen der Informatik für Wirtschaftsinformatiker (Technical Foundations of Computer Science)",
+            ]}
           />
         </div>
 
         <div>
           <SectionTitle>Publications</SectionTitle>
-          <div className="space-y-5">
+          <div className="divide-y-1">
             <Activity
               type="publication"
               title={
@@ -77,7 +91,7 @@ export const Resume: React.FC = ({}) => {
                 </a>
               }
             />
-            <hr></hr>
+
             <Activity
               type="publication"
               title={
@@ -96,29 +110,37 @@ export const Resume: React.FC = ({}) => {
 
         <div>
           <SectionTitle>Education</SectionTitle>
-          <div className="space-y-5">
+          <div className="divide-y-1">
             <Activity
               type="degree"
               title="Master Information Systems Management (Grade: 1.2)"
               location="Technical University of Berlin"
               duration="04/2018 - 10/2020"
+              details={[
+                "Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic Charging” (Grade: 1.0)",
+              ]}
             />
-            <hr></hr>
+
             <Activity
               type="degree"
               title="Bachelor Wirtschaftsinformatik (Grade: 1.8)"
               location="Technical University of Berlin"
               duration="10/2014 - 03/2018"
+              details={[
+                "Certificate for being honoured as part of the best students in my year",
+                "Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability Offering” (Grade: 1.3)",
+              ]}
             />
-            <hr></hr>
+
             <Activity
               type="degree"
               title="Abitur (Grade: 1.3)"
               location="Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual
             Highschool (German-English))"
               duration="2007 - 2013"
+              details={["Major subjects: English and Physics"]}
             />
-            <hr></hr>
+
             <Activity
               type="degree"
               title="Quentin Blake Europeschool (Bilingual Primary School

@@ -57,10 +57,7 @@ const IndexPage: React.FC = () => {
         <div className="flex flex-col space-y-3 sm:flex-row sm:justify-center sm:items-center sm:space-x-10 sm:space-y-0">
           <div className="flex items-center">
             <img className="w-5 h-5 mr-2" src={MailIcon} alt="Mail Icon" />
-            <a
-              className="break-all link"
-              href="mailto:marcelreppi@gmail.com"
-            >
+            <a className="break-all link" href="mailto:marcelreppi@gmail.com">
               marcelreppi@gmail.com
             </a>
           </div>
@@ -70,10 +67,7 @@ const IndexPage: React.FC = () => {
               src={HomePageIcon}
               alt="Homepage Icon"
             />
-            <a
-              className="break-all link"
-              href="https://www.reppenhagen.space"
-            >
+            <a className="break-all link" href="https://www.reppenhagen.space">
               reppenhagen.space
             </a>
           </div>
