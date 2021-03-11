@@ -19,7 +19,7 @@ export const NPMPackage: React.FC<NPMPackageProps> = ({
       >
         {name}
       </a>
-      <div className="text-center">{description}</div>
+      <div className="text-xl leading-6 text-center">{description}</div>
       <a
         className="flex-grow flex items-end"
         href={`https://nodei.co/npm/${name}`}

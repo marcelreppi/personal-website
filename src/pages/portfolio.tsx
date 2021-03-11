@@ -4,17 +4,7 @@ import { Layout } from "../components/Layout"
 import { NPMPackage } from "../components/NPMPackage"
 import { PageTitle } from "../components/PageTitle"
 import { SectionTitle } from "../components/SectionTitle"
-
-import SenSafetyLogo from "../images/sensafety-logo.png"
-import SenSafetyPic1 from "../images/sen-1.jpg"
-import SenSafetyPic2 from "../images/sen-2.jpg"
-import SenSafetyPic3 from "../images/sen-3.jpg"
-import SenSafetyPic4 from "../images/sen-4.jpg"
-import SenSafetyPic5 from "../images/sen-5.jpg"
-
-import MoodleBuddyPic1 from "../images/mb-1.png"
-import MoodleBuddyPic2 from "../images/mb-2.png"
-import MoodleBuddyPic3 from "../images/mb-3.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const Portfolio: React.FC = ({}) => {
   return (
@@ -31,10 +21,14 @@ export const Portfolio: React.FC = ({}) => {
                 rel="noopener noreferrer"
                 className="h-16 py-1 flex justify-center items-center bg-gradient-to-r from-sen1 to-sen2"
               >
-                <img className="h-full" src={SenSafetyLogo} />
+                <StaticImage
+                  height={60}
+                  alt="SenSafety Logo"
+                  src="../images/sensafety-logo.png"
+                />
               </a>
               <div className="p-5 space-y-3">
-                <div className="text-l text-center">
+                <div className="text-xl leading-6 text-center">
                   Mobile crowdsourcing platform for perceived safety of urban
                   citizens. The data is aggregated and can be used by
                   municipalities to evaluate how perceived safety changes over
@@ -48,19 +42,39 @@ export const Portfolio: React.FC = ({}) => {
                     infiniteLoop={true}
                   >
                     <div>
-                      <img className="h-80 w-auto" src={SenSafetyPic1} />
+                      <StaticImage
+                        height={320}
+                        alt="SenSafety 1"
+                        src="../images/sen-1.jpg"
+                      />
                     </div>
                     <div>
-                      <img className="h-80 w-auto" src={SenSafetyPic2} />
+                      <StaticImage
+                        height={320}
+                        alt="SenSafety 2"
+                        src="../images/sen-2.jpg"
+                      />
                     </div>
                     <div>
-                      <img className="h-80 w-auto" src={SenSafetyPic3} />
+                      <StaticImage
+                        height={320}
+                        alt="SenSafety 3"
+                        src="../images/sen-3.jpg"
+                      />
                     </div>
                     <div>
-                      <img className="h-80 w-auto" src={SenSafetyPic4} />
+                      <StaticImage
+                        height={320}
+                        alt="SenSafety 4"
+                        src="../images/sen-4.jpg"
+                      />
                     </div>
                     <div>
-                      <img className="h-80 w-auto" src={SenSafetyPic5} />
+                      <StaticImage
+                        height={320}
+                        alt="SenSafety 5"
+                        src="../images/sen-5.jpg"
+                      />
                     </div>
                   </Carousel>
                 </div>
@@ -79,7 +93,7 @@ export const Portfolio: React.FC = ({}) => {
                 </span>
               </a>
               <div className="p-5 space-y-3">
-                <div className="text-l text-center">
+                <div className="text-xl leading-6 text-center">
                   Cross-platform browser plugin that offers mass download and
                   notification functionality for the <b>Moodle</b> learning
                   management platform.
@@ -91,16 +105,16 @@ export const Portfolio: React.FC = ({}) => {
                     rel="noopener noreferrer"
                     href="https://chrome.google.com/webstore/detail/moodle-buddy/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                   >
-                    <img
+                    <StaticImage
                       className="mt-1"
                       src="https://img.shields.io/chrome-web-store/v/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Version"
                     />
-                    <img
+                    <StaticImage
                       src="https://img.shields.io/chrome-web-store/users/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Users"
                     />
-                    <img
+                    <StaticImage
                       src="https://img.shields.io/chrome-web-store/rating/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Ratings"
                     />
@@ -111,16 +125,16 @@ export const Portfolio: React.FC = ({}) => {
                     rel="noopener noreferrer"
                     href="https://addons.mozilla.org/en-US/firefox/addon/moodle-buddy/"
                   >
-                    <img
+                    <StaticImage
                       className="mt-1"
                       src="https://img.shields.io/amo/v/moodle-buddy"
                       alt="Version"
                     />
-                    <img
+                    <StaticImage
                       src="https://img.shields.io/amo/users/moodle-buddy"
                       alt="Users"
                     />
-                    <img
+                    <StaticImage
                       src="https://img.shields.io/amo/rating/moodle-buddy"
                       alt="Ratings"
                     />
@@ -133,13 +147,25 @@ export const Portfolio: React.FC = ({}) => {
                     infiniteLoop={true}
                   >
                     <div>
-                      <img className="h-80 w-auto" src={MoodleBuddyPic1} />
+                      <StaticImage
+                        height={320}
+                        alt="MoodleBuddy 1"
+                        src="../images/mb-1.png"
+                      />
                     </div>
                     <div>
-                      <img className="h-80 w-auto" src={MoodleBuddyPic2} />
+                      <StaticImage
+                        height={320}
+                        alt="MoodleBuddy 2"
+                        src="../images/mb-2.png"
+                      />
                     </div>
                     <div>
-                      <img className="h-80 w-auto" src={MoodleBuddyPic3} />
+                      <StaticImage
+                        height={320}
+                        alt="MoodleBuddy 3"
+                        src="../images/mb-3.png"
+                      />
                     </div>
                   </Carousel>
                 </div>

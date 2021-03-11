@@ -1,11 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
-import WorkIcon from "../images/work.png"
-import LocationIcon from "../images/location.png"
-import DurationIcon from "../images/duration.png"
-import TutorIcon from "../images/tutor.png"
-import DegreeIcon from "../images/degree.png"
-import PublicationIcon from "../images/publication.png"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
 interface ActivityProps {
   type: "work" | "tutor" | "degree" | "publication"
@@ -15,18 +10,31 @@ interface ActivityProps {
   details?: Array<string | React.ReactNode>
 }
 
-function getActivityIcon(type: ActivityProps["type"]) {
+function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
   switch (type) {
     case "work":
-      return WorkIcon
+      return (
+        <StaticImage width={20} height={20} src="../images/work.png" alt="" />
+      )
     case "tutor":
-      return TutorIcon
+      return (
+        <StaticImage width={20} height={20} src="../images/tutor.png" alt="" />
+      )
     case "degree":
-      return DegreeIcon
+      return (
+        <StaticImage width={20} height={20} src="../images/degree.png" alt="" />
+      )
     case "publication":
-      return PublicationIcon
+      return (
+        <StaticImage
+          width={20}
+          height={20}
+          src="../images/publication.png"
+          alt=""
+        />
+      )
     default:
-      return WorkIcon
+      return "../images/work.png"
   }
 }
 
@@ -57,23 +65,31 @@ export const Activity: React.FC<ActivityProps> = ({
   const [showDetails, setShowDetails] = useState(false)
   const toggleDetails = () => setShowDetails(!showDetails)
 
-  let activityIcon = getActivityIcon(type)
-
   return (
     <div className="space-y-2 pt-4 pb-4 first:pt-0 last:pb-0">
       <div className="flex items-center space-x-2 ">
-        <img className="w-5 h-5" src={activityIcon} alt="" />
+        {getActivityIcon(type)}
         <span className="text-lg medium-font">{title}</span>
       </div>
       {location ? (
         <div className="flex items-center space-x-2">
-          <img className="w-5 h-5" src={LocationIcon} alt="" />
+          <StaticImage
+            width={20}
+            height={20}
+            src="../images/location.png"
+            alt=""
+          />
           <span>{location}</span>
         </div>
       ) : null}
       {duration ? (
         <div className="flex items-center space-x-2">
-          <img className="w-5 h-5" src={DurationIcon} alt="" />
+          <StaticImage
+            width={20}
+            height={20}
+            src="../images/duration.png"
+            alt=""
+          />
           <span>{duration}</span>
         </div>
       ) : null}
@@ -83,7 +99,7 @@ export const Activity: React.FC<ActivityProps> = ({
             className="flex items-center cursor-pointer"
             onClick={toggleDetails}
           >
-            <Arrow rotate={showDetails ? true : false}></Arrow>
+            <Arrow rotate={showDetails}></Arrow>
             <div className="text-gray-500 select-none">
               {showDetails ? "Less" : "More"} details
             </div>
@@ -91,8 +107,8 @@ export const Activity: React.FC<ActivityProps> = ({
           <ul
             className={`list-disc list-inside ${showDetails ? "" : "hidden"}`}
           >
-            {details.map((detail) => (
-              <li>
+            {details.map((detail, i) => (
+              <li key={i}>
                 <span className="-ml-2">{detail}</span>
               </li>
             ))}

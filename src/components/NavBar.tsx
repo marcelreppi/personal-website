@@ -1,9 +1,6 @@
 import { Link } from "gatsby"
 import React, { useEffect, useState } from "react"
-import MenuClosedIcon from "../images/menu-closed.png"
-import MenuOpenIcon from "../images/menu-open.png"
-
-interface NavBarProps {}
+import { StaticImage } from "gatsby-plugin-image"
 
 const NavBarItem: React.FC = ({ children }) => {
   return (
@@ -11,7 +8,7 @@ const NavBarItem: React.FC = ({ children }) => {
   )
 }
 
-export const NavBar: React.FC<NavBarProps> = ({}) => {
+export const NavBar: React.FC = ({}) => {
   const isMobile = () => window.innerWidth <= 480
   const [showMobileNavBar, setShowMobileNavBar] = useState(isMobile())
   window.addEventListener("resize", () => {
@@ -24,9 +21,11 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
   const openMobileMenu = (
     <div className="absolute w-full h-full bg-white z-10">
       <div className="flex justify-end m-5">
-        <img
-          className="w-12 h-12"
-          src={MenuOpenIcon}
+        <StaticImage
+          width={48}
+          height={48}
+          alt="Menu open"
+          src="../images/menu-open.png"
           onClick={toggleMobileMenu}
         />
       </div>
@@ -48,9 +47,11 @@ export const NavBar: React.FC<NavBarProps> = ({}) => {
   )
   const closedMobileMenu = (
     <div className="flex justify-end m-5">
-      <img
-        className="w-12 h-12"
-        src={MenuClosedIcon}
+      <StaticImage
+        width={48}
+        height={48}
+        alt="Menu closed"
+        src="../images/menu-closed.png"
         onClick={toggleMobileMenu}
       />
     </div>

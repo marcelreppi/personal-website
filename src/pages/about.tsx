@@ -1,17 +1,19 @@
 import React from "react"
 import { Layout } from "../components/Layout"
 import { PageTitle } from "../components/PageTitle"
-import ProfilePic from "../images/me.jpg"
+import { StaticImage } from "gatsby-plugin-image"
 
 export const About: React.FC = ({}) => {
   return (
     <Layout>
       <PageTitle>About</PageTitle>
       <div className="flex flex-col items-center space-y-10">
-        <img
-          src={ProfilePic}
+        <StaticImage
+          src="../images/me.jpg"
           alt="Profile picture"
-          className="w-64 h-64 rounded-lg shadow-custom"
+          width={256}
+          height={256}
+          className="rounded-lg shadow-custom"
         />
         <div className="space-y-6 text-lg">
           <p>

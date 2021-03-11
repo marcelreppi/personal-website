@@ -1,12 +1,8 @@
 import React from "react"
 import Typist from "react-typist"
+import { StaticImage } from "gatsby-plugin-image"
 
 import { Layout } from "../components/Layout"
-import GitHubIcon from "../images/github.png"
-import LinkedInIcon from "../images/linkedin.png"
-import TwitterIcon from "../images/twitter.png"
-import MailIcon from "../images/mail.png"
-import HomePageIcon from "../images/homepage.png"
 
 const IndexPage: React.FC = () => {
   return (
@@ -35,36 +31,59 @@ const IndexPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-8 h-8" src={GitHubIcon} alt="GitHub Icon" />
+            <StaticImage
+              width={32}
+              height={32}
+              src="../images/github.png"
+              alt="GitHub Icon"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-8 h-8" src={LinkedInIcon} alt="LinkedIn Icon" />
+            <StaticImage
+              width={32}
+              height={32}
+              src="../images/linkedin.png"
+              alt="LinkedIn Icon"
+            />
           </a>
           <a
             href="https://twitter.com/marcelreppi"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-8 h-8" src={TwitterIcon} alt="Twitter Icon" />
+            <StaticImage
+              width={32}
+              height={32}
+              src="../images/twitter.png"
+              alt="Twitter Icon"
+            />
           </a>
         </div>
 
         {/* Other Links */}
         <div className="flex flex-col space-y-3 sm:flex-row sm:justify-center sm:items-center sm:space-x-10 sm:space-y-0">
           <div className="flex items-center">
-            <img className="w-5 h-5 mr-2" src={MailIcon} alt="Mail Icon" />
+            <StaticImage
+              width={20}
+              height={20}
+              className="mr-2"
+              src="../images/mail.png"
+              alt="Mail Icon"
+            />
             <a className="break-all link" href="mailto:marcelreppi@gmail.com">
               marcelreppi@gmail.com
             </a>
           </div>
           <div className="flex items-center">
-            <img
-              className="w-5 h-5 mr-2"
-              src={HomePageIcon}
+            <StaticImage
+              width={20}
+              height={20}
+              className="mr-2"
+              src="../images/homepage.png"
               alt="Homepage Icon"
             />
             <a className="break-all link" href="https://www.reppenhagen.space">

@@ -1,7 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: false, // or 'media' or 'class'
-  important: true,
   theme: {
     extend: {
       colors: {
@@ -23,6 +22,9 @@ module.exports = {
       },
       width: {
         38: "9.375rem",
+      },
+      maxWidth: {
+        "4.5xl": "60rem",
       },
       borderWidth: {
         1: "1px",
