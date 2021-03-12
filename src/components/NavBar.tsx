@@ -27,11 +27,11 @@ export const NavBar: React.FC<NavBarProps> = ({
   mobileMenuIsOpen,
   toggleMobileMenu,
 }) => {
-  interface NBItem {
+  interface Route {
     path: string
     name: string
   }
-  const navBarItems: Array<NBItem> = [
+  const routes: Array<Route> = [
     {
       name: "Home",
       path: "/",
@@ -49,6 +49,15 @@ export const NavBar: React.FC<NavBarProps> = ({
       path: "/portfolio",
     },
   ]
+  const navBarItems = routes.map(({ name, path }) => {
+    const active =
+      typeof window !== "undefined" && window.location.pathname === path
+    return (
+      <NavBarItem key={name} active={active}>
+        <Link to={path}>{name}</Link>
+      </NavBarItem>
+    )
+  })
 
   const mobileNavBar = (
     <div
@@ -78,25 +87,13 @@ export const NavBar: React.FC<NavBarProps> = ({
           loading="eager"
         />
       </div>
-      {mobileMenuIsOpen ? (
-        <nav className="flex flex-col items-center text-2xl space-y-5">
-          {navBarItems.map(({ name, path }) => (
-            <NavBarItem key={name} active={window.location.pathname === path}>
-              <Link to={path}>{name}</Link>
-            </NavBarItem>
-          ))}
-        </nav>
-      ) : null}
+      {mobileMenuIsOpen ? navBarItems : null}
     </div>
   )
 
   const regularNavBar = (
     <nav className="container max-w-5xl mx-auto mt-24 mb-10 flex justify-around items-center text-2xl">
-      {navBarItems.map(({ name, path }) => (
-        <NavBarItem key={name} active={window.location.pathname === path}>
-          <Link to={path}>{name}</Link>
-        </NavBarItem>
-      ))}
+      {navBarItems}
     </nav>
   )
   return mobile ? mobileNavBar : regularNavBar
