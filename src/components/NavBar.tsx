@@ -17,21 +17,16 @@ const NavBarItem: React.FC<NavBarItemProps> = ({ active, children }) => {
   )
 }
 
-export const NavBar: React.FC = ({}) => {
-  const isMobile = () => {
-    return typeof window !== "undefined" && window.innerWidth <= 480
-  }
-  const [showMobileNavBar, setShowMobileNavBar] = useState(isMobile())
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setShowMobileNavBar(isMobile())
-    })
-  })
-
-  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
-  const toggleMobileMenu = () => setMobileMenuIsOpen(!mobileMenuIsOpen)
-
+interface NavBarProps {
+  mobile: boolean
+  mobileMenuIsOpen: boolean
+  toggleMobileMenu: () => void
+}
+export const NavBar: React.FC<NavBarProps> = ({
+  mobile,
+  mobileMenuIsOpen,
+  toggleMobileMenu,
+}) => {
   interface NBItem {
     path: string
     name: string
@@ -55,10 +50,15 @@ export const NavBar: React.FC = ({}) => {
     },
   ]
 
-  const openMobileMenu = (
-    <div className="absolute w-full h-full bg-white z-10">
+  const mobileNavBar = (
+    <div
+      className={`w-full h-full bg-white ${
+        mobileMenuIsOpen ? "absolute z-10" : ""
+      }`}
+    >
       <div className="flex justify-end m-5">
         <StaticImage
+          className={`${mobileMenuIsOpen ? "" : "hidden"}`}
           placeholder="blurred"
           width={48}
           height={48}
@@ -67,30 +67,28 @@ export const NavBar: React.FC = ({}) => {
           onClick={toggleMobileMenu}
           loading="eager"
         />
+        <StaticImage
+          className={`${mobileMenuIsOpen ? "hidden" : ""}`}
+          placeholder="blurred"
+          width={48}
+          height={48}
+          alt="Menu closed"
+          src="../images/menu-closed.svg"
+          onClick={toggleMobileMenu}
+          loading="eager"
+        />
       </div>
-      <nav className="flex flex-col items-center text-2xl space-y-5">
-        {navBarItems.map(({ name, path }) => (
-          <NavBarItem key={name} active={window.location.pathname === path}>
-            <Link to={path}>{name}</Link>
-          </NavBarItem>
-        ))}
-      </nav>
+      {mobileMenuIsOpen ? (
+        <nav className="flex flex-col items-center text-2xl space-y-5">
+          {navBarItems.map(({ name, path }) => (
+            <NavBarItem key={name} active={window.location.pathname === path}>
+              <Link to={path}>{name}</Link>
+            </NavBarItem>
+          ))}
+        </nav>
+      ) : null}
     </div>
   )
-  const closedMobileMenu = (
-    <div className="flex justify-end m-5">
-      <StaticImage
-        placeholder="blurred"
-        width={48}
-        height={48}
-        alt="Menu closed"
-        src="../images/menu-closed.svg"
-        onClick={toggleMobileMenu}
-        loading="eager"
-      />
-    </div>
-  )
-  const mobileNavBar = mobileMenuIsOpen ? openMobileMenu : closedMobileMenu
 
   const regularNavBar = (
     <nav className="container max-w-5xl mx-auto mt-24 mb-10 flex justify-around items-center text-2xl">
@@ -101,5 +99,5 @@ export const NavBar: React.FC = ({}) => {
       ))}
     </nav>
   )
-  return showMobileNavBar ? mobileNavBar : regularNavBar
+  return mobile ? mobileNavBar : regularNavBar
 }
