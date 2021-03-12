@@ -87,7 +87,9 @@ export const NavBar: React.FC<NavBarProps> = ({
           loading="eager"
         />
       </div>
-      {mobileMenuIsOpen ? navBarItems : null}
+      <nav className="flex flex-col items-center text-2xl space-y-5">
+        {mobileMenuIsOpen ? navBarItems : null}
+      </nav>
     </div>
   )
 
