@@ -146,9 +146,7 @@ export const Activity: React.FC<ActivityProps> = ({
             className={`list-disc list-inside ${showDetails ? "" : "hidden"}`}
           >
             {details.map((detail, i) => (
-              <li key={i}>
-                <span className="-ml-2">{detail}</span>
-              </li>
+              <li key={i}>{detail}</li>
             ))}
           </ul>
         </div>
