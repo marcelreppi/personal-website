@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 interface NavBarItemProps {
@@ -18,10 +18,15 @@ const NavBarItem: React.FC<NavBarItemProps> = ({ active, children }) => {
 }
 
 export const NavBar: React.FC = ({}) => {
-  const isMobile = () => window.innerWidth <= 480
+  const isMobile = () => {
+    return typeof window !== "undefined" && window.innerWidth <= 480
+  }
   const [showMobileNavBar, setShowMobileNavBar] = useState(isMobile())
-  window.addEventListener("resize", () => {
-    setShowMobileNavBar(isMobile())
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setShowMobileNavBar(isMobile())
+    })
   })
 
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false)
