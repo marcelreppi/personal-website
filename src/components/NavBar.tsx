@@ -67,6 +67,7 @@ export const NavBar: React.FC<NavBarProps> = ({
     >
       <div className="flex justify-end m-5">
         <StaticImage
+          layout="fixed"
           className={`${mobileMenuIsOpen ? "" : "hidden"}`}
           placeholder="blurred"
           width={48}
@@ -77,6 +78,7 @@ export const NavBar: React.FC<NavBarProps> = ({
           loading="eager"
         />
         <StaticImage
+          layout="fixed"
           className={`${mobileMenuIsOpen ? "hidden" : ""}`}
           placeholder="blurred"
           width={48}

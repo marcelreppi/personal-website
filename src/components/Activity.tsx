@@ -15,6 +15,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
     case "work":
       return (
         <StaticImage
+          layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
@@ -25,6 +26,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
     case "tutor":
       return (
         <StaticImage
+          layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
@@ -35,6 +37,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
     case "degree":
       return (
         <StaticImage
+          layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
@@ -45,6 +48,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
     case "publication":
       return (
         <StaticImage
+          layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
@@ -88,31 +92,37 @@ export const Activity: React.FC<ActivityProps> = ({
   return (
     <div className="space-y-2 pt-4 pb-4 first:pt-0 last:pb-0">
       <div className="flex items-center space-x-2 ">
-        {getActivityIcon(type)}
-        <span className="text-lg medium-font">{title}</span>
+        <div className="">{getActivityIcon(type)}</div>
+        <div className="text-lg medium-font">{title}</div>
       </div>
       {location ? (
         <div className="flex items-center space-x-2">
-          <StaticImage
-            placeholder="blurred"
-            width={20}
-            height={20}
-            src="../images/location.png"
-            alt=""
-          />
-          <span>{location}</span>
+          <div>
+            <StaticImage
+              layout="fixed"
+              placeholder="blurred"
+              width={20}
+              height={20}
+              src="../images/location.png"
+              alt=""
+            />
+          </div>
+          <div>{location}</div>
         </div>
       ) : null}
       {duration ? (
         <div className="flex items-center space-x-2">
-          <StaticImage
-            placeholder="blurred"
-            width={20}
-            height={20}
-            src="../images/duration.png"
-            alt=""
-          />
-          <span>{duration}</span>
+          <div>
+            <StaticImage
+              layout="fixed"
+              placeholder="blurred"
+              width={20}
+              height={20}
+              src="../images/duration.png"
+              alt=""
+            />
+          </div>
+          <div>{duration}</div>
         </div>
       ) : null}
       {details ? (
