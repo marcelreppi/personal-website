@@ -2,7 +2,6 @@ import React from "react"
 import { Activity } from "../components/Activity"
 import { Layout } from "../components/Layout"
 import { PageTitle } from "../components/PageTitle"
-import ResumePDF from "../../static/cv.pdf"
 import { SectionTitle } from "../components/SectionTitle"
 import { SEO } from "../components/SEO"
 
@@ -19,7 +18,7 @@ export const Resume: React.FC = ({}) => {
       <PageTitle>Resumé</PageTitle>
       <div className="text-center -mt-12 mb-10">
         <a
-          href={ResumePDF}
+          href="cv.pdf"
           className="text-highlight hover:underline"
           target="_blank"
           rel="noopener noreferrer"
