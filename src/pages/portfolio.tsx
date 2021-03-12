@@ -47,7 +47,6 @@ export const Portfolio: React.FC = ({}) => {
                   >
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="SenSafety 1"
@@ -56,7 +55,6 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="SenSafety 2"
@@ -65,7 +63,6 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="SenSafety 3"
@@ -74,7 +71,6 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="SenSafety 4"
@@ -83,7 +79,6 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="SenSafety 5"
@@ -162,7 +157,6 @@ export const Portfolio: React.FC = ({}) => {
                   >
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="MoodleBuddy 1"
@@ -171,7 +165,6 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="MoodleBuddy 2"
@@ -180,7 +173,6 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
-                        layout="fixed"
                         placeholder="blurred"
                         height={320}
                         alt="MoodleBuddy 3"
