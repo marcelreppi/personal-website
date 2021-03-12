@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: metropolis;
+  src: url("../fonts/Metropolis-Regular.otf");
+}
+
+@font-face {
+  font-family: metropolis-medium;
+  src: url("../fonts/Metropolis-Medium.otf");
+}
+
+@font-face {
+  font-family: metropolis-bold;
+  src: url("../fonts/Metropolis-Bold.otf");
+}
+
+html,
+body {
+  font-family: metropolis;
+  font-size: 16px;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.medium-font {
+  font-family: metropolis-medium;
+}
+
+.bold-font {
+  font-family: metropolis-bold;
+}
+
+.Cursor {
+  margin-left: 1px;
+  font-size: 2.2rem;
+}
+
+.link {
+  @apply text-blue-600 hover:text-blue-800 visited:text-purple-600;
+}
+
+.carousel .slide {
+  background: none;
+}

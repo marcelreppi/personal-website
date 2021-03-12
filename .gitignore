@@ -26,5 +26,5 @@ yarn-error.log*
 todo.txt
 
 .cache
-
 .vscode
+public

@@ -1,36 +1,45 @@
 {
-  "name": "personal-website",
-  "version": "0.1.0",
+  "name": "gatsby",
+  "version": "1.0.0",
   "private": true,
+  "description": "gatsby",
+  "author": "Marcel Reppenhagen",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "start": "npm run nuke && cross-env NODE_ENV=dev webpack-dev-server",
-    "build": "npm run nuke && cross-env NODE_ENV=production webpack",
-    "nuke": "rm -rf ./build"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "vue": "^2.6.11",
-    "vue-carousel": "^0.18.0",
-    "vue-router": "^3.1.3",
-    "vue-typer": "^1.2.0"
+    "gatsby": "^3.0.1",
+    "gatsby-plugin-google-analytics": "^3.0.0",
+    "gatsby-plugin-image": "^1.0.0",
+    "gatsby-plugin-manifest": "^3.0.0",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-responsive-carousel": "^3.2.13",
+    "react-typist": "^2.0.5",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "babel-loader": "^8.0.6",
-    "copy-webpack-plugin": "^5.1.1",
-    "cross-env": "^6.0.3",
-    "css-loader": "^3.4.0",
-    "file-loader": "^5.0.2",
-    "html-webpack-plugin": "^3.2.0",
-    "image-webpack-loader": "^6.0.0",
-    "terser-webpack-plugin": "^2.3.0",
-    "url-loader": "^3.0.0",
-    "vue-loader": "^15.8.3",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.0"
+    "@types/node": "^14.14.32",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-typist": "^2.0.1",
+    "@types/styled-components": "^5.1.7",
+    "autoprefixer": "^10.2.5",
+    "gatsby-plugin-postcss": "^4.0.0",
+    "postcss": "^8.2.7",
+    "tailwindcss": "^2.0.3"
   }
 }
