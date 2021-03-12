@@ -31,7 +31,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         mobileMenuIsOpen={mobileMenuIsOpen}
         toggleMobileMenu={toggleMobileMenu}
       ></NavBar>
-      <div className="max-w-4.5xl w-full mx-auto px-5">{children}</div>
+      <div className="max-w-4.5xl w-full mx-auto px-7">{children}</div>
       <footer className="mb-10"></footer>
     </div>
   )

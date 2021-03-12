@@ -27,12 +27,12 @@ export const Portfolio: React.FC = ({}) => {
                   quality={100}
                   layout="fixed"
                   placeholder="blurred"
-                  height={40}
+                  height={50}
                   alt="SenSafety Logo"
                   src="../images/sensafety-logo.png"
                 />
               </a>
-              <div className="p-5 space-y-3">
+              <div className="p-5 space-y-5">
                 <div className="text-xl leading-6 text-center">
                   Mobile crowdsourcing platform for perceived safety of urban
                   citizens. The data is aggregated and can be used by
