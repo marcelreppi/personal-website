@@ -6,7 +6,12 @@ interface LayoutProps {}
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   const isMobile = () => {
-    return typeof window !== "undefined" && window.innerWidth <= 480
+    if (typeof window === "undefined") {
+      // Assume mobile by default
+      return true
+    }
+
+    return window.innerWidth <= 480
   }
   const [showMobileView, setShowMobileView] = useState(isMobile())
 
