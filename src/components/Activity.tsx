@@ -14,19 +14,38 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
   switch (type) {
     case "work":
       return (
-        <StaticImage width={20} height={20} src="../images/work.png" alt="" />
+        <StaticImage
+          placeholder="blurred"
+          width={20}
+          height={20}
+          src="../images/work.png"
+          alt=""
+        />
       )
     case "tutor":
       return (
-        <StaticImage width={20} height={20} src="../images/tutor.png" alt="" />
+        <StaticImage
+          placeholder="blurred"
+          width={20}
+          height={20}
+          src="../images/tutor.png"
+          alt=""
+        />
       )
     case "degree":
       return (
-        <StaticImage width={20} height={20} src="../images/degree.png" alt="" />
+        <StaticImage
+          placeholder="blurred"
+          width={20}
+          height={20}
+          src="../images/degree.png"
+          alt=""
+        />
       )
     case "publication":
       return (
         <StaticImage
+          placeholder="blurred"
           width={20}
           height={20}
           src="../images/publication.png"
@@ -39,7 +58,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
 }
 
 interface ArrowProps {
-  rotate: boolean
+  rotate: number
 }
 
 const Arrow = styled.div<ArrowProps>`
@@ -51,8 +70,9 @@ const Arrow = styled.div<ArrowProps>`
   border-right: 2px solid black;
 
   transition: all 0.5s;
-  transform: ${(props) => (props.rotate ? "rotate(135deg)" : "rotate(45deg)")};
-  margin-top: ${(props) => (props.rotate ? "-6px" : "0px")};
+  transform: ${(props) =>
+    props.rotate === 1 ? "rotate(135deg)" : "rotate(45deg)"};
+  margin-top: ${(props) => (props.rotate === 1 ? "-6px" : "0px")};
 `
 
 export const Activity: React.FC<ActivityProps> = ({
@@ -74,6 +94,7 @@ export const Activity: React.FC<ActivityProps> = ({
       {location ? (
         <div className="flex items-center space-x-2">
           <StaticImage
+            placeholder="blurred"
             width={20}
             height={20}
             src="../images/location.png"
@@ -85,6 +106,7 @@ export const Activity: React.FC<ActivityProps> = ({
       {duration ? (
         <div className="flex items-center space-x-2">
           <StaticImage
+            placeholder="blurred"
             width={20}
             height={20}
             src="../images/duration.png"
@@ -99,7 +121,7 @@ export const Activity: React.FC<ActivityProps> = ({
             className="flex items-center cursor-pointer"
             onClick={toggleDetails}
           >
-            <Arrow rotate={showDetails}></Arrow>
+            <Arrow rotate={showDetails ? 1 : 0}></Arrow>
             <div className="text-gray-500 select-none">
               {showDetails ? "Less" : "More"} details
             </div>

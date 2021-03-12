@@ -2,13 +2,22 @@ import React from "react"
 import { Layout } from "../components/Layout"
 import { PageTitle } from "../components/PageTitle"
 import { StaticImage } from "gatsby-plugin-image"
+import { SEO } from "../components/SEO"
+
+const SEODescription = `
+Hi, my name is Marcel Reppenhagen 🙋‍♂️👋
+
+I am a curious person with a passion for programming, web technologies and ☁️-computing. I love exploring today's ever-evolving technologies and continuously learn new things. 💡
+`
 
 export const About: React.FC = ({}) => {
   return (
     <Layout>
+      <SEO title="About" slug="/about" description={SEODescription}></SEO>
       <PageTitle>About</PageTitle>
       <div className="flex flex-col items-center space-y-10">
         <StaticImage
+          placeholder="blurred"
           src="../images/me.jpg"
           alt="Profile picture"
           width={256}

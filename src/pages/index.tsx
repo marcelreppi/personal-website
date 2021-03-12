@@ -3,10 +3,18 @@ import Typist from "react-typist"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Layout } from "../components/Layout"
+import { SEO } from "../components/SEO"
+
+const SEODescription = `
+Hi, I'm Marcel
+Information Systems Management
+Master Graduate from Technical University of Berlin
+`
 
 const IndexPage: React.FC = () => {
   return (
     <Layout>
+      <SEO title="Home" slug="/" description={SEODescription}></SEO>
       <div className="flex flex-col items-center space-y-10">
         {/* Typer */}
         <Typist
@@ -32,6 +40,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
+              placeholder="blurred"
               width={32}
               height={32}
               src="../images/github.png"
@@ -44,6 +53,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
+              placeholder="blurred"
               width={32}
               height={32}
               src="../images/linkedin.png"
@@ -56,6 +66,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
+              placeholder="blurred"
               width={32}
               height={32}
               src="../images/twitter.png"
@@ -68,6 +79,7 @@ const IndexPage: React.FC = () => {
         <div className="flex flex-col space-y-3 sm:flex-row sm:justify-center sm:items-center sm:space-x-10 sm:space-y-0">
           <div className="flex items-center">
             <StaticImage
+              placeholder="blurred"
               width={20}
               height={20}
               className="mr-2"
@@ -80,6 +92,7 @@ const IndexPage: React.FC = () => {
           </div>
           <div className="flex items-center">
             <StaticImage
+              placeholder="blurred"
               width={20}
               height={20}
               className="mr-2"

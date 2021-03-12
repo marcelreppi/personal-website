@@ -12,6 +12,16 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Marcel Reppenhagen",
+        short_name: "Marcel R.",
+        start_url: "/",
+        display: "standalone",
+        icon: "src/images/favicon.png",
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -31,4 +41,4 @@ module.exports = {
       },
     },
   ],
-};
+}

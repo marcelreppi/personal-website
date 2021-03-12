@@ -1,14 +1,16 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Carousel } from "react-responsive-carousel"
 import { Layout } from "../components/Layout"
 import { NPMPackage } from "../components/NPMPackage"
 import { PageTitle } from "../components/PageTitle"
 import { SectionTitle } from "../components/SectionTitle"
-import { StaticImage } from "gatsby-plugin-image"
+import { SEO } from "../components/SEO"
 
 export const Portfolio: React.FC = ({}) => {
   return (
     <Layout>
+      <SEO title="Portfolio" slug="/portfolio"></SEO>
       <PageTitle>Portfolio</PageTitle>
       <div className="space-y-12">
         <div>
@@ -22,6 +24,7 @@ export const Portfolio: React.FC = ({}) => {
                 className="h-16 py-1 flex justify-center items-center bg-gradient-to-r from-sen1 to-sen2"
               >
                 <StaticImage
+                  placeholder="blurred"
                   height={60}
                   alt="SenSafety Logo"
                   src="../images/sensafety-logo.png"
@@ -43,6 +46,7 @@ export const Portfolio: React.FC = ({}) => {
                   >
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="SenSafety 1"
                         src="../images/sen-1.jpg"
@@ -50,6 +54,7 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="SenSafety 2"
                         src="../images/sen-2.jpg"
@@ -57,6 +62,7 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="SenSafety 3"
                         src="../images/sen-3.jpg"
@@ -64,6 +70,7 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="SenSafety 4"
                         src="../images/sen-4.jpg"
@@ -71,6 +78,7 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="SenSafety 5"
                         src="../images/sen-5.jpg"
@@ -105,16 +113,16 @@ export const Portfolio: React.FC = ({}) => {
                     rel="noopener noreferrer"
                     href="https://chrome.google.com/webstore/detail/moodle-buddy/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                   >
-                    <StaticImage
+                    <img
                       className="mt-1"
                       src="https://img.shields.io/chrome-web-store/v/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Version"
                     />
-                    <StaticImage
+                    <img
                       src="https://img.shields.io/chrome-web-store/users/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Users"
                     />
-                    <StaticImage
+                    <img
                       src="https://img.shields.io/chrome-web-store/rating/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Ratings"
                     />
@@ -125,16 +133,16 @@ export const Portfolio: React.FC = ({}) => {
                     rel="noopener noreferrer"
                     href="https://addons.mozilla.org/en-US/firefox/addon/moodle-buddy/"
                   >
-                    <StaticImage
+                    <img
                       className="mt-1"
                       src="https://img.shields.io/amo/v/moodle-buddy"
                       alt="Version"
                     />
-                    <StaticImage
+                    <img
                       src="https://img.shields.io/amo/users/moodle-buddy"
                       alt="Users"
                     />
-                    <StaticImage
+                    <img
                       src="https://img.shields.io/amo/rating/moodle-buddy"
                       alt="Ratings"
                     />
@@ -148,6 +156,7 @@ export const Portfolio: React.FC = ({}) => {
                   >
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="MoodleBuddy 1"
                         src="../images/mb-1.png"
@@ -155,6 +164,7 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="MoodleBuddy 2"
                         src="../images/mb-2.png"
@@ -162,6 +172,7 @@ export const Portfolio: React.FC = ({}) => {
                     </div>
                     <div>
                       <StaticImage
+                        placeholder="blurred"
                         height={320}
                         alt="MoodleBuddy 3"
                         src="../images/mb-3.png"
