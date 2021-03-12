@@ -16,6 +16,7 @@ export const SEO: React.FC<SEOProps> = ({ title, description, slug }) => {
       titleTemplate="%s | Marcel Reppenhagen"
       defaultTitle="Marcel Reppenhagen"
     >
+      <html lang="en" />
       <meta charSet="utf-8" />
       <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       <link rel="canonical" href={url} />
