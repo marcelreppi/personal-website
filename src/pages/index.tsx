@@ -40,6 +40,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={32}
@@ -54,6 +55,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={32}
@@ -68,6 +70,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
           >
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={32}
@@ -82,6 +85,7 @@ const IndexPage: React.FC = () => {
         <div className="flex flex-col space-y-3 sm:flex-row sm:justify-center sm:items-center sm:space-x-10 sm:space-y-0">
           <div className="flex items-center">
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={20}
@@ -96,6 +100,7 @@ const IndexPage: React.FC = () => {
           </div>
           <div className="flex items-center">
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={20}

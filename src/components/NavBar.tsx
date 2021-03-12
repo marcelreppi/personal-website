@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
-import React, { useEffect, useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
 
 interface NavBarItemProps {
   active: boolean
@@ -72,10 +72,11 @@ export const NavBar: React.FC<NavBarProps> = ({
           placeholder="blurred"
           width={48}
           height={48}
-          alt="Menu open"
-          src="../images/menu-open.svg"
+          alt="Open menu"
+          src="../images/menu-open.png"
           onClick={toggleMobileMenu}
           loading="eager"
+          quality={100}
         />
         <StaticImage
           layout="fixed"
@@ -83,10 +84,11 @@ export const NavBar: React.FC<NavBarProps> = ({
           placeholder="blurred"
           width={48}
           height={48}
-          alt="Menu closed"
-          src="../images/menu-closed.svg"
+          alt="Closed menu"
+          src="../images/menu-closed.png"
           onClick={toggleMobileMenu}
           loading="eager"
+          quality={100}
         />
       </div>
       <nav className="flex flex-col items-center text-2xl space-y-5">

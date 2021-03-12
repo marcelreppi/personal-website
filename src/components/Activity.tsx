@@ -15,45 +15,49 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
     case "work":
       return (
         <StaticImage
+          quality={100}
           layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
           src="../images/work.png"
-          alt=""
+          alt="Work icon"
         />
       )
     case "tutor":
       return (
         <StaticImage
+          quality={100}
           layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
           src="../images/tutor.png"
-          alt=""
+          alt="Tutor icon"
         />
       )
     case "degree":
       return (
         <StaticImage
+          quality={100}
           layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
           src="../images/degree.png"
-          alt=""
+          alt="Degree icon"
         />
       )
     case "publication":
       return (
         <StaticImage
+          quality={100}
           layout="fixed"
           placeholder="blurred"
           width={20}
           height={20}
           src="../images/publication.png"
-          alt=""
+          alt="Publication icon"
         />
       )
     default:
@@ -99,12 +103,13 @@ export const Activity: React.FC<ActivityProps> = ({
         <div className="flex items-center space-x-2">
           <div>
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={20}
               height={20}
               src="../images/location.png"
-              alt=""
+              alt="Location icon"
             />
           </div>
           <div>{location}</div>
@@ -114,12 +119,13 @@ export const Activity: React.FC<ActivityProps> = ({
         <div className="flex items-center space-x-2">
           <div>
             <StaticImage
+              quality={100}
               layout="fixed"
               placeholder="blurred"
               width={20}
               height={20}
               src="../images/duration.png"
-              alt=""
+              alt="Duration icon"
             />
           </div>
           <div>{duration}</div>

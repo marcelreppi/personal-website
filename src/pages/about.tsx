@@ -17,6 +17,7 @@ export const About: React.FC = ({}) => {
       <PageTitle>About</PageTitle>
       <div className="flex flex-col items-center space-y-10">
         <StaticImage
+          quality={100}
           layout="fixed"
           placeholder="blurred"
           src="../images/me.jpg"
