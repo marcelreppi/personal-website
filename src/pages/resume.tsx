@@ -2,7 +2,7 @@ import React from "react"
 import { Activity } from "../components/Activity"
 import { Layout } from "../components/Layout"
 import { PageTitle } from "../components/PageTitle"
-import ResumePDF from "../static/cv.pdf"
+import ResumePDF from "../../static/cv.pdf"
 import { SectionTitle } from "../components/SectionTitle"
 import { SEO } from "../components/SEO"
 
