@@ -1,21 +1,6 @@
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import React from "react"
-
-interface NavBarItemProps {
-  active: boolean
-}
-const NavBarItem: React.FC<NavBarItemProps> = ({ active, children }) => {
-  return (
-    <div
-      className={`hover:text-highlight hover:cursor-pointer ${
-        active ? "text-highlight" : ""
-      }`}
-    >
-      {children}
-    </div>
-  )
-}
+import React, { useEffect, useState } from "react"
 
 interface NavBarProps {
   mobileMenuIsOpen: boolean
@@ -25,35 +10,50 @@ export const NavBar: React.FC<NavBarProps> = ({
   mobileMenuIsOpen,
   toggleMobileMenu,
 }) => {
+  const [currentRoute, setCurrentRoute] = useState("/")
+  useEffect(() => {
+    let path = window.location.pathname
+    if (path !== "/" && path.endsWith("/")) {
+      // Remove trailing slash
+      path = path.slice(0, -1)
+    }
+
+    setCurrentRoute(path)
+  })
+
   interface Route {
-    path: string
+    route: string
     name: string
   }
   const routes: Array<Route> = [
     {
       name: "Home",
-      path: "/",
+      route: "/",
     },
     {
       name: "About",
-      path: "/about",
+      route: "/about",
     },
     {
       name: "Resumé",
-      path: "/resume",
+      route: "/resume",
     },
     {
       name: "Portfolio",
-      path: "/portfolio",
+      route: "/portfolio",
     },
   ]
-  const navBarItems = routes.map(({ name, path }) => {
-    const active =
-      typeof window !== "undefined" && window.location.pathname === path
+  const navBarItems = routes.map(({ name, route }) => {
+    const active = currentRoute === route
     return (
-      <NavBarItem key={name} active={active}>
-        <Link to={path}>{name}</Link>
-      </NavBarItem>
+      <div
+        className={`hover:text-highlight hover:cursor-pointer ${
+          active ? "text-highlight" : ""
+        }`}
+        key={route}
+      >
+        <Link to={route}>{name}</Link>
+      </div>
     )
   })
 
