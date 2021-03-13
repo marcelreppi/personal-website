@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { Layout } from "../components/Layout"
 import { SEO } from "../components/SEO"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const SEODescription = `
 Hi, I'm Marcel
@@ -34,7 +35,7 @@ const IndexPage: React.FC = () => {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-5">
-          <a
+          <OutboundLink
             href="https://github.com/marcelreppi"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,8 +49,8 @@ const IndexPage: React.FC = () => {
               src="../images/github.png"
               alt="GitHub Icon"
             />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/"
             target="_blank"
             rel="noopener noreferrer"
@@ -63,8 +64,8 @@ const IndexPage: React.FC = () => {
               src="../images/linkedin.png"
               alt="LinkedIn Icon"
             />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href="https://twitter.com/marcelreppi"
             target="_blank"
             rel="noopener noreferrer"
@@ -78,7 +79,7 @@ const IndexPage: React.FC = () => {
               src="../images/twitter.png"
               alt="Twitter Icon"
             />
-          </a>
+          </OutboundLink>
         </div>
 
         {/* Other Links */}
@@ -94,9 +95,12 @@ const IndexPage: React.FC = () => {
               src="../images/mail.png"
               alt="Mail Icon"
             />
-            <a className="break-all link" href="mailto:marcelreppi@gmail.com">
+            <OutboundLink
+              className="break-all link"
+              href="mailto:marcelreppi@gmail.com"
+            >
               marcelreppi@gmail.com
-            </a>
+            </OutboundLink>
           </div>
           <div className="flex items-center">
             <StaticImage
@@ -109,9 +113,12 @@ const IndexPage: React.FC = () => {
               src="../images/homepage.png"
               alt="Homepage Icon"
             />
-            <a className="break-all link" href="https://www.reppenhagen.space">
+            <OutboundLink
+              className="break-all link"
+              href="https://www.reppenhagen.space"
+            >
               reppenhagen.space
-            </a>
+            </OutboundLink>
           </div>
         </div>
       </div>

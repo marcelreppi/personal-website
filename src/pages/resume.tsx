@@ -1,3 +1,4 @@
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import React from "react"
 import { Activity } from "../components/Activity"
 import { Layout } from "../components/Layout"
@@ -17,14 +18,14 @@ export const Resume: React.FC = ({}) => {
       <SEO title="Resumé" slug="/resume"></SEO>
       <PageTitle>Resumé</PageTitle>
       <div className="text-center -mt-12 mb-10">
-        <a
+        <OutboundLink
           href="cv.pdf"
           className="text-highlight hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
           Download
-        </a>
+        </OutboundLink>
       </div>
       <div className="space-y-10">
         <SectionTitle>Experience</SectionTitle>
@@ -34,14 +35,14 @@ export const Resume: React.FC = ({}) => {
             title={
               <div>
                 Mobile/Web Developer at{" "}
-                <a
+                <OutboundLink
                   className="link"
                   href="https://sensafety.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   SenSafety
-                </a>
+                </OutboundLink>
               </div>
             }
             location="Technical University of Berlin"
@@ -52,14 +53,14 @@ export const Resume: React.FC = ({}) => {
               "App development with React Native and Firebase",
               <span>
                 Implementation of{" "}
-                <a
+                <OutboundLink
                   href="https://sensafety.org/map.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
                 >
                   statistics dashboard and live map
-                </a>{" "}
+                </OutboundLink>{" "}
                 with real-time popups
               </span>,
             ]}
@@ -82,28 +83,28 @@ export const Resume: React.FC = ({}) => {
             <Activity
               type="publication"
               title={
-                <a
+                <OutboundLink
                   className="link"
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Towards Application-Layer Purpose-Based Access Control
-                </a>
+                </OutboundLink>
               }
             />
 
             <Activity
               type="publication"
               title={
-                <a
+                <OutboundLink
                   className="link"
                   href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Sensafety: Crowdsourcing the Urban Sense of Safety
-                </a>
+                </OutboundLink>
               }
             />
           </div>

@@ -1,3 +1,4 @@
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import React from "react"
 
 interface NPMPackageProps {
@@ -11,16 +12,16 @@ export const NPMPackage: React.FC<NPMPackageProps> = ({
 }) => {
   return (
     <div className="max-w-xl w-full h-full shadow-custom rounded-lg overflow-hidden p-6 flex flex-col items-center">
-      <a
+      <OutboundLink
         className="w-full h-14 flex justify-center items-center text-white text-1.5xl bg-npm rounded mb-5 p-3 hover:text-2xl transition-fontSize"
         href={`https://www.npmjs.com/package/${name}`}
         target="_blank"
         rel="noopener noreferrer"
       >
         {name}
-      </a>
+      </OutboundLink>
       <div className="text-xl leading-6 text-center">{description}</div>
-      <a
+      <OutboundLink
         className="flex-grow flex items-end"
         href={`https://nodei.co/npm/${name}`}
         target="_blank"
@@ -31,7 +32,7 @@ export const NPMPackage: React.FC<NPMPackageProps> = ({
           alt="package summary"
           src={`https://nodei.co/npm/${name}.png`}
         />
-      </a>
+      </OutboundLink>
     </div>
   )
 }

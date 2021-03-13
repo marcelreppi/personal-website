@@ -1,3 +1,4 @@
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import { Carousel } from "react-responsive-carousel"
@@ -17,7 +18,7 @@ export const Portfolio: React.FC = ({}) => {
           <SectionTitle>Projects</SectionTitle>
           <div className="grid grid-cols-1 gap-y-8 place-items-center lg:grid-cols-2 lg:gap-x-8">
             <div className="max-w-xl w-full h-full shadow-custom rounded-lg overflow-hidden">
-              <a
+              <OutboundLink
                 href="https://sensafety.org"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,7 +32,7 @@ export const Portfolio: React.FC = ({}) => {
                   alt="SenSafety Logo"
                   src="../images/sensafety-logo.png"
                 />
-              </a>
+              </OutboundLink>
               <div className="p-5 space-y-5">
                 <div className="text-xl leading-6 text-center">
                   Mobile crowdsourcing platform for perceived safety of urban
@@ -97,7 +98,7 @@ export const Portfolio: React.FC = ({}) => {
             </div>
 
             <div className="max-w-xl w-full h-full flex flex-col shadow-custom rounded-lg overflow-hidden">
-              <a
+              <OutboundLink
                 href="https://moodlebuddy.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -106,7 +107,7 @@ export const Portfolio: React.FC = ({}) => {
                 <span className="text-2xl text-white font-bold">
                   MoodleBuddy
                 </span>
-              </a>
+              </OutboundLink>
               <div className="p-5 space-y-3">
                 <div className="text-xl leading-6 text-center">
                   Cross-platform browser plugin that offers mass download and
@@ -114,7 +115,7 @@ export const Portfolio: React.FC = ({}) => {
                   management platform.
                 </div>
                 <div className="flex flex-col items-center space-y-1 mb-3">
-                  <a
+                  <OutboundLink
                     className="flex flex-wrap justify-center space-x-1 space-y-1"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -133,8 +134,8 @@ export const Portfolio: React.FC = ({}) => {
                       src="https://img.shields.io/chrome-web-store/rating/nomahjpllnbcpbggnpiehiecfbjmcaeo"
                       alt="Ratings"
                     />
-                  </a>
-                  <a
+                  </OutboundLink>
+                  <OutboundLink
                     className="flex flex-wrap justify-center space-x-1 space-y-1"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -153,7 +154,7 @@ export const Portfolio: React.FC = ({}) => {
                       src="https://img.shields.io/amo/rating/moodle-buddy"
                       alt="Ratings"
                     />
-                  </a>
+                  </OutboundLink>
                 </div>
                 <div className="flex-grow flex items-center">
                   <Carousel
@@ -206,9 +207,12 @@ export const Portfolio: React.FC = ({}) => {
               name="purposize"
               description={
                 <span>
-                  <a className="link" href="http://docs.sequelizejs.com/">
+                  <OutboundLink
+                    className="link"
+                    href="http://docs.sequelizejs.com/"
+                  >
                     Sequelize
-                  </a>{" "}
+                  </OutboundLink>{" "}
                   plugin to help with GDPR-compliant data storage
                 </span>
               }
