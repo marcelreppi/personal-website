@@ -12,38 +12,31 @@
   src: url("../fonts/Metropolis-Medium.otf");
 }
 
-@font-face {
-  font-family: metropolis-bold;
-  src: url("../fonts/Metropolis-Bold.otf");
-}
+@layer components {
+  html,
+  body {
+    font-family: metropolis;
+    font-size: 16px;
+  }
 
-html,
-body {
-  font-family: metropolis;
-  font-size: 16px;
-}
+  body {
+    overflow-y: scroll;
+  }
 
-body {
-  overflow-y: scroll;
-}
+  /* Modify React carousel package */
+  .carousel .slide {
+    background: none;
+  }
 
-.medium-font {
-  font-family: metropolis-medium;
-}
+  .medium-font {
+    font-family: metropolis-medium;
+  }
 
-.bold-font {
-  font-family: metropolis-bold;
-}
+  .link {
+    @apply text-blue-600 hover:text-blue-800 visited:text-purple-600;
+  }
 
-.Cursor {
-  margin-left: 1px;
-  font-size: 2.2rem;
-}
-
-.link {
-  @apply text-blue-600 hover:text-blue-800 visited:text-purple-600;
-}
-
-.carousel .slide {
-  background: none;
+  .page-title {
+    @apply w-full medium-font text-center text-highlight text-3.5xl mb-12;
+  }
 }

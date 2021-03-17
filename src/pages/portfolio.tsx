@@ -4,7 +4,6 @@ import React from "react"
 import { Carousel } from "react-responsive-carousel"
 import { Layout } from "../components/Layout"
 import { NPMPackage } from "../components/NPMPackage"
-import { PageTitle } from "../components/PageTitle"
 import { SectionTitle } from "../components/SectionTitle"
 import { SEO } from "../components/SEO"
 
@@ -12,17 +11,17 @@ export const Portfolio: React.FC = ({}) => {
   return (
     <Layout>
       <SEO title="Portfolio" slug="/portfolio"></SEO>
-      <PageTitle>Portfolio</PageTitle>
+      <div className="page-title">Portfolio</div>
       <div className="space-y-12">
         <div>
           <SectionTitle>Projects</SectionTitle>
           <div className="grid grid-cols-1 gap-y-8 place-items-center lg:grid-cols-2 lg:gap-x-8">
-            <div className="max-w-xl w-full h-full shadow-custom rounded-lg overflow-hidden">
+            <div className="w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
               <OutboundLink
                 href="https://sensafety.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-16 py-1 flex justify-center items-center bg-gradient-to-r from-sen1 to-sen2"
+                className="flex items-center justify-center h-16 py-1 bg-gradient-to-r from-sen1 to-sen2"
               >
                 <StaticImage
                   quality={100}
@@ -41,7 +40,7 @@ export const Portfolio: React.FC = ({}) => {
                   time and how additional infrastructure impacts the perceived
                   safety.
                 </div>
-                <div className="flex-grow flex items-center">
+                <div className="flex items-center flex-grow">
                   <Carousel
                     renderThumbs={() => []}
                     autoPlay={true}
@@ -97,14 +96,14 @@ export const Portfolio: React.FC = ({}) => {
               </div>
             </div>
 
-            <div className="max-w-xl w-full h-full flex flex-col shadow-custom rounded-lg overflow-hidden">
+            <div className="flex flex-col w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
               <OutboundLink
                 href="https://moodlebuddy.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-16 py-1 flex justify-center items-center bg-mb"
+                className="flex items-center justify-center h-16 py-1 bg-mb"
               >
-                <span className="text-2xl text-white font-bold">
+                <span className="text-2xl font-bold text-white">
                   MoodleBuddy
                 </span>
               </OutboundLink>
@@ -114,7 +113,7 @@ export const Portfolio: React.FC = ({}) => {
                   notification functionality for the <b>Moodle</b> learning
                   management platform.
                 </div>
-                <div className="flex flex-col items-center space-y-1 mb-3">
+                <div className="flex flex-col items-center mb-3 space-y-1">
                   <OutboundLink
                     className="flex flex-wrap justify-center space-x-1 space-y-1"
                     target="_blank"
@@ -156,7 +155,7 @@ export const Portfolio: React.FC = ({}) => {
                     />
                   </OutboundLink>
                 </div>
-                <div className="flex-grow flex items-center">
+                <div className="flex items-center flex-grow">
                   <Carousel
                     renderThumbs={() => []}
                     autoPlay={true}

@@ -60,7 +60,7 @@ export const NavBar: React.FC<NavBarProps> = ({
   return (
     <>
       {/* Regular NavBar */}
-      <nav className="hidden sm:flex container max-w-5xl mx-auto mt-24 mb-10 justify-around items-center text-2xl">
+      <nav className="container items-center justify-around hidden max-w-5xl mx-auto mt-24 mb-10 text-2xl sm:flex">
         {navBarItems}
       </nav>
 

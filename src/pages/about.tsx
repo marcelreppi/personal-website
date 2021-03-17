@@ -1,6 +1,5 @@
 import React from "react"
 import { Layout } from "../components/Layout"
-import { PageTitle } from "../components/PageTitle"
 import { StaticImage } from "gatsby-plugin-image"
 import { SEO } from "../components/SEO"
 
@@ -14,7 +13,7 @@ export const About: React.FC = ({}) => {
   return (
     <Layout>
       <SEO title="About" slug="/about" description={SEODescription}></SEO>
-      <PageTitle>About</PageTitle>
+      <div className="page-title">About</div>
       <div className="flex flex-col items-center space-y-10">
         <StaticImage
           quality={100}

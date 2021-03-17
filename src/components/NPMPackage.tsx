@@ -11,7 +11,7 @@ export const NPMPackage: React.FC<NPMPackageProps> = ({
   description,
 }) => {
   return (
-    <div className="max-w-xl w-full h-full shadow-custom rounded-lg overflow-hidden p-6 flex flex-col items-center">
+    <div className="flex flex-col items-center w-full h-full max-w-xl p-6 overflow-hidden rounded-lg shadow-custom">
       <OutboundLink
         className="w-full h-14 flex justify-center items-center text-white text-1.5xl bg-npm rounded mb-5 p-3 hover:text-2xl transition-fontSize"
         href={`https://www.npmjs.com/package/${name}`}
@@ -22,7 +22,7 @@ export const NPMPackage: React.FC<NPMPackageProps> = ({
       </OutboundLink>
       <div className="text-xl leading-6 text-center">{description}</div>
       <OutboundLink
-        className="flex-grow flex items-end"
+        className="flex items-end flex-grow"
         href={`https://nodei.co/npm/${name}`}
         target="_blank"
         rel="noopener noreferrer"

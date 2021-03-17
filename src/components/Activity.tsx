@@ -94,7 +94,7 @@ export const Activity: React.FC<ActivityProps> = ({
   const toggleDetails = () => setShowDetails(!showDetails)
 
   return (
-    <div className="space-y-2 pt-4 pb-4 first:pt-0 last:pb-0">
+    <div className="pt-4 pb-4 space-y-2 first:pt-0 last:pb-0">
       <div className="flex items-center space-x-2 ">
         <div className="">{getActivityIcon(type)}</div>
         <div className="text-lg medium-font">{title}</div>

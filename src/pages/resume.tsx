@@ -2,12 +2,11 @@ import { OutboundLink } from "gatsby-plugin-google-gtag"
 import React from "react"
 import { Activity } from "../components/Activity"
 import { Layout } from "../components/Layout"
-import { PageTitle } from "../components/PageTitle"
 import { SectionTitle } from "../components/SectionTitle"
 import { SEO } from "../components/SEO"
 
 const Badge: React.FC = ({ children }) => (
-  <div className="border-highlight border-2 rounded-lg px-2 py-1 mr-3 mb-3">
+  <div className="px-2 py-1 mb-3 mr-3 border-2 rounded-lg border-highlight">
     {children}
   </div>
 )
@@ -16,8 +15,8 @@ export const Resume: React.FC = ({}) => {
   return (
     <Layout>
       <SEO title="Resumé" slug="/resume"></SEO>
-      <PageTitle>Resumé</PageTitle>
-      <div className="text-center -mt-12 mb-10">
+      <div className="page-title">Resumé</div>
+      <div className="mb-10 -mt-12 text-center">
         <OutboundLink
           href="cv.pdf"
           className="text-highlight hover:underline"
