@@ -23,11 +23,6 @@
     overflow-y: scroll;
   }
 
-  /* Modify React carousel package */
-  .carousel .slide {
-    background: none;
-  }
-
   .medium-font {
     font-family: metropolis-medium;
   }
@@ -39,4 +34,9 @@
   .page-title {
     @apply w-full medium-font text-center text-highlight text-3.5xl mb-12;
   }
+}
+
+/* Modify React carousel package */
+.carousel .slide {
+  background: none;
 }
