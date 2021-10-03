@@ -9,6 +9,7 @@ module.exports = {
         sen2: "rgba(150, 71, 219, 1)",
         mb: "#c50e20",
         npm: "#ca3736",
+        wordchain: "#31A691",
       },
       fontSize: {
         "1.5xl": "1.375rem",

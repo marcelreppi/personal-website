@@ -41,6 +41,7 @@
     "dotenv": "^8.2.0",
     "gatsby-plugin-postcss": "^4.0.0",
     "postcss": "^8.2.7",
+    "postcss-import": "^14.0.2",
     "tailwindcss": "^2.0.3"
   }
 }

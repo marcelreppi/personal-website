@@ -8,6 +8,7 @@ import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const SEODescription = `
 Hi, I'm Marcel
+Software Developer @ SAP Innovation Center
 Information Systems Management
 Master Graduate from Technical University of Berlin
 `
@@ -27,11 +28,13 @@ const IndexPage: React.FC = () => {
         </Typist>
 
         {/* Intro Text */}
-        <h2 className="text-1.5xl medium-font font-medium text-center">
+        <h1>Software Developer @ SAP Innovation Center</h1>
+
+        <h1>
           Information Systems Management
           <br />
           Master Graduate from Technical University of Berlin
-        </h2>
+        </h1>
 
         {/* Social Links */}
         <div className="flex justify-center space-x-5">
@@ -95,10 +98,7 @@ const IndexPage: React.FC = () => {
               src="../images/mail.png"
               alt="Mail Icon"
             />
-            <OutboundLink
-              className="break-all link"
-              href="mailto:marcelreppi@gmail.com"
-            >
+            <OutboundLink className="break-all link" href="mailto:marcelreppi@gmail.com">
               marcelreppi@gmail.com
             </OutboundLink>
           </div>
@@ -113,10 +113,7 @@ const IndexPage: React.FC = () => {
               src="../images/homepage.png"
               alt="Homepage Icon"
             />
-            <OutboundLink
-              className="break-all link"
-              href="https://www.reppenhagen.space"
-            >
+            <OutboundLink className="break-all link" href="https://www.reppenhagen.space">
               reppenhagen.space
             </OutboundLink>
           </div>

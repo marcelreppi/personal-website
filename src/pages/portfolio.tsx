@@ -34,18 +34,12 @@ export const Portfolio: React.FC = ({}) => {
               </OutboundLink>
               <div className="p-5 space-y-5">
                 <div className="text-xl leading-6 text-center">
-                  Mobile crowdsourcing platform for perceived safety of urban
-                  citizens. The data is aggregated and can be used by
-                  municipalities to evaluate how perceived safety changes over
-                  time and how additional infrastructure impacts the perceived
-                  safety.
+                  Mobile crowdsourcing platform for perceived safety of urban citizens. The data is
+                  aggregated and can be used by municipalities to evaluate how perceived safety
+                  changes over time and how additional infrastructure impacts the perceived safety.
                 </div>
                 <div className="flex items-center flex-grow">
-                  <Carousel
-                    renderThumbs={() => []}
-                    autoPlay={true}
-                    infiniteLoop={true}
-                  >
+                  <Carousel renderThumbs={() => []} autoPlay={true} infiniteLoop={true}>
                     <div>
                       <StaticImage
                         quality={100}
@@ -103,15 +97,12 @@ export const Portfolio: React.FC = ({}) => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center h-16 py-1 bg-mb"
               >
-                <span className="text-2xl font-bold text-white">
-                  MoodleBuddy
-                </span>
+                <span className="text-2xl font-bold text-white">MoodleBuddy</span>
               </OutboundLink>
               <div className="p-5 space-y-3">
                 <div className="text-xl leading-6 text-center">
-                  Cross-platform browser plugin that offers mass download and
-                  notification functionality for the <b>Moodle</b> learning
-                  management platform.
+                  Cross-platform browser plugin that offers mass download and notification
+                  functionality for the <b>Moodle</b> learning management platform.
                 </div>
                 <div className="flex flex-col items-center mb-3 space-y-1">
                   <OutboundLink
@@ -145,22 +136,12 @@ export const Portfolio: React.FC = ({}) => {
                       src="https://img.shields.io/amo/v/moodle-buddy"
                       alt="Version"
                     />
-                    <img
-                      src="https://img.shields.io/amo/users/moodle-buddy"
-                      alt="Users"
-                    />
-                    <img
-                      src="https://img.shields.io/amo/rating/moodle-buddy"
-                      alt="Ratings"
-                    />
+                    <img src="https://img.shields.io/amo/users/moodle-buddy" alt="Users" />
+                    <img src="https://img.shields.io/amo/rating/moodle-buddy" alt="Ratings" />
                   </OutboundLink>
                 </div>
                 <div className="flex items-center flex-grow">
-                  <Carousel
-                    renderThumbs={() => []}
-                    autoPlay={true}
-                    infiniteLoop={true}
-                  >
+                  <Carousel renderThumbs={() => []} autoPlay={true} infiniteLoop={true}>
                     <div>
                       <StaticImage
                         quality={100}
@@ -192,6 +173,39 @@ export const Portfolio: React.FC = ({}) => {
                 </div>
               </div>
             </div>
+
+            <div className="flex flex-col w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
+              <OutboundLink
+                href="https://www.amazon.de/-/en/dp/B074CQL5NJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center h-16 py-1 bg-wordchain "
+              >
+                <span className="text-2xl font-bold text-white">Wordchain Alexa Skill</span>
+              </OutboundLink>
+              <div className="p-5 space-y-3">
+                <div className="text-xl leading-6 text-center">
+                  Alexa skill to play the wordchain game where you must reply with words that start
+                  with the last letter of Alexa's word.
+                </div>
+                <div className="flex justify-center">
+                  <OutboundLink
+                    href="https://www.amazon.de/-/en/dp/B074CQL5NJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StaticImage
+                      quality={100}
+                      placeholder="blurred"
+                      height={200}
+                      alt="Wordchain Logo"
+                      src="../images/wordchain.png"
+                      className="rounded-3xl"
+                    />
+                  </OutboundLink>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -206,10 +220,7 @@ export const Portfolio: React.FC = ({}) => {
               name="purposize"
               description={
                 <span>
-                  <OutboundLink
-                    className="link"
-                    href="http://docs.sequelizejs.com/"
-                  >
+                  <OutboundLink className="link" href="http://docs.sequelizejs.com/">
                     Sequelize
                   </OutboundLink>{" "}
                   plugin to help with GDPR-compliant data storage

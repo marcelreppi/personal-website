@@ -5,12 +5,6 @@ import { Layout } from "../components/Layout"
 import { SectionTitle } from "../components/SectionTitle"
 import { SEO } from "../components/SEO"
 
-const Badge: React.FC = ({ children }) => (
-  <div className="px-2 py-1 mb-3 mr-3 border-2 rounded-lg border-highlight">
-    {children}
-  </div>
-)
-
 export const Resume: React.FC = ({}) => {
   return (
     <Layout>
@@ -29,6 +23,29 @@ export const Resume: React.FC = ({}) => {
       <div className="space-y-10">
         <SectionTitle>Experience</SectionTitle>
         <div className="divide-y-1">
+          <Activity
+            type="work"
+            title={
+              <div>
+                Software Developer at{" "}
+                <OutboundLink
+                  className="link"
+                  href="https://icn.sap.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SAP Innovation Center
+                </OutboundLink>
+              </div>
+            }
+            location="Potsdam"
+            duration="04/2021 - today"
+            details={[
+              "Fullstack Development in a modern agile environment",
+              "Working on innovative cross-platform architecture projects and frontrunners",
+              "Kotlin, VueJS, Jenkins",
+            ]}
+          />
           <Activity
             type="work"
             title={
@@ -155,49 +172,54 @@ export const Resume: React.FC = ({}) => {
         <div>
           <SectionTitle>Skills</SectionTitle>
           <div className="flex flex-wrap">
-            <Badge>Fullstack Development</Badge>
-            <Badge>NodeJS</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>Python</Badge>
-            <Badge>Java</Badge>
-            <Badge>React</Badge>
-            <Badge>Vue</Badge>
-            <Badge>DevOps</Badge>
-            <Badge>Docker</Badge>
-            <Badge>GitHub Actions</Badge>
-            <Badge>AWS</Badge>
-            <Badge>PostgreSQL</Badge>
-            <Badge>MySQL</Badge>
-            <Badge>MongoDB</Badge>
-            <Badge>Traffic Simulation with SUMO</Badge>
-            <Badge>Alexa Skills</Badge>
+            <div className="badge">Fullstack Development</div>
+            <div className="badge">NodeJS</div>
+            <div className="badge">TypeScript</div>
+            <div className="badge">Python</div>
+            <div className="badge">Kotlin</div>
+            <div className="badge">Java</div>
+            <div className="badge">React</div>
+            <div className="badge">Vue</div>
+            <div className="badge">DevOps</div>
+            <div className="badge">Docker</div>
+            <div className="badge">Jenkins</div>
+            <div className="badge">GitHub Actions</div>
+            <div className="badge">AWS</div>
+            <div className="badge">PostgreSQL</div>
+            <div className="badge">MySQL</div>
+            <div className="badge">MongoDB</div>
+            <div className="badge">SQLite</div>
+            <div className="badge">Traffic Simulation with SUMO</div>
+            <div className="badge">Browser Extensions</div>
+            <div className="badge">Alexa Skills</div>
           </div>
         </div>
 
         <div>
           <SectionTitle>Traits</SectionTitle>
           <div className="flex flex-wrap">
-            <Badge>Highly motivated</Badge>
-            <Badge>Adaptable</Badge>
-            <Badge>Fast learner</Badge>
-            <Badge>Passionate</Badge>
-            <Badge>Team spirit</Badge>
-            <Badge>Agile, independent and determined way of working</Badge>
+            <div className="badge">Highly motivated</div>
+            <div className="badge">Adaptable</div>
+            <div className="badge">Fast learner</div>
+            <div className="badge">Passionate</div>
+            <div className="badge">Team spirit</div>
+            <div className="badge">Agile, independent and determined way of working</div>
           </div>
         </div>
 
         <div>
           <SectionTitle>Interests</SectionTitle>
           <div className="flex flex-wrap">
-            <Badge>Piano</Badge>
-            <Badge>Traveling</Badge>
-            <Badge>Programming</Badge>
-            <Badge>Wakeboarding</Badge>
-            <Badge>Longboarding</Badge>
-            <Badge>Board Games</Badge>
-            <Badge>Origami</Badge>
-            <Badge>Running</Badge>
-            <Badge>Rope Jumping</Badge>
+            <div className="badge">Piano</div>
+            <div className="badge">Traveling</div>
+            <div className="badge">Programming</div>
+            <div className="badge">Wakeboarding</div>
+            <div className="badge">Longboarding</div>
+            <div className="badge">Board Games</div>
+            <div className="badge">Origami</div>
+            <div className="badge">Running</div>
+            <div className="badge">Rope Jumping</div>
+            <div className="badge">Hiking</div>
           </div>
         </div>
       </div>
