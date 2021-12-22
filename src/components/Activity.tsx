@@ -78,18 +78,11 @@ const Arrow = styled.div<ArrowProps>`
   border-right: 2px solid black;
 
   transition: all 0.5s;
-  transform: ${(props) =>
-    props.rotate === 1 ? "rotate(135deg)" : "rotate(45deg)"};
+  transform: ${(props) => (props.rotate === 1 ? "rotate(135deg)" : "rotate(45deg)")};
   margin-top: ${(props) => (props.rotate === 1 ? "-6px" : "0px")};
 `
 
-export const Activity: React.FC<ActivityProps> = ({
-  type,
-  title,
-  location,
-  duration,
-  details,
-}) => {
+export const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, details }) => {
   const [showDetails, setShowDetails] = useState(false)
   const toggleDetails = () => setShowDetails(!showDetails)
 
@@ -124,8 +117,8 @@ export const Activity: React.FC<ActivityProps> = ({
               placeholder="blurred"
               width={20}
               height={20}
-              src="../images/duration.png"
-              alt="Duration icon"
+              src="../images/calendar.png"
+              alt="Calendar icon"
             />
           </div>
           <div>{duration}</div>
@@ -133,18 +126,11 @@ export const Activity: React.FC<ActivityProps> = ({
       ) : null}
       {details ? (
         <div className="ml-8">
-          <div
-            className="flex items-center cursor-pointer"
-            onClick={toggleDetails}
-          >
+          <div className="flex items-center cursor-pointer" onClick={toggleDetails}>
             <Arrow rotate={showDetails ? 1 : 0}></Arrow>
-            <div className="text-gray-500 select-none">
-              {showDetails ? "Less" : "More"} details
-            </div>
+            <div className="text-gray-500 select-none">{showDetails ? "Less" : "More"} details</div>
           </div>
-          <ul
-            className={`list-disc list-inside ${showDetails ? "" : "hidden"}`}
-          >
+          <ul className={`list-disc list-inside ${showDetails ? "" : "hidden"}`}>
             {details.map((detail, i) => (
               <li key={i}>{detail}</li>
             ))}

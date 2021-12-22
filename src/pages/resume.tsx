@@ -34,16 +34,16 @@ export const Resume: React.FC = ({}) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  SAP Innovation Center
+                  SAP Innovation Center Potsdam
                 </OutboundLink>
               </div>
             }
             location="Potsdam"
             duration="04/2021 - today"
             details={[
-              "Fullstack Development in a modern agile environment",
-              "Working on innovative cross-platform architecture projects and frontrunners",
-              "Kotlin, VueJS, Jenkins",
+              "Fullstack development of cloud native applications in a modern cross-functional agile team",
+              "Driving innovative strategic projects and cloud transformation of cross-product solutions",
+              "JavaScript, TypeScript, Node.js, Vue.js, Kotlin, Java, Spring Boot, CI/CD, Docker, K8s, Cloud Foundry, SQL, git",
             ]}
           />
           <Activity
@@ -178,10 +178,12 @@ export const Resume: React.FC = ({}) => {
             <div className="badge">Python</div>
             <div className="badge">Kotlin</div>
             <div className="badge">Java</div>
+            <div className="badge">Spring Boot</div>
             <div className="badge">React</div>
             <div className="badge">Vue</div>
             <div className="badge">DevOps</div>
             <div className="badge">Docker</div>
+            <div className="badge">Kubernetes</div>
             <div className="badge">Jenkins</div>
             <div className="badge">GitHub Actions</div>
             <div className="badge">AWS</div>
@@ -202,6 +204,7 @@ export const Resume: React.FC = ({}) => {
             <div className="badge">Adaptable</div>
             <div className="badge">Fast learner</div>
             <div className="badge">Passionate</div>
+            <div className="badge">Curious</div>
             <div className="badge">Team spirit</div>
             <div className="badge">Agile, independent and determined way of working</div>
           </div>
