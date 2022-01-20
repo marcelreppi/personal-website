@@ -1,33 +1,54 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+import Head from "next/head"
+import { useRouter } from "next/router"
 
 interface SEOProps {
-  title: string
   description?: string
-  slug: string
+  pageTitle: string
 }
 
-export const SEO: React.FC<SEOProps> = ({ title, description, slug }) => {
-  const url = `https://reppenhagen.space${slug}`
-  const twitterUsername = "marcelreppi"
+const title = "Marcel Reppenhagen"
+const url = "https://reppenhagen.space"
+const defaultDescription = `
+Hi, I'm Marcel
+Software Developer @ SAP Innovation Center Potsdam
+Information Systems Management
+Master Graduate from Technical University of Berlin
+`.trim()
+
+const SEO: React.FC<SEOProps> = ({ description = defaultDescription, pageTitle }) => {
+  const { pathname } = useRouter()
+  const fullPageTitle = `${pageTitle} | ${title}`
+
   return (
-    <Helmet title={title} titleTemplate="%s | Marcel Reppenhagen" defaultTitle="Marcel Reppenhagen">
-      <html lang="en" />
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
 
-      <link rel="canonical" href={url} />
-      {description && <meta name="description" content={description} />}
+      {/* Favicon - https://favicon.io/ */}
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+      <link rel="manifest" href="/favicon/site.webmanifest" />
+
+      <title>{fullPageTitle}</title>
+      <meta name="description" content={description} />
 
       {/* OpenGraph */}
-      {url && <meta property="og:url" content={url} />}
-      {title && <meta property="og:title" content={title} />}
-      {description && <meta property="og:description" content={description} />}
+      <meta property="og:title" content={fullPageTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content={title} />
+      <meta property="og:url" content={`${url}${pathname}`} />
+
+      <meta property="og:image" content={`${url}/image.png`} />
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="300" />
 
       {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      {twitterUsername && <meta name="twitter:creator" content={twitterUsername} />}
-      {title && <meta name="twitter:title" content={title} />}
-      {description && <meta name="twitter:description" content={description} />}
-    </Helmet>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={title} />
+    </Head>
   )
 }
+
+export default SEO

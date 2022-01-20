@@ -1,41 +1,38 @@
-import { OutboundLink } from "gatsby-plugin-google-gtag"
 import React from "react"
-import { Activity } from "../components/Activity"
-import { Layout } from "../components/Layout"
-import { SectionTitle } from "../components/SectionTitle"
-import { SEO } from "../components/SEO"
+import Activity from "../components/Activity"
+import Layout from "../components/Layout"
+import SectionTitle from "../components/SectionTitle"
 
 export const Resume: React.FC = ({}) => {
   return (
-    <Layout>
-      <SEO title="Resumé" slug="/resume"></SEO>
+    <Layout pageTitle="Resumé">
       <div className="page-title">Resumé</div>
       <div className="mb-10 -mt-12 text-center">
-        <OutboundLink
-          href="cv.pdf"
+        <a
+          href="/cv.pdf"
           className="text-highlight hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
           Download
-        </OutboundLink>
+        </a>
       </div>
       <div className="space-y-10">
-        <SectionTitle>Experience</SectionTitle>
+        <SectionTitle text="Experience" />
         <div className="divide-y-1">
           <Activity
             type="work"
             title={
               <div>
                 Software Developer at{" "}
-                <OutboundLink
+                <a
                   className="link"
                   href="https://icn.sap.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   SAP Innovation Center Potsdam
-                </OutboundLink>
+                </a>
               </div>
             }
             location="Potsdam"
@@ -51,14 +48,14 @@ export const Resume: React.FC = ({}) => {
             title={
               <div>
                 Mobile/Web Developer at{" "}
-                <OutboundLink
+                <a
                   className="link"
                   href="https://sensafety.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   SenSafety
-                </OutboundLink>
+                </a>
               </div>
             }
             location="Technical University of Berlin"
@@ -69,14 +66,14 @@ export const Resume: React.FC = ({}) => {
               "App development with React Native and Firebase",
               <span>
                 Implementation of{" "}
-                <OutboundLink
+                <a
                   href="https://sensafety.org/map.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="link"
                 >
                   statistics dashboard and live map
-                </OutboundLink>{" "}
+                </a>{" "}
                 with real-time popups
               </span>,
             ]}
@@ -94,40 +91,40 @@ export const Resume: React.FC = ({}) => {
         </div>
 
         <div>
-          <SectionTitle>Publications</SectionTitle>
+          <SectionTitle text="Publications" />
           <div className="divide-y-1">
             <Activity
               type="publication"
               title={
-                <OutboundLink
+                <a
                   className="link"
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Towards Application-Layer Purpose-Based Access Control
-                </OutboundLink>
+                </a>
               }
             />
 
             <Activity
               type="publication"
               title={
-                <OutboundLink
+                <a
                   className="link"
                   href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Sensafety: Crowdsourcing the Urban Sense of Safety
-                </OutboundLink>
+                </a>
               }
             />
           </div>
         </div>
 
         <div>
-          <SectionTitle>Education</SectionTitle>
+          <SectionTitle text="Education" />
           <div className="divide-y-1">
             <Activity
               type="degree"
@@ -170,7 +167,7 @@ export const Resume: React.FC = ({}) => {
         </div>
 
         <div>
-          <SectionTitle>Skills</SectionTitle>
+          <SectionTitle text="Skills" />
           <div className="flex flex-wrap">
             <div className="badge">Fullstack Development</div>
             <div className="badge">NodeJS</div>
@@ -179,8 +176,10 @@ export const Resume: React.FC = ({}) => {
             <div className="badge">Kotlin</div>
             <div className="badge">Java</div>
             <div className="badge">Spring Boot</div>
+            <div className="badge">Next.js</div>
             <div className="badge">React</div>
             <div className="badge">Vue</div>
+            <div className="badge">Tailwind</div>
             <div className="badge">DevOps</div>
             <div className="badge">Docker</div>
             <div className="badge">Kubernetes</div>
@@ -198,7 +197,7 @@ export const Resume: React.FC = ({}) => {
         </div>
 
         <div>
-          <SectionTitle>Traits</SectionTitle>
+          <SectionTitle text="Traits" />
           <div className="flex flex-wrap">
             <div className="badge">Highly motivated</div>
             <div className="badge">Adaptable</div>
@@ -211,7 +210,7 @@ export const Resume: React.FC = ({}) => {
         </div>
 
         <div>
-          <SectionTitle>Interests</SectionTitle>
+          <SectionTitle text="Interests" />
           <div className="flex flex-wrap">
             <div className="badge">Piano</div>
             <div className="badge">Traveling</div>
