@@ -39,11 +39,13 @@ export const Resume: React.FC = ({}) => {
               </div>
             }
             location="Potsdam"
-            duration="04/2021 - today"
+            duration="04/2021 - 04/2022"
             details={[
               "Fullstack development of cloud native applications in a modern cross-functional agile team",
               "Driving innovative strategic projects and cloud transformation of cross-product solutions",
-              "JavaScript, TypeScript, Node.js, Vue.js, Kotlin, Java, Spring Boot, CI/CD, Docker, K8s, Cloud Foundry, SQL, git",
+              "Pioneering and verifying company's tech strategy, frameworks and architecture",
+              'Received a "Spot Award" for exceptional efforts and results',
+              "JavaScript, TypeScript, Node.js, Vue.js, Kotlin, Java, Spring Boot, git, SQL, CI/CD, Docker, K8s, Cloud Foundry",
             ]}
           />
           <Activity
