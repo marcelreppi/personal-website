@@ -103,6 +103,21 @@ export const Resume: React.FC = ({}) => {
               title={
                 <OutboundLink
                   className="link"
+                  href="https://www.sciencedirect.com/science/article/pii/S2667091722000061"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  What if Air Quality Dictates Road Pricing? Simulation of an Air Pollution-based
+                  Road Charging Scheme
+                </OutboundLink>
+              }
+            />
+
+            <Activity
+              type="publication"
+              title={
+                <OutboundLink
+                  className="link"
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
