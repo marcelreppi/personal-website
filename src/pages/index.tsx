@@ -54,7 +54,7 @@ const IndexPage: React.FC = () => {
             />
           </OutboundLink>
           <OutboundLink
-            href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/"
+            href="https://www.linkedin.com/in/marcelreppi/"
             target="_blank"
             rel="noopener noreferrer"
           >
