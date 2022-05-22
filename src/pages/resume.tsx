@@ -148,7 +148,7 @@ export const Resume: React.FC = ({}) => {
           <div className="divide-y-1">
             <Activity
               type="degree"
-              title="Master Information Systems Management (Grade: 1.2)"
+              title="Master Information Systems Management (Grade: 1.2, One of the best graduates of my year)"
               location="Technical University of Berlin"
               duration="04/2018 - 10/2020"
               details={[
@@ -158,11 +158,10 @@ export const Resume: React.FC = ({}) => {
 
             <Activity
               type="degree"
-              title="Bachelor Wirtschaftsinformatik (Grade: 1.8)"
+              title="Bachelor Wirtschaftsinformatik (Grade: 1.8, One of the best graduates of my year)"
               location="Technical University of Berlin"
               duration="10/2014 - 03/2018"
               details={[
-                "Certificate for being honoured as part of the best students in my year",
                 "Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability Offering” (Grade: 1.3)",
               ]}
             />
