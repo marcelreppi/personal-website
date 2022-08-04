@@ -113,8 +113,8 @@ const IndexPage: React.FC = () => {
               src="../images/homepage.png"
               alt="Homepage Icon"
             />
-            <OutboundLink className="break-all link" href="https://www.reppenhagen.space">
-              reppenhagen.space
+            <OutboundLink className="break-all link" href="https://marcelreppi.com">
+              marcelreppi.com
             </OutboundLink>
           </div>
         </div>

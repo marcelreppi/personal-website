@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 export const SEO: React.FC<SEOProps> = ({ title, description, slug }) => {
-  const url = `https://reppenhagen.space${slug}`
+  const url = `https://marcelreppi.com${slug}`
   const twitterUsername = "marcelreppi"
   return (
     <Helmet title={title} titleTemplate="%s | Marcel Reppenhagen" defaultTitle="Marcel Reppenhagen">
