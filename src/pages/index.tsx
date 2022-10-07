@@ -66,7 +66,7 @@ const IndexPage: React.FC = () => {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/marcel-reppenhagen-b8994a121/"
+            href="https://www.linkedin.com/in/marcelreppi/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -115,8 +115,8 @@ const IndexPage: React.FC = () => {
               src={homepageIcon}
               alt="Homepage Icon"
             />
-            <a className="ml-2 break-all link" href="https://www.reppenhagen.space">
-              reppenhagen.space
+            <a className="break-all link" href="https://marcelreppi.com">
+              marcelreppi.com
             </a>
           </div>
         </div>

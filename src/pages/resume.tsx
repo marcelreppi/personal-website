@@ -1,7 +1,7 @@
-import React from "react"
-import Activity from "../components/Activity"
-import Layout from "../components/Layout"
-import SectionTitle from "../components/SectionTitle"
+import React from "react";
+import Activity from "../components/Activity";
+import Layout from "../components/Layout";
+import SectionTitle from "../components/SectionTitle";
 
 export const Resume: React.FC = ({}) => {
   return (
@@ -36,11 +36,13 @@ export const Resume: React.FC = ({}) => {
               </div>
             }
             location="Potsdam"
-            duration="04/2021 - today"
+            duration="04/2021 - 04/2022"
             details={[
               "Fullstack development of cloud native applications in a modern cross-functional agile team",
               "Driving innovative strategic projects and cloud transformation of cross-product solutions",
-              "JavaScript, TypeScript, Node.js, Vue.js, Kotlin, Java, Spring Boot, CI/CD, Docker, K8s, Cloud Foundry, SQL, git",
+              "Pioneering and verifying company's tech strategy, frameworks and architecture",
+              'Received a "Spot Award" for exceptional efforts and results',
+              "JavaScript, TypeScript, Node.js, Vue.js, Kotlin, Java, Spring Boot, git, SQL, CI/CD, Docker, K8s, Cloud Foundry",
             ]}
           />
           <Activity
@@ -98,6 +100,21 @@ export const Resume: React.FC = ({}) => {
               title={
                 <a
                   className="link"
+                  href="https://www.sciencedirect.com/science/article/pii/S2667091722000061"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  What if Air Quality Dictates Road Pricing? Simulation of an Air Pollution-based
+                  Road Charging Scheme
+                </a>
+              }
+            />
+
+            <Activity
+              type="publication"
+              title={
+                <a
+                  className="link"
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -128,7 +145,7 @@ export const Resume: React.FC = ({}) => {
           <div className="divide-y-1">
             <Activity
               type="degree"
-              title="Master Information Systems Management (Grade: 1.2)"
+              title="Master Information Systems Management (Grade: 1.2, One of the best graduates of my year)"
               location="Technical University of Berlin"
               duration="04/2018 - 10/2020"
               details={[
@@ -138,11 +155,10 @@ export const Resume: React.FC = ({}) => {
 
             <Activity
               type="degree"
-              title="Bachelor Wirtschaftsinformatik (Grade: 1.8)"
+              title="Bachelor Wirtschaftsinformatik (Grade: 1.8, One of the best graduates of my year)"
               location="Technical University of Berlin"
               duration="10/2014 - 03/2018"
               details={[
-                "Certificate for being honoured as part of the best students in my year",
                 "Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability Offering” (Grade: 1.3)",
               ]}
             />
@@ -226,7 +242,7 @@ export const Resume: React.FC = ({}) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
