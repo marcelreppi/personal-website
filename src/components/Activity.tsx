@@ -1,20 +1,20 @@
-import Image from "next/image"
-import React, { useState } from "react"
+import Image from "next/image";
+import React, { useState } from "react";
 // import styled from "styled-components"
 
-import workIcon from "../../public/images/work.png"
-import tutorIcon from "../../public/images/tutor.png"
-import degreeIcon from "../../public/images/degree.png"
-import publicationIcon from "../../public/images/publication.png"
-import locationIcon from "../../public/images/location.png"
-import calendarIcon from "../../public/images/calendar.png"
+import workIcon from "../../public/images/work.png";
+import tutorIcon from "../../public/images/tutor.png";
+import degreeIcon from "../../public/images/degree.png";
+import publicationIcon from "../../public/images/publication.png";
+import locationIcon from "../../public/images/location.png";
+import calendarIcon from "../../public/images/calendar.png";
 
 interface ActivityProps {
-  type: "work" | "tutor" | "degree" | "publication"
-  title: string | React.ReactNode
-  location?: string
-  duration?: string
-  details?: Array<string | React.ReactNode>
+  type: "work" | "tutor" | "degree" | "publication";
+  title: string | React.ReactNode;
+  location?: string;
+  duration?: string;
+  details?: Array<string | React.ReactNode>;
 }
 
 function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
@@ -22,7 +22,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
     case "work":
       return (
         <Image quality={100} layout="fixed" width={20} height={20} src={workIcon} alt="Work icon" />
-      )
+      );
     case "tutor":
       return (
         <Image
@@ -33,7 +33,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
           src={tutorIcon}
           alt="Tutor icon"
         />
-      )
+      );
     case "degree":
       return (
         <Image
@@ -44,7 +44,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
           src={degreeIcon}
           alt="Degree icon"
         />
-      )
+      );
     case "publication":
       return (
         <Image
@@ -55,9 +55,9 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
           src={publicationIcon}
           alt="Publication icon"
         />
-      )
+      );
     default:
-      return { workIcon }
+      return { workIcon };
   }
 }
 
@@ -79,8 +79,8 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
 // `
 
 const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, details }) => {
-  const [showDetails, setShowDetails] = useState(false)
-  const toggleDetails = () => setShowDetails(!showDetails)
+  const [showDetails, setShowDetails] = useState(false);
+  const toggleDetails = () => setShowDetails(!showDetails);
 
   return (
     <div className="pt-4 pb-4 space-y-2 first:pt-0 last:pb-0">
@@ -132,7 +132,7 @@ const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, de
         </div>
       ) : null}
     </div>
-  )
-}
+  );
+};
 
-export default Activity
+export default Activity;

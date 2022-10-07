@@ -1,10 +1,10 @@
-import React from "react"
-import NavBar from "./NavBar"
-import SEO from "./SEO"
+import React from "react";
+import NavBar from "./NavBar";
+import SEO from "./SEO";
 
 interface LayoutProps {
-  pageTitle: string
-  description?: string
+  pageTitle: string;
+  description?: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, pageTitle, description }) => {
@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle, description }) => 
       <main className="max-w-4xl m-auto">{children}</main>
       <footer className="h-20"></footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

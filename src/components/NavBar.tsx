@@ -1,12 +1,12 @@
-import NextLink from "next/link"
-import React, { useState } from "react"
-import Hamburger from "hamburger-react"
-import { useRouter } from "next/router"
-import Link from "next/link"
+import NextLink from "next/link";
+import React, { useState } from "react";
+import Hamburger from "hamburger-react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 interface NavBarItem {
-  name: string
-  href: string
+  name: string;
+  href: string;
 }
 const navBarItems: Array<NavBarItem> = [
   {
@@ -25,20 +25,20 @@ const navBarItems: Array<NavBarItem> = [
     name: "Portfolio",
     href: "/portfolio",
   },
-]
+];
 
 interface NavBarProps {}
 
 const NavBar: React.FC<NavBarProps> = ({}) => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const router = useRouter()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <>
       {/* Web Navbar */}
       <nav className="items-center justify-around hidden max-w-4xl mx-auto pt-24 pb-14 text-2xl sm:flex">
         {navBarItems.map(({ name, href }) => {
-          const active = router.pathname === href
+          const active = router.pathname === href;
           return (
             <div
               className={`hover:text-highlight hover:cursor-pointer ${
@@ -48,7 +48,7 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
             >
               <Link href={href}>{name}</Link>
             </div>
-          )
+          );
         })}
       </nav>
 
@@ -81,12 +81,12 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
                   {x.name}
                 </a>
               </NextLink>
-            )
+            );
           })}
         </nav>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

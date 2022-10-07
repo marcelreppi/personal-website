@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
 interface NPMPackageProps {
-  name: string
-  description: string | React.ReactNode
+  name: string;
+  description: string | React.ReactNode;
 }
 
 const NPMPackage: React.FC<NPMPackageProps> = ({ name, description }) => {
@@ -26,7 +26,7 @@ const NPMPackage: React.FC<NPMPackageProps> = ({ name, description }) => {
         <img className="mt-5" alt="package summary" src={`https://nodei.co/npm/${name}.png`} />
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default NPMPackage
+export default NPMPackage;

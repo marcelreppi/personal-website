@@ -1,40 +1,40 @@
-import React, { useEffect, useRef } from "react"
-import Typed, { TypedOptions } from "typed.js"
-import Image from "next/image"
+import React, { useEffect, useRef } from "react";
+import Typed, { TypedOptions } from "typed.js";
+import Image from "next/image";
 
-import githubIcon from "@/images/github.png"
-import linkedinIcon from "@/images/linkedin.png"
-import twitterIcon from "@/images/twitter.png"
-import mailIcon from "@/images/mail.png"
-import homepageIcon from "@/images/homepage.png"
+import githubIcon from "@/images/github.png";
+import linkedinIcon from "@/images/linkedin.png";
+import twitterIcon from "@/images/twitter.png";
+import mailIcon from "@/images/mail.png";
+import homepageIcon from "@/images/homepage.png";
 
-import { linkToUncryptMailTo } from "../helpers/uncryptMailTo"
-import Layout from "../components/Layout"
+import { linkToUncryptMailTo } from "../helpers/uncryptMailTo";
+import Layout from "../components/Layout";
 
 const IndexPage: React.FC = () => {
   // Create reference to store the DOM element containing the animation
-  const el = useRef<HTMLDivElement | null>(null)
+  const el = useRef<HTMLDivElement | null>(null);
   // Create reference to store the Typed instance itself
-  const typed = useRef<Typed | null>(null)
+  const typed = useRef<Typed | null>(null);
 
   useEffect(() => {
     const options: TypedOptions = {
       strings: ["Hi, I'm Marcel"],
       typeSpeed: 120,
       showCursor: true,
-    }
+    };
 
     if (el.current !== null) {
       // elRef refers to the <span> rendered below
-      typed.current = new Typed(el.current, options)
+      typed.current = new Typed(el.current, options);
     }
 
     return () => {
       // Make sure to destroy Typed instance during cleanup
       // to prevent memory leaks
-      typed.current?.destroy()
-    }
-  }, [])
+      typed.current?.destroy();
+    };
+  }, []);
 
   return (
     <Layout pageTitle="Home">
@@ -115,14 +115,14 @@ const IndexPage: React.FC = () => {
               src={homepageIcon}
               alt="Homepage Icon"
             />
-            <a className="break-all link" href="https://marcelreppi.com">
+            <a className="ml-2 break-all link hover:cursor-pointer" href="https://marcelreppi.com">
               marcelreppi.com
             </a>
           </div>
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

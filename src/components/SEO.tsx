@@ -1,24 +1,24 @@
-import React from "react"
-import Head from "next/head"
-import { useRouter } from "next/router"
+import React from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 interface SEOProps {
-  description?: string
-  pageTitle: string
+  description?: string;
+  pageTitle: string;
 }
 
-const title = "Marcel Reppenhagen"
-const url = "https://reppenhagen.space"
+const title = "Marcel Reppenhagen";
+const url = "https://reppenhagen.space";
 const defaultDescription = `
 Hi, I'm Marcel
 Software Developer @ SAP Innovation Center Potsdam
 Information Systems Management
 Master Graduate from Technical University of Berlin
-`.trim()
+`.trim();
 
 const SEO: React.FC<SEOProps> = ({ description = defaultDescription, pageTitle }) => {
-  const { pathname } = useRouter()
-  const fullPageTitle = `${pageTitle} | ${title}`
+  const { pathname } = useRouter();
+  const fullPageTitle = `${pageTitle} | ${title}`;
 
   return (
     <Head>
@@ -48,7 +48,7 @@ const SEO: React.FC<SEOProps> = ({ description = defaultDescription, pageTitle }
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={title} />
     </Head>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

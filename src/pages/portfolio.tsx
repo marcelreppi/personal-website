@@ -1,42 +1,42 @@
-import Image from "next/image"
-import React, { useRef } from "react"
-import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react"
-import Autoplay, { AutoplayOptionsType } from "embla-carousel-autoplay"
-import Layout from "../components/Layout"
-import NPMPackage from "../components/NPMPackage"
-import SectionTitle from "../components/SectionTitle"
+import Image from "next/image";
+import React, { useRef } from "react";
+import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import Autoplay, { AutoplayOptionsType } from "embla-carousel-autoplay";
+import Layout from "../components/Layout";
+import NPMPackage from "../components/NPMPackage";
+import SectionTitle from "../components/SectionTitle";
 
-import sensafetyLogo from "@/images/sensafety-logo.png"
-import sensafetyPic1 from "@/images/sen-1.jpg"
-import sensafetyPic2 from "@/images/sen-2.jpg"
-import sensafetyPic3 from "@/images/sen-3.jpg"
-import sensafetyPic4 from "@/images/sen-4.jpg"
-import sensafetyPic5 from "@/images/sen-5.jpg"
+import sensafetyLogo from "@/images/sensafety-logo.png";
+import sensafetyPic1 from "@/images/sen-1.jpg";
+import sensafetyPic2 from "@/images/sen-2.jpg";
+import sensafetyPic3 from "@/images/sen-3.jpg";
+import sensafetyPic4 from "@/images/sen-4.jpg";
+import sensafetyPic5 from "@/images/sen-5.jpg";
 
-import moodleBuddyPic1 from "@/images/mb-1.png"
-import moodleBuddyPic2 from "@/images/mb-2.png"
-import moodleBuddyPic3 from "@/images/mb-3.png"
+import moodleBuddyPic1 from "@/images/mb-1.png";
+import moodleBuddyPic2 from "@/images/mb-2.png";
+import moodleBuddyPic3 from "@/images/mb-3.png";
 
-import wordchainLogo from "@/images/wordchain.png"
+import wordchainLogo from "@/images/wordchain.png";
 
 const emblaOptions: EmblaOptionsType = {
   loop: true,
-}
+};
 const autoPlayOptions: AutoplayOptionsType = {
   delay: 3000,
   stopOnInteraction: false,
-}
+};
 
 export const Portfolio: React.FC = ({}) => {
   const sensafetyAutoplay = useRef(
     Autoplay(autoPlayOptions, (emblaRoot) => emblaRoot.parentElement)
-  )
-  const [sensafetyEmblaRef] = useEmblaCarousel(emblaOptions, [sensafetyAutoplay.current])
+  );
+  const [sensafetyEmblaRef] = useEmblaCarousel(emblaOptions, [sensafetyAutoplay.current]);
 
   const moodleBuddyAutoplay = useRef(
     Autoplay(autoPlayOptions, (emblaRoot) => emblaRoot.parentElement)
-  )
-  const [moodleBuddyEmblaRef] = useEmblaCarousel(emblaOptions, [moodleBuddyAutoplay.current])
+  );
+  const [moodleBuddyEmblaRef] = useEmblaCarousel(emblaOptions, [moodleBuddyAutoplay.current]);
 
   return (
     <Layout pageTitle="Portfolio">
@@ -282,7 +282,7 @@ export const Portfolio: React.FC = ({}) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

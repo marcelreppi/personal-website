@@ -1,14 +1,14 @@
-import React from "react"
-import Layout from "../components/Layout"
-import Image from "next/image"
+import React from "react";
+import Layout from "../components/Layout";
+import Image from "next/image";
 
-import profilePicture from "../../public/images/me.jpg"
+import profilePicture from "../../public/images/me.jpg";
 
 const SEODescription = `
 Hi, my name is Marcel Reppenhagen 🙋‍♂️👋
 
 I am a curious person with a passion for programming, web technologies and ☁️-computing. I love exploring today's ever-evolving technologies and continuously learn new things. 💡
-`
+`;
 
 export const About: React.FC = ({}) => {
   return (
@@ -84,7 +84,7 @@ export const About: React.FC = ({}) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

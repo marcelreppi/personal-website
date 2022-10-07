@@ -1,8 +1,8 @@
-import React from "react"
-import Script from "next/script"
-import "../styles/index.css"
+import React from "react";
+import Script from "next/script";
+import "../styles/index.css";
 
-import { AppProps } from "next/app"
+import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
