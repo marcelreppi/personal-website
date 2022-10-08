@@ -57,26 +57,11 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
         />
       );
     default:
-      return { workIcon };
+      return (
+        <Image quality={100} layout="fixed" width={20} height={20} src={workIcon} alt="Work icon" />
+      );
   }
 }
-
-// interface ArrowProps {
-//   rotate: number
-// }
-
-// const Arrow = styled.div<ArrowProps>`
-//   margin-right: 8px;
-//   margin-left: -3px;
-//   width: 8px;
-//   height: 8px;
-//   border-top: 2px solid black;
-//   border-right: 2px solid black;
-
-//   transition: all 0.5s;
-//   transform: ${(props) => (props.rotate === 1 ? "rotate(135deg)" : "rotate(45deg)")};
-//   margin-top: ${(props) => (props.rotate === 1 ? "-6px" : "0px")};
-// `
 
 const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, details }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -121,10 +106,19 @@ const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, de
       {details ? (
         <div className="ml-8">
           <div className="flex items-center cursor-pointer" onClick={toggleDetails}>
-            {/* <Arrow rotate={showDetails ? 1 : 0}></Arrow> */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className={`w-4.5 h-4.5 mr-1 transition-transform ${showDetails ? "rotate-90" : ""}`}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
             <div className="text-gray-500 select-none">{showDetails ? "Less" : "More"} details</div>
           </div>
-          <ul className={`list-disc list-inside ${showDetails ? "" : "hidden"}`}>
+          <ul className={`ml-2 list-disc list-inside ${showDetails ? "" : "hidden"}`}>
             {details.map((detail, i) => (
               <li key={i}>{detail}</li>
             ))}

@@ -17,6 +17,9 @@ module.exports = {
       transitionProperty: {
         fontSize: "font-size",
       },
+      spacing: {
+        4.5: "1.125rem",
+      },
     },
   },
   variants: {
@@ -27,4 +30,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
