@@ -10,7 +10,7 @@ Hi, my name is Marcel Reppenhagen 🙋‍♂️👋
 I am a curious person with a passion for programming, web technologies and ☁️-computing. I love exploring today's ever-evolving technologies and continuously learn new things. 💡
 `;
 
-export const About: React.FC = ({}) => {
+export const About: React.FC = () => {
   return (
     <Layout pageTitle="About" description={SEODescription}>
       <div className="page-title">About</div>

@@ -18,7 +18,7 @@ import moodleBuddyPic3 from "@/images/mb-3.png";
 
 import wordchainLogo from "@/images/wordchain.png";
 
-export const Portfolio: React.FC = ({}) => {
+export const Portfolio: React.FC = () => {
   return (
     <Layout pageTitle="Portfolio">
       <div className="page-title">Portfolio</div>

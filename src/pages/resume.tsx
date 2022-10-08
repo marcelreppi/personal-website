@@ -3,7 +3,7 @@ import Activity from "../components/Activity";
 import Layout from "../components/Layout";
 import SectionTitle from "../components/SectionTitle";
 
-export const Resume: React.FC = ({}) => {
+export const Resume: React.FC = () => {
   return (
     <Layout pageTitle="Resumé">
       <div className="page-title">Resumé</div>
