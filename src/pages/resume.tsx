@@ -53,7 +53,7 @@ export const Resume: React.FC = ({}) => {
                 </a>
               </div>
             }
-            location="Potsdam"
+            location="Potsdam, Germany"
             duration="04/2021 - 04/2022"
             details={[
               "Fullstack development of cloud native applications in a modern cross-functional agile team",
@@ -78,7 +78,7 @@ export const Resume: React.FC = ({}) => {
                 </a>
               </div>
             }
-            location="Technical University of Berlin"
+            location="Technical University of Berlin, Germany"
             duration="04/2019 - 10/2019"
             details={[
               "Mobile crowdsourcing platform for perceived safety of urban citizens",
@@ -101,7 +101,7 @@ export const Resume: React.FC = ({}) => {
           <Activity
             type="tutor"
             title="Student Tutor"
-            location="Technical University of Berlin"
+            location="Technical University of Berlin, Germany"
             duration="04/2016 - 04/2017"
             details={[
               "Geschäftsprozesse & IT-Dienste (Business Processes and IT-Services)",
@@ -164,7 +164,7 @@ export const Resume: React.FC = ({}) => {
             <Activity
               type="degree"
               title="Master Information Systems Management (Grade: 1.2, One of the best graduates of my year)"
-              location="Technical University of Berlin"
+              location="Technical University of Berlin, Germany"
               duration="04/2018 - 10/2020"
               details={[
                 "Master Thesis: „Traffic Simulation for an Air Pollution-aware Toll System with Dynamic Charging” (Grade: 1.0)",
@@ -174,7 +174,7 @@ export const Resume: React.FC = ({}) => {
             <Activity
               type="degree"
               title="Bachelor Wirtschaftsinformatik (Grade: 1.8, One of the best graduates of my year)"
-              location="Technical University of Berlin"
+              location="Technical University of Berlin, Germany"
               duration="10/2014 - 03/2018"
               details={[
                 "Bachelors Thesis: „Creation of a Lightweight Microservice for Semantic Capability Offering” (Grade: 1.3)",
@@ -183,18 +183,18 @@ export const Resume: React.FC = ({}) => {
 
             <Activity
               type="degree"
-              title="Abitur (Grade: 1.3)"
-              location="Staatliche Europaschule Berlin, Schiller Gymnasium (Bilingual
-            Highschool (German-English))"
+              title="Schiller Gymnasium, Staatliche Europaschule Berlin (German-English Bilingual
+                Highschool)"
+              location="Berlin, Germany"
               duration="2007 - 2013"
-              details={["Major subjects: English and Physics"]}
+              details={["Abitur (Grade: 1.3)", "Major subjects: English and Physics"]}
             />
 
             <Activity
               type="degree"
               title="Quentin Blake Europeschool (Bilingual Primary School
             (German-English))"
-              location="Berlin"
+              location="Berlin, Germany"
               duration="2001 - 2007"
             />
           </div>
