@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 const title = "Marcel Reppenhagen";
-const url = "https://reppenhagen.space";
+const url = "https://marcelreppi.com";
 const defaultDescription = `
 Hi, I'm Marcel
 Software Developer @ SAP Innovation Center Potsdam
