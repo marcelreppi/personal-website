@@ -1,10 +1,9 @@
 import Image from "next/image";
-import React, { useRef } from "react";
-import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
-import Autoplay, { AutoplayOptionsType } from "embla-carousel-autoplay";
+import React from "react";
 import Layout from "../components/Layout";
 import NPMPackage from "../components/NPMPackage";
 import SectionTitle from "../components/SectionTitle";
+import Carousel from "../components/Carousel";
 
 import sensafetyLogo from "@/images/sensafety-logo.png";
 import sensafetyPic1 from "@/images/sen-1.jpg";
@@ -19,25 +18,7 @@ import moodleBuddyPic3 from "@/images/mb-3.png";
 
 import wordchainLogo from "@/images/wordchain.png";
 
-const emblaOptions: EmblaOptionsType = {
-  loop: true,
-};
-const autoPlayOptions: AutoplayOptionsType = {
-  delay: 3000,
-  stopOnInteraction: false,
-};
-
 export const Portfolio: React.FC = ({}) => {
-  const sensafetyAutoplay = useRef(
-    Autoplay(autoPlayOptions, (emblaRoot) => emblaRoot.parentElement)
-  );
-  const [sensafetyEmblaRef] = useEmblaCarousel(emblaOptions, [sensafetyAutoplay.current]);
-
-  const moodleBuddyAutoplay = useRef(
-    Autoplay(autoPlayOptions, (emblaRoot) => emblaRoot.parentElement)
-  );
-  const [moodleBuddyEmblaRef] = useEmblaCarousel(emblaOptions, [moodleBuddyAutoplay.current]);
-
   return (
     <Layout pageTitle="Portfolio">
       <div className="page-title">Portfolio</div>
@@ -62,65 +43,22 @@ export const Portfolio: React.FC = ({}) => {
                   src={sensafetyLogo}
                 />
               </a>
-              <div className="p-5 space-y-5">
+              <div className="p-5 space-y-3 flex flex-col flex-grow">
                 <div className="text-xl leading-6 text-center">
                   Mobile crowdsourcing platform for perceived safety of urban citizens. The data is
                   aggregated and can be used by municipalities to evaluate how perceived safety
                   changes over time and how additional infrastructure impacts the perceived safety.
                 </div>
-                <div className="embla py-3" ref={sensafetyEmblaRef}>
-                  <div className="embla__container h-[320px]">
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="SenSafety 1"
-                        src={sensafetyPic1}
-                      />
-                    </div>
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="SenSafety 2"
-                        src={sensafetyPic2}
-                      />
-                    </div>
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="SenSafety 3"
-                        src={sensafetyPic3}
-                      />
-                    </div>
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="SenSafety 4"
-                        src={sensafetyPic4}
-                      />
-                    </div>
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="SenSafety 5"
-                        src={sensafetyPic5}
-                      />
-                    </div>
-                  </div>
+                <div className="flex flex-grow items-end">
+                  <Carousel
+                    images={[
+                      sensafetyPic1,
+                      sensafetyPic2,
+                      sensafetyPic3,
+                      sensafetyPic4,
+                      sensafetyPic5,
+                    ]}
+                  />
                 </div>
               </div>
             </div>
@@ -134,12 +72,12 @@ export const Portfolio: React.FC = ({}) => {
               >
                 <span className="text-2xl font-bold text-white">MoodleBuddy</span>
               </a>
-              <div className="p-5 space-y-3">
+              <div className="p-5 space-y-3 flex flex-col flex-grow">
                 <div className="text-xl leading-6 text-center">
                   Cross-platform browser plugin that offers mass download and notification
                   functionality for the <b>Moodle</b> learning management platform.
                 </div>
-                <div className="flex flex-col items-center mb-3 space-y-1">
+                <div className="flex flex-col items-center space-y-1">
                   <a
                     className="flex flex-wrap justify-center space-x-1 space-y-1"
                     target="_blank"
@@ -175,39 +113,8 @@ export const Portfolio: React.FC = ({}) => {
                     <img src="https://img.shields.io/amo/rating/moodle-buddy" alt="Ratings" />
                   </a>
                 </div>
-                <div className="embla py-3" ref={moodleBuddyEmblaRef}>
-                  <div className="embla__container h-[320px]">
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="Moodle Buddy 1"
-                        src={moodleBuddyPic1}
-                      />
-                    </div>
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="Moodle Buddy 2"
-                        src={moodleBuddyPic2}
-                      />
-                    </div>
-                    <div className="embla__slide">
-                      <Image
-                        quality={100}
-                        placeholder="blur"
-                        height={320}
-                        objectFit="contain"
-                        alt="Moodle Buddy 3"
-                        src={moodleBuddyPic3}
-                      />
-                    </div>
-                  </div>
+                <div className="flex flex-grow items-end">
+                  <Carousel images={[moodleBuddyPic1, moodleBuddyPic2, moodleBuddyPic3]} />
                 </div>
               </div>
             </div>
