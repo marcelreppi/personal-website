@@ -11,7 +11,7 @@ const title = "Marcel Reppenhagen";
 const url = "https://marcelreppi.com";
 const defaultDescription = `
 Hi, I'm Marcel
-Software Developer @ SAP Innovation Center Potsdam
+Software Developer @ JFrog
 Information Systems Management
 Master Graduate from Technical University of Berlin
 `.trim();
