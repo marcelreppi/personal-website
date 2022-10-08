@@ -13,7 +13,7 @@ class MyDocument extends Document {
           <script
             async
             defer
-            data-website-id="b300b400-004a-409e-97b3-e48b5f6eee7e"
+            data-website-id="125b2ab7-46a5-4f4a-a652-23162a362b7d"
             src="https://umami.marcelreppi.com/umami.js"
             data-domains="marcelreppi.com"
           ></script>
