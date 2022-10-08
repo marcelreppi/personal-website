@@ -5,6 +5,7 @@ import SEO from "./SEO";
 interface LayoutProps {
   pageTitle: string;
   description?: string;
+  children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, pageTitle, description }) => {
