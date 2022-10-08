@@ -1,90 +1,71 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import Image from "next/image";
+import React, { useState } from "react";
+// import styled from "styled-components"
+
+import workIcon from "../../public/images/work.png";
+import tutorIcon from "../../public/images/tutor.png";
+import degreeIcon from "../../public/images/degree.png";
+import publicationIcon from "../../public/images/publication.png";
+import locationIcon from "../../public/images/location.png";
+import calendarIcon from "../../public/images/calendar.png";
 
 interface ActivityProps {
-  type: "work" | "tutor" | "degree" | "publication"
-  title: string | React.ReactNode
-  location?: string
-  duration?: string
-  details?: Array<string | React.ReactNode>
+  type: "work" | "tutor" | "degree" | "publication";
+  title: string | React.ReactNode;
+  location?: string;
+  duration?: string;
+  details?: Array<string | React.ReactNode>;
 }
 
 function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
   switch (type) {
     case "work":
       return (
-        <StaticImage
-          quality={100}
-          layout="fixed"
-          placeholder="blurred"
-          width={20}
-          height={20}
-          src="../images/work.png"
-          alt="Work icon"
-        />
-      )
+        <Image quality={100} layout="fixed" width={20} height={20} src={workIcon} alt="Work icon" />
+      );
     case "tutor":
       return (
-        <StaticImage
+        <Image
           quality={100}
           layout="fixed"
-          placeholder="blurred"
           width={20}
           height={20}
-          src="../images/tutor.png"
+          src={tutorIcon}
           alt="Tutor icon"
         />
-      )
+      );
     case "degree":
       return (
-        <StaticImage
+        <Image
           quality={100}
           layout="fixed"
-          placeholder="blurred"
           width={20}
           height={20}
-          src="../images/degree.png"
+          src={degreeIcon}
           alt="Degree icon"
         />
-      )
+      );
     case "publication":
       return (
-        <StaticImage
+        <Image
           quality={100}
           layout="fixed"
-          placeholder="blurred"
           width={20}
           height={20}
-          src="../images/publication.png"
+          src={publicationIcon}
           alt="Publication icon"
         />
-      )
+      );
     default:
-      return "../images/work.png"
+      return (
+        <Image quality={100} layout="fixed" width={20} height={20} src={workIcon} alt="Work icon" />
+      );
   }
 }
 
-interface ArrowProps {
-  rotate: number
-}
-
-const Arrow = styled.div<ArrowProps>`
-  margin-right: 8px;
-  margin-left: -3px;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-
-  transition: all 0.5s;
-  transform: ${(props) => (props.rotate === 1 ? "rotate(135deg)" : "rotate(45deg)")};
-  margin-top: ${(props) => (props.rotate === 1 ? "-6px" : "0px")};
-`
-
-export const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, details }) => {
-  const [showDetails, setShowDetails] = useState(false)
-  const toggleDetails = () => setShowDetails(!showDetails)
+const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, details }) => {
+  const [showDetails, setShowDetails] = useState(false);
+  const toggleDetails = () => setShowDetails(!showDetails);
 
   return (
     <div className="pt-4 pb-4 space-y-2 first:pt-0 last:pb-0">
@@ -95,13 +76,12 @@ export const Activity: React.FC<ActivityProps> = ({ type, title, location, durat
       {location ? (
         <div className="flex items-center space-x-2">
           <div>
-            <StaticImage
+            <Image
               quality={100}
               layout="fixed"
-              placeholder="blurred"
               width={20}
               height={20}
-              src="../images/location.png"
+              src={locationIcon}
               alt="Location icon"
             />
           </div>
@@ -111,13 +91,12 @@ export const Activity: React.FC<ActivityProps> = ({ type, title, location, durat
       {duration ? (
         <div className="flex items-center space-x-2">
           <div>
-            <StaticImage
+            <Image
               quality={100}
               layout="fixed"
-              placeholder="blurred"
               width={20}
               height={20}
-              src="../images/calendar.png"
+              src={calendarIcon}
               alt="Calendar icon"
             />
           </div>
@@ -127,10 +106,19 @@ export const Activity: React.FC<ActivityProps> = ({ type, title, location, durat
       {details ? (
         <div className="ml-8">
           <div className="flex items-center cursor-pointer" onClick={toggleDetails}>
-            <Arrow rotate={showDetails ? 1 : 0}></Arrow>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className={`w-4.5 h-4.5 mr-1 transition-transform ${showDetails ? "rotate-90" : ""}`}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
             <div className="text-gray-500 select-none">{showDetails ? "Less" : "More"} details</div>
           </div>
-          <ul className={`list-disc list-inside ${showDetails ? "" : "hidden"}`}>
+          <ul className={`ml-2 list-disc list-inside ${showDetails ? "" : "hidden"}`}>
             {details.map((detail, i) => (
               <li key={i}>{detail}</li>
             ))}
@@ -138,5 +126,7 @@ export const Activity: React.FC<ActivityProps> = ({ type, title, location, durat
         </div>
       ) : null}
     </div>
-  )
-}
+  );
+};
+
+export default Activity;

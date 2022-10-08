@@ -1,8 +1,14 @@
-import React from "react"
+import React from "react";
 
-export const SectionTitle: React.FC = ({ children }) => (
+interface SectionTitleProps {
+  text: string;
+}
+
+const SectionTitle: React.FC<SectionTitleProps> = ({ text }) => (
   <div className="mb-8 text-xl tracking-wider text-highlight medium-font">
-    {children}
-    <div className="w-38 h-0.75 mt-1 bg-highlight"></div>
+    <div>{text}</div>
+    <div className="w-40 border-b-2 border-highlight"></div>
   </div>
-)
+);
+
+export default SectionTitle;

@@ -1,6 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -11,36 +10,24 @@ module.exports = {
         npm: "#ca3736",
         wordchain: "#31A691",
       },
-      fontSize: {
-        "1.5xl": "1.375rem",
-        "3.5xl": "2.125rem",
-      },
+      fontSize: {},
       boxShadow: {
         custom: "0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%)",
       },
-      height: {
-        0.75: "0.1875rem",
-      },
-      width: {
-        38: "9.375rem",
-      },
-      maxWidth: {
-        "4.5xl": "60rem",
-      },
-      borderWidth: {
-        1: "1px",
-      },
       transitionProperty: {
         fontSize: "font-size",
+      },
+      spacing: {
+        4.5: "1.125rem",
       },
     },
   },
   variants: {
     extend: {
       textColor: ["visited"],
-      padding: ["first", "last"],
-      fontSize: ["hover"],
+      borderWidth: ["hover", "focus"],
+      cursor: ["hover", "focus"],
     },
   },
   plugins: [],
-}
+};

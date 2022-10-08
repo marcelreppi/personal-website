@@ -1,12 +1,80 @@
-@import "tailwindcss/base";
-@import "./base.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import "tailwindcss/components";
-@import "./components.css";
+#__next {
+  height: 100%;
+  width: 100%;
+}
 
-@import "tailwindcss/utilities";
+@layer base {
+  @font-face {
+    font-family: metropolis;
+    src: url("/fonts/Metropolis-Regular.otf");
+  }
+
+  @font-face {
+    font-family: metropolis-medium;
+    src: url("/fonts/Metropolis-Medium.otf");
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-family: "metropolis", sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+
+  h1 {
+    @apply text-xl md:text-2xl medium-font  text-center;
+  }
+
+  p {
+    @apply mb-2;
+  }
+}
+
+@layer components {
+  .medium-font {
+    font-family: metropolis-medium;
+  }
+
+  .link {
+    @apply text-blue-600 hover:text-blue-800 visited:text-purple-600;
+  }
+
+  .page-title {
+    @apply w-full medium-font text-center text-highlight text-3xl mb-12;
+  }
+
+  .badge {
+    @apply px-2 py-1 mb-3 mr-3 border-2 rounded-lg border-highlight;
+  }
+}
 
 /* Modify React carousel package */
 .carousel .slide {
   background: none;
+}
+
+/* Slow down blink speed */
+.typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 1s infinite !important;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  display: flex;
 }

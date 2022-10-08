@@ -4,4 +4,4 @@
 
 Source code for my personal website running on [marcelreppi.com](https://marcelreppi.com/)
 
-Made with ❤️ and React/Gatsby 😊
+Made with ❤️ and React/Next.js 😊
