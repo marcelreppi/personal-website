@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "npm run nuke && next build",
     "start": "next start",
-    "ssg": "npm run nuke && next build && next export -o ssg",
-    "nuke": "rm -rf build && rm -rf ssg",
+    "ssg": "npm run nuke && next build && next export",
+    "nuke": "rm -rf out .next",
     "prepare": "husky install",
     "lint": "tsc --noEmit"
   },
