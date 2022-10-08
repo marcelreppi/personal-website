@@ -10,6 +10,7 @@ import homepageIcon from "@/images/homepage.png";
 
 import { linkToUncryptMailTo } from "../helpers/uncryptMailTo";
 import Layout from "../components/Layout";
+import JFrogLogo from "../components/JFrogLogo";
 
 const IndexPage: React.FC = () => {
   // Create reference to store the DOM element containing the animation
@@ -45,7 +46,13 @@ const IndexPage: React.FC = () => {
         </div>
 
         {/* Intro Text */}
-        <h1>Software Developer @ SAP Innovation Center</h1>
+        <h1 className="flex flex-col items-center space-y-2">
+          <span>Full Stack Developer</span>
+          <span>@</span>
+          <div className="w-28 h-28">
+            <JFrogLogo />
+          </div>
+        </h1>
 
         <h1>
           Information Systems Management

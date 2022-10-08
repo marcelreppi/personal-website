@@ -24,6 +24,24 @@ export const Resume: React.FC = ({}) => {
             type="work"
             title={
               <div>
+                Full Stack Developer at{" "}
+                <a
+                  className="link"
+                  href="https://jfrog.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  JFrog
+                </a>
+              </div>
+            }
+            location="Tel Aviv, Israel"
+            duration="09/2022 - today"
+          />
+          <Activity
+            type="work"
+            title={
+              <div>
                 Software Developer at{" "}
                 <a
                   className="link"
