@@ -11,7 +11,11 @@
   @font-face {
     font-family: metropolis;
     src: url("/fonts/Metropolis-Regular.otf");
-    font-display: swap;
+  }
+
+  @font-face {
+    font-family: metropolis-medium;
+    src: url("/fonts/Metropolis-Medium.otf");
   }
 
   html,
