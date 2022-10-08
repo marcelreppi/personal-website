@@ -31,7 +31,7 @@ export const Portfolio: React.FC = () => {
                 href="https://sensafety.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-16 py-1 bg-gradient-to-r from-sen1 to-sen2"
+                className="flex items-center justify-center h-16 py-1 bg-gradient-to-r from-sen1 to-sen2 umami--click--sensafety-portfolio"
               >
                 <Image
                   quality={100}
@@ -68,7 +68,7 @@ export const Portfolio: React.FC = () => {
                 href="https://moodlebuddy.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-16 py-1 bg-mb"
+                className="flex items-center justify-center h-16 py-1 bg-mb umami--click--moodlebuddy-portfolio"
               >
                 <span className="text-2xl font-bold text-white">MoodleBuddy</span>
               </a>
@@ -79,7 +79,7 @@ export const Portfolio: React.FC = () => {
                 </div>
                 <div className="flex flex-col items-center space-y-1">
                   <a
-                    className="flex flex-wrap justify-center space-x-1 space-y-1"
+                    className="flex flex-wrap justify-center space-x-1 space-y-1 umami--click--moodlebuddy-chrome-stats"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://chrome.google.com/webstore/detail/moodle-buddy/nomahjpllnbcpbggnpiehiecfbjmcaeo"
@@ -99,7 +99,7 @@ export const Portfolio: React.FC = () => {
                     />
                   </a>
                   <a
-                    className="flex flex-wrap justify-center space-x-1 space-y-1"
+                    className="flex flex-wrap justify-center space-x-1 space-y-1 umami--click--moodlebuddy-firefox-stats"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://addons.mozilla.org/en-US/firefox/addon/moodle-buddy/"
@@ -124,7 +124,7 @@ export const Portfolio: React.FC = () => {
                 href="https://www.amazon.de/-/en/dp/B074CQL5NJ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-16 py-1 bg-wordchain "
+                className="flex items-center justify-center h-16 py-1 bg-wordchain umami--click--wordchain-portfolio"
               >
                 <span className="text-2xl font-bold text-white">Wordchain Alexa Skill</span>
               </a>
@@ -138,7 +138,7 @@ export const Portfolio: React.FC = () => {
                     href="https://www.amazon.de/-/en/dp/B074CQL5NJ"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-3xl flex"
+                    className="rounded-3xl flex umami--click--wordchain-portfolio"
                   >
                     <Image
                       quality={100}

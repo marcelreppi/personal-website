@@ -8,6 +8,7 @@ interface SEOProps {
 }
 
 const title = "Marcel Reppenhagen";
+const username = "marcelreppi"
 const url = "https://marcelreppi.com";
 const defaultDescription = `
 Hi, I'm Marcel
@@ -40,13 +41,14 @@ const SEO: React.FC<SEOProps> = ({ description = defaultDescription, pageTitle }
       <meta property="og:site_name" content={title} />
       <meta property="og:url" content={`${url}${pathname}`} />
 
-      <meta property="og:image" content={`${url}/image.png`} />
+      <meta property="og:image" content={`${url}/images/favicon.png`} />
       <meta property="og:image:width" content="300" />
       <meta property="og:image:height" content="300" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={title} />
+      <meta name="twitter:creator" content={username} />
+      <meta name="twitter:site" content={username} />
     </Head>
   );
 };

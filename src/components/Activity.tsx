@@ -10,6 +10,7 @@ import locationIcon from "../../public/images/location.png";
 import calendarIcon from "../../public/images/calendar.png";
 
 interface ActivityProps {
+  id: string;
   type: "work" | "tutor" | "degree" | "publication";
   title: string | React.ReactNode;
   location?: string;
@@ -63,9 +64,12 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
   }
 }
 
-const Activity: React.FC<ActivityProps> = ({ type, title, location, duration, details }) => {
+const Activity: React.FC<ActivityProps> = ({ id, type, title, location, duration, details }) => {
   const [showDetails, setShowDetails] = useState(false);
-  const toggleDetails = () => setShowDetails(!showDetails);
+  const toggleDetails = () => {
+    window.umami.trackEvent(`${id}-${type}-${showDetails ? "less" : "more"}-details`);
+    setShowDetails(!showDetails);
+  };
 
   return (
     <div className="pt-4 pb-4 space-y-2 first:pt-0 last:pb-0">

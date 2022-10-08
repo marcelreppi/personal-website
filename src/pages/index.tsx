@@ -6,7 +6,6 @@ import githubIcon from "@/images/github.png";
 import linkedinIcon from "@/images/linkedin.png";
 import twitterIcon from "@/images/twitter.png";
 import mailIcon from "@/images/mail.png";
-import homepageIcon from "@/images/homepage.png";
 
 import { linkToUncryptMailTo } from "../helpers/uncryptMailTo";
 import Layout from "../components/Layout";
@@ -50,7 +49,14 @@ const IndexPage: React.FC = () => {
           <span>Full Stack Developer</span>
           <span>@</span>
           <div className="w-28 h-28">
-            <JFrogLogo />
+            <a
+              href="https://jfrog.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="umami--click--jfrog-logo"
+            >
+              <JFrogLogo />
+            </a>
           </div>
         </h1>
 
@@ -62,7 +68,12 @@ const IndexPage: React.FC = () => {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-5">
-          <a href="https://github.com/marcelreppi" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/marcelreppi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="umami--click--github"
+          >
             <Image
               quality={100}
               layout="fixed"
@@ -76,6 +87,7 @@ const IndexPage: React.FC = () => {
             href="https://www.linkedin.com/in/marcelreppi/"
             target="_blank"
             rel="noopener noreferrer"
+            className="umami--click--linkedin"
           >
             <Image
               quality={100}
@@ -86,7 +98,12 @@ const IndexPage: React.FC = () => {
               alt="LinkedIn Icon"
             />
           </a>
-          <a href="https://twitter.com/marcelreppi" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/marcelreppi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="umami--click--twitter"
+          >
             <Image
               quality={100}
               layout="fixed"
@@ -96,36 +113,21 @@ const IndexPage: React.FC = () => {
               alt="Twitter Icon"
             />
           </a>
-        </div>
-
-        {/* Other Links */}
-        <div className="flex flex-col space-y-3 sm:flex-row sm:justify-center sm:items-center sm:space-x-10 sm:space-y-0">
-          <div className="flex items-center">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:cursor-pointer umami--click--mail"
+            onClick={linkToUncryptMailTo}
+          >
             <Image
               quality={100}
               layout="fixed"
-              width={20}
-              height={20}
+              width={32}
+              height={32}
               src={mailIcon}
               alt="Mail Icon"
             />
-            <a className="ml-2 break-all link hover:cursor-pointer" onClick={linkToUncryptMailTo}>
-              marcelreppi@gmail.com
-            </a>
-          </div>
-          <div className="flex items-center">
-            <Image
-              quality={100}
-              layout="fixed"
-              width={20}
-              height={20}
-              src={homepageIcon}
-              alt="Homepage Icon"
-            />
-            <a className="ml-2 break-all link hover:cursor-pointer" href="https://marcelreppi.com">
-              marcelreppi.com
-            </a>
-          </div>
+          </a>
         </div>
       </div>
     </Layout>

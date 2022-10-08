@@ -10,7 +10,7 @@ export const Resume: React.FC = () => {
       <div className="mb-10 -mt-12 text-center">
         <a
           href="/cv.pdf"
-          className="text-highlight hover:underline"
+          className="text-highlight hover:underline umami--click--download-cv"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -21,12 +21,13 @@ export const Resume: React.FC = () => {
         <SectionTitle text="Experience" />
         <div className="divide-y-1">
           <Activity
+            id="jfrog"
             type="work"
             title={
               <div>
                 Full Stack Developer at{" "}
                 <a
-                  className="link"
+                  className="link umami--click--jfrog-resume"
                   href="https://jfrog.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -39,12 +40,13 @@ export const Resume: React.FC = () => {
             duration="09/2022 - today"
           />
           <Activity
+            id="sap"
             type="work"
             title={
               <div>
                 Software Developer at{" "}
                 <a
-                  className="link"
+                  className="link umami--click--sap-resume"
                   href="https://icn.sap.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -64,12 +66,13 @@ export const Resume: React.FC = () => {
             ]}
           />
           <Activity
+            id="sensafety"
             type="work"
             title={
               <div>
                 Mobile/Web Developer at{" "}
                 <a
-                  className="link"
+                  className="link umami--click--sensafety-resume"
                   href="https://sensafety.org/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,6 +102,7 @@ export const Resume: React.FC = () => {
             ]}
           />
           <Activity
+            id="tutor"
             type="tutor"
             title="Student Tutor"
             location="Technical University of Berlin, Germany"
@@ -114,10 +118,11 @@ export const Resume: React.FC = () => {
           <SectionTitle text="Publications" />
           <div className="divide-y-1">
             <Activity
+              id="air-quality"
               type="publication"
               title={
                 <a
-                  className="link"
+                  className="link umami--click--air-quality-publication"
                   href="https://www.sciencedirect.com/science/article/pii/S2667091722000061"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -129,10 +134,11 @@ export const Resume: React.FC = () => {
             />
 
             <Activity
+              id="purposize"
               type="publication"
               title={
                 <a
-                  className="link"
+                  className="link umami--click--purposize-publication"
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,10 +149,11 @@ export const Resume: React.FC = () => {
             />
 
             <Activity
+              id="sensafety"
               type="publication"
               title={
                 <a
-                  className="link"
+                  className="link umami--click--sensafety-publication"
                   href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -162,6 +169,7 @@ export const Resume: React.FC = () => {
           <SectionTitle text="Education" />
           <div className="divide-y-1">
             <Activity
+              id="master"
               type="degree"
               title="Master Information Systems Management (Grade: 1.2, One of the best graduates of my year)"
               location="Technical University of Berlin, Germany"
@@ -172,6 +180,7 @@ export const Resume: React.FC = () => {
             />
 
             <Activity
+              id="bachelor"
               type="degree"
               title="Bachelor Wirtschaftsinformatik (Grade: 1.8, One of the best graduates of my year)"
               location="Technical University of Berlin, Germany"
@@ -182,6 +191,7 @@ export const Resume: React.FC = () => {
             />
 
             <Activity
+              id="high-school"
               type="degree"
               title="Schiller Gymnasium, Staatliche Europaschule Berlin (German-English Bilingual
                 Highschool)"
@@ -191,6 +201,7 @@ export const Resume: React.FC = () => {
             />
 
             <Activity
+              id="primary-school"
               type="degree"
               title="Quentin Blake Europeschool (Bilingual Primary School
             (German-English))"
