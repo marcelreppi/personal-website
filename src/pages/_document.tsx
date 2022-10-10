@@ -14,7 +14,7 @@ class MyDocument extends Document {
             async
             defer
             data-website-id="125b2ab7-46a5-4f4a-a652-23162a362b7d"
-            src="https://umami.marcelreppi.com/umami.js"
+            src="/blubb.js"
             data-domains="marcelreppi.com"
           ></script>
         </Head>

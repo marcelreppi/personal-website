@@ -5,5 +5,16 @@ module.exports = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  async rewrites() {
+    return [
+      {
+        source: "/blubb.js",
+        destination: "https://umami.marcelreppi.com/umami.js",
+      },
+      {
+        source: "/api/collect",
+        destination: "https://umami.marcelreppi.com/api/collect",
+      },
+    ];
   },
 };
