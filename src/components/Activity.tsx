@@ -67,7 +67,9 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
 const Activity: React.FC<ActivityProps> = ({ id, type, title, location, duration, details }) => {
   const [showDetails, setShowDetails] = useState(false);
   const toggleDetails = () => {
-    window.umami.trackEvent(`${id}-${type}-${showDetails ? "less" : "more"}-details`);
+    if (window.umami) {
+      window.umami.trackEvent(`${id}-${type}-${showDetails ? "less" : "more"}-details`);
+    }
     setShowDetails(!showDetails);
   };
 
