@@ -41,8 +41,8 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
           const active = router.pathname === href;
           return (
             <div
-              className={`hover:text-highlight hover:cursor-pointer ${
-                active ? "text-highlight" : ""
+              className={`hover:text-blue-600 hover:cursor-pointer ${
+                active ? "text-blue-700" : ""
               }`}
               key={href}
             >
@@ -54,7 +54,7 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
 
       {/* Mobile Navbar */}
       <div className="md:hidden">
-        <div className="fixed bottom-5 right-5 z-50 p-2 rounded-full shadow-btn bg-highlight">
+        <div className="fixed bottom-5 right-5 z-50 p-2 rounded-full shadow-btn bg-blue-700">
           <Hamburger
             color="#FFF"
             toggled={mobileMenuOpen}

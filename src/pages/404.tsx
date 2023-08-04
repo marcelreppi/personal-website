@@ -5,7 +5,7 @@ const NotFoundPage = () => {
   return (
     <Layout pageTitle="404">
       <div className="flex flex-col items-center space-y-5">
-        <div className="text-4xl font-medium medium-font text-highlight">
+        <div className="text-4xl font-medium medium-font text-blue-700">
           Error 404: Page not found!
         </div>
         <div className="space-y-3 text-center text">

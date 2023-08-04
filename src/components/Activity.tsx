@@ -122,7 +122,7 @@ const Activity: React.FC<ActivityProps> = ({ id, type, title, location, duration
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
-            <div className="text-gray-500 select-none">{showDetails ? "Less" : "More"} details</div>
+            <div className="text-gray-500 select-none hover:text-gray-400">{showDetails ? "Less" : "More"} details</div>
           </div>
           <ul className={`ml-2 list-disc list-inside ${showDetails ? "" : "hidden"}`}>
             {details.map((detail, i) => (

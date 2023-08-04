@@ -47,15 +47,15 @@
   }
 
   .link {
-    @apply text-blue-600 hover:text-blue-800 visited:text-purple-600;
+    @apply text-blue-600 hover:text-blue-500 visited:text-purple-600;
   }
 
   .page-title {
-    @apply w-full medium-font text-center text-highlight text-3xl mb-12;
+    @apply w-full medium-font text-center text-blue-700 text-3xl mb-12;
   }
 
   .badge {
-    @apply px-2 py-1 mb-3 mr-3 border-2 rounded-lg border-highlight;
+    @apply px-2 py-1 mb-3 mr-3 border-2 rounded-lg border-blue-700;
   }
 }
 

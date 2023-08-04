@@ -40,7 +40,7 @@ const IndexPage: React.FC = () => {
     <Layout pageTitle="Home">
       <div className="flex flex-col items-center space-y-10">
         {/* Typer */}
-        <div className="text-4xl text-highlight medium-font">
+        <div className="text-4xl text-blue-700 medium-font">
           <span ref={el}></span>
         </div>
 

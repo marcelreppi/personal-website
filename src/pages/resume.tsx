@@ -10,7 +10,7 @@ export const Resume: React.FC = () => {
       <div className="mb-10 -mt-12 text-center">
         <a
           href="/cv.pdf"
-          className="text-highlight hover:underline umami--click--download-cv"
+          className="text-blue-700 hover:text-blue-500 umami--click--download-cv"
           target="_blank"
           rel="noopener noreferrer"
         >

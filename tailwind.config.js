@@ -3,7 +3,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        highlight: "#234ef3",
+        blue: {
+          50: "#e9f6ff",
+          100: "#d8edff",
+          200: "#b8ddff",
+          300: "#8dc4ff",
+          400: "#609eff",
+          500: "#3c78ff",
+          600: "#1a4dff",
+          700: "#234ef3",
+          800: "#1139c2",
+          900: "#173698",
+          950: "#0e1e58",
+        },
         sen1: "rgba(100, 85, 232, 1)",
         sen2: "rgba(150, 71, 219, 1)",
         mb: "#c50e20",
