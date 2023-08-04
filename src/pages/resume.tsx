@@ -13,6 +13,7 @@ export const Resume: React.FC = () => {
           className="text-blue-700 hover:text-blue-500 umami--click--download-cv"
           target="_blank"
           rel="noopener noreferrer"
+          data-umami-event="download-cv"
         >
           Download
         </a>
@@ -31,6 +32,7 @@ export const Resume: React.FC = () => {
                   href="https://jfrog.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="jfrog-resume"
                 >
                   JFrog
                 </a>
@@ -55,6 +57,7 @@ export const Resume: React.FC = () => {
                   href="https://icn.sap.com/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="sap-resume"
                 >
                   SAP Innovation Center Potsdam
                 </a>
@@ -81,6 +84,7 @@ export const Resume: React.FC = () => {
                   href="https://sensafety.org/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="sensafety-resume"
                 >
                   SenSafety
                 </a>
@@ -131,6 +135,7 @@ export const Resume: React.FC = () => {
                   href="https://www.sciencedirect.com/science/article/pii/S2667091722000061"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="air-quality-publication"
                 >
                   What if Air Quality Dictates Road Pricing? Simulation of an Air Pollution-based
                   Road Charging Scheme
@@ -147,6 +152,7 @@ export const Resume: React.FC = () => {
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="purposize-publication"
                 >
                   Towards Application-Layer Purpose-Based Access Control
                 </a>
@@ -162,6 +168,7 @@ export const Resume: React.FC = () => {
                   href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-umami-event="sensafety-publication"
                 >
                   Sensafety: Crowdsourcing the Urban Sense of Safety
                 </a>

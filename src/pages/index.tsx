@@ -54,6 +54,7 @@ const IndexPage: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="umami--click--jfrog-logo"
+              data-umami-event="jfrog-logo"
             >
               <JFrogLogo />
             </a>
@@ -73,6 +74,7 @@ const IndexPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="umami--click--github"
+            data-umami-event="github"
           >
             <Image
               quality={100}
@@ -88,6 +90,7 @@ const IndexPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="umami--click--linkedin"
+            data-umami-event="linkedin"
           >
             <Image
               quality={100}
@@ -103,6 +106,7 @@ const IndexPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="umami--click--twitter"
+            data-umami-event="twitter"
           >
             <Image
               quality={100}
@@ -118,6 +122,7 @@ const IndexPage: React.FC = () => {
             rel="noopener noreferrer"
             className="hover:cursor-pointer umami--click--mail"
             onClick={linkToUncryptMailTo}
+            data-umami-event="mail"
           >
             <Image
               quality={100}

@@ -32,6 +32,7 @@ export const Portfolio: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center h-16 py-1 bg-gradient-to-r from-sen1 to-sen2 umami--click--sensafety-portfolio"
+                data-umami-event="sensafety-portfolio"
               >
                 <Image
                   quality={100}
@@ -69,6 +70,7 @@ export const Portfolio: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center h-16 py-1 bg-mb umami--click--moodlebuddy-portfolio"
+                data-umami-event="moodlebuddy-portfolio"
               >
                 <span className="text-2xl font-bold text-white">MoodleBuddy</span>
               </a>
@@ -83,6 +85,7 @@ export const Portfolio: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://chrome.google.com/webstore/detail/moodle-buddy/nomahjpllnbcpbggnpiehiecfbjmcaeo"
+                    data-umami-event="moodlebuddy-chrome-stats"
                   >
                     <img
                       className="mt-1"
@@ -103,6 +106,7 @@ export const Portfolio: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://addons.mozilla.org/en-US/firefox/addon/moodle-buddy/"
+                    data-umami-event="moodlebuddy-firefox-stats"
                   >
                     <img
                       className="mt-1"
@@ -125,6 +129,7 @@ export const Portfolio: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center h-16 py-1 bg-wordchain umami--click--wordchain-portfolio"
+                data-umami-event="wordchain-portfolio"
               >
                 <span className="text-2xl font-bold text-white">Wordchain Alexa Skill</span>
               </a>
@@ -139,6 +144,7 @@ export const Portfolio: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-3xl flex umami--click--wordchain-portfolio"
+                    data-umami-event="wordchain-portfolio"
                   >
                     <Image
                       quality={100}
