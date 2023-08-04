@@ -38,6 +38,11 @@ export const Resume: React.FC = () => {
             }
             location="Tel Aviv, Israel"
             duration="09/2022 - today"
+            details={[
+              "Fullstack software development in the platform infrastructure department",
+              "Working on product-critical features such as authorization, authentication and user management",
+              "Handling production issues and customer escalations",
+            ]}  
           />
           <Activity
             id="sap"
