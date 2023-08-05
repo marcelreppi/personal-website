@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useState } from "react";
-// import styled from "styled-components"
 
 import workIcon from "../../public/images/work.png";
 import tutorIcon from "../../public/images/tutor.png";
@@ -8,6 +7,7 @@ import degreeIcon from "../../public/images/degree.png";
 import publicationIcon from "../../public/images/publication.png";
 import locationIcon from "../../public/images/location.png";
 import calendarIcon from "../../public/images/calendar.png";
+import { trackEvent } from "../helpers/umami";
 
 interface ActivityProps {
   id: string;
@@ -67,9 +67,7 @@ function getActivityIcon(type: ActivityProps["type"]): React.ReactNode {
 const Activity: React.FC<ActivityProps> = ({ id, type, title, location, duration, details }) => {
   const [showDetails, setShowDetails] = useState(false);
   const toggleDetails = () => {
-    if (window.umami) {
-      window.umami.trackEvent(`${id}-${type}-${showDetails ? "less" : "more"}-details`);
-    }
+    trackEvent(`${id}-${type}-${showDetails ? "less" : "more"}-details`);
     setShowDetails(!showDetails);
   };
 
