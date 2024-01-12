@@ -1,5 +1,5 @@
 export interface TrackerConfig {
-	WEBSITE_ID: string
-	SCRIPT_SRC: string
-	DOMAIN: string
+  websiteId: string;
+  scriptSrc: string;
+  domain?: string;
 }

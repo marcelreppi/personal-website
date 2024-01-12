@@ -12,7 +12,7 @@ const NPMPackage: React.FC<NPMPackageProps> = ({ name, description }) => {
     <div className="flex flex-col items-center w-full h-full max-w-xl p-6 overflow-hidden rounded-lg shadow-custom">
       <a
         data-umami-event={eventName}
-        className={`w-full h-14 flex justify-center items-center text-white text-xl bg-npm rounded mb-5 p-3 hover:text-2xl transition-fontSize umami--click--${eventName}`}
+        className={`w-full h-14 flex justify-center items-center text-white text-xl bg-npm rounded mb-5 p-3 hover:text-2xl transition-fontSize`}
         href={`https://www.npmjs.com/package/${name}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -22,7 +22,7 @@ const NPMPackage: React.FC<NPMPackageProps> = ({ name, description }) => {
       <div className="text-xl leading-6 text-center">{description}</div>
       <a
         data-umami-event={eventName}
-        className={`flex items-end flex-grow umami--click--${eventName}`}
+        className={`flex items-end flex-grow`}
         href={`https://nodei.co/npm/${name}`}
         target="_blank"
         rel="noopener noreferrer"

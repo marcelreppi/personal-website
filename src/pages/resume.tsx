@@ -10,7 +10,7 @@ export const Resume: React.FC = () => {
       <div className="mb-10 -mt-12 text-center">
         <a
           href="/cv.pdf"
-          className="text-blue-700 hover:text-blue-500 umami--click--download-cv"
+          className="text-blue-700 hover:text-blue-500"
           target="_blank"
           rel="noopener noreferrer"
           data-umami-event="download-cv"
@@ -28,7 +28,7 @@ export const Resume: React.FC = () => {
               <div>
                 Full Stack Developer at{" "}
                 <a
-                  className="link umami--click--jfrog-resume"
+                  className="link"
                   href="https://jfrog.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export const Resume: React.FC = () => {
               <div>
                 Software Developer at{" "}
                 <a
-                  className="link umami--click--sap-resume"
+                  className="link"
                   href="https://icn.sap.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export const Resume: React.FC = () => {
               <div>
                 Mobile/Web Developer at{" "}
                 <a
-                  className="link umami--click--sensafety-resume"
+                  className="link"
                   href="https://sensafety.org/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -131,7 +131,7 @@ export const Resume: React.FC = () => {
               type="publication"
               title={
                 <a
-                  className="link umami--click--air-quality-publication"
+                  className="link"
                   href="https://www.sciencedirect.com/science/article/pii/S2667091722000061"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -148,7 +148,7 @@ export const Resume: React.FC = () => {
               type="publication"
               title={
                 <a
-                  className="link umami--click--purposize-publication"
+                  className="link"
                   href="https://www.researchgate.net/publication/340269152_Towards_application-layer_purpose-based_access_control"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -164,7 +164,7 @@ export const Resume: React.FC = () => {
               type="publication"
               title={
                 <a
-                  className="link umami--click--sensafety-publication"
+                  className="link"
                   href="https://www.researchgate.net/publication/337068653_Sensafety_Crowdsourcing_the_Urban_Sense_of_Safety"
                   target="_blank"
                   rel="noopener noreferrer"
