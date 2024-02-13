@@ -53,7 +53,6 @@ const IndexPage: React.FC = () => {
               href="https://jfrog.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="umami--click--jfrog-logo"
               data-umami-event="jfrog-logo"
             >
               <JFrogLogo />
@@ -73,7 +72,6 @@ const IndexPage: React.FC = () => {
             href="https://github.com/marcelreppi"
             target="_blank"
             rel="noopener noreferrer"
-            className="umami--click--github"
             data-umami-event="github"
           >
             <Image
@@ -89,7 +87,6 @@ const IndexPage: React.FC = () => {
             href="https://www.linkedin.com/in/marcelreppi/"
             target="_blank"
             rel="noopener noreferrer"
-            className="umami--click--linkedin"
             data-umami-event="linkedin"
           >
             <Image
@@ -105,7 +102,6 @@ const IndexPage: React.FC = () => {
             href="https://twitter.com/marcelreppi"
             target="_blank"
             rel="noopener noreferrer"
-            className="umami--click--twitter"
             data-umami-event="twitter"
           >
             <Image
@@ -120,7 +116,7 @@ const IndexPage: React.FC = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:cursor-pointer umami--click--mail"
+            className="hover:cursor-pointer"
             onClick={linkToUncryptMailTo}
             data-umami-event="mail"
           >

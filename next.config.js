@@ -1,3 +1,5 @@
+const UMAMI_HOST = "https://umami.marcelreppi.com";
+
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
@@ -9,11 +11,11 @@ module.exports = {
     return [
       {
         source: "/blubb.js",
-        destination: "https://umami.marcelreppi.com/umami.js",
+        destination: `${UMAMI_HOST}/script.js`,
       },
       {
-        source: "/api/collect",
-        destination: "https://umami.marcelreppi.com/api/collect",
+        source: "/api/send",
+        destination: `${UMAMI_HOST}/api/send`,
       },
     ];
   },
