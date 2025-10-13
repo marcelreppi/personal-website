@@ -46,7 +46,7 @@ const IndexPage: React.FC = () => {
 
         {/* Intro Text */}
         <h1 className="flex flex-col items-center space-y-2">
-          <span>Full Stack Developer</span>
+          <span>Senior Full Stack Developer</span>
           <span>@</span>
           <div className="w-28 h-28">
             <a

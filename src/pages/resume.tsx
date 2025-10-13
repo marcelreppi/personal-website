@@ -26,7 +26,7 @@ export const Resume: React.FC = () => {
             type="work"
             title={
               <div>
-                Full Stack Developer at{" "}
+                Senior Full Stack Developer at{" "}
                 <a
                   className="link"
                   href="https://jfrog.com"
@@ -44,7 +44,10 @@ export const Resume: React.FC = () => {
               "Fullstack software development in the platform infrastructure department",
               "Working on product-critical features such as authorization, authentication and user management",
               "Handling production issues and customer escalations",
-            ]}  
+              "Promoted to Senior Full Stack Developer in July 2025",
+              "Building new crucial innovative microservices and components for the JFrog Platform",
+              "Lead developer for new AppTrust product presented at SwampUp 2025 conference",
+            ]}
           />
           <Activity
             id="sap"
@@ -229,14 +232,15 @@ export const Resume: React.FC = () => {
             <div className="badge">Fullstack Development</div>
             <div className="badge">NodeJS</div>
             <div className="badge">TypeScript</div>
-            <div className="badge">Python</div>
-            <div className="badge">Kotlin</div>
+            <div className="badge">Golang</div>
             <div className="badge">Java</div>
+            <div className="badge">Kotlin</div>
             <div className="badge">Spring Boot</div>
-            <div className="badge">Next.js</div>
-            <div className="badge">React</div>
             <div className="badge">Vue</div>
+            {/* <div className="badge">Next.js</div> */}
+            {/* <div className="badge">React</div> */}
             <div className="badge">Tailwind</div>
+            <div className="badge">Playwright</div>
             <div className="badge">DevOps</div>
             <div className="badge">Docker</div>
             <div className="badge">Kubernetes</div>
@@ -245,7 +249,7 @@ export const Resume: React.FC = () => {
             <div className="badge">AWS</div>
             <div className="badge">PostgreSQL</div>
             <div className="badge">MySQL</div>
-            <div className="badge">MongoDB</div>
+            {/* <div className="badge">MongoDB</div> */}
             <div className="badge">SQLite</div>
             <div className="badge">Traffic Simulation with SUMO</div>
             <div className="badge">Browser Extensions</div>
@@ -276,7 +280,7 @@ export const Resume: React.FC = () => {
             <div className="badge">Longboarding</div>
             <div className="badge">Board Games</div>
             <div className="badge">Origami</div>
-            <div className="badge">Running</div>
+            <div className="badge">Biking</div>
             <div className="badge">Rope Jumping</div>
             <div className="badge">Hiking</div>
           </div>
