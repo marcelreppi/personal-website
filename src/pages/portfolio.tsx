@@ -26,45 +26,7 @@ export const Portfolio: React.FC = () => {
         <div>
           <SectionTitle text="Projects" />
           <div className="grid grid-cols-1 gap-y-8 place-items-center lg:grid-cols-2 lg:gap-x-8">
-            <div className="w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
-              <a
-                href="https://sensafety.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center h-16 py-1 bg-gradient-to-r from-sen1 to-sen2"
-                data-umami-event="sensafety-portfolio"
-              >
-                <Image
-                  quality={100}
-                  layout="fixed"
-                  placeholder="blur"
-                  height={50}
-                  objectFit="contain"
-                  alt="SenSafety Logo"
-                  src={sensafetyLogo}
-                />
-              </a>
-              <div className="p-5 space-y-3 flex flex-col flex-grow">
-                <div className="text-xl leading-6 text-center">
-                  Mobile crowdsourcing platform for perceived safety of urban citizens. The data is
-                  aggregated and can be used by municipalities to evaluate how perceived safety
-                  changes over time and how additional infrastructure impacts the perceived safety.
-                </div>
-                <div className="flex flex-grow items-end">
-                  <Carousel
-                    images={[
-                      sensafetyPic1,
-                      sensafetyPic2,
-                      sensafetyPic3,
-                      sensafetyPic4,
-                      sensafetyPic5,
-                    ]}
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
+          <div className="flex flex-col w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
               <a
                 href="https://moodlebuddy.com/"
                 target="_blank"
@@ -119,6 +81,44 @@ export const Portfolio: React.FC = () => {
                 </div>
                 <div className="flex flex-grow items-end">
                   <Carousel images={[moodleBuddyPic1, moodleBuddyPic2, moodleBuddyPic3]} />
+                </div>
+              </div>
+            </div>
+            
+            <div className="w-full h-full max-w-xl overflow-hidden rounded-lg shadow-custom">
+              <a
+                href="https://sensafety.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center h-16 py-1 bg-gradient-to-r from-sen1 to-sen2"
+                data-umami-event="sensafety-portfolio"
+              >
+                <Image
+                  quality={100}
+                  layout="fixed"
+                  placeholder="blur"
+                  height={50}
+                  objectFit="contain"
+                  alt="SenSafety Logo"
+                  src={sensafetyLogo}
+                />
+              </a>
+              <div className="p-5 space-y-3 flex flex-col flex-grow">
+                <div className="text-xl leading-6 text-center">
+                  Mobile crowdsourcing platform for perceived safety of urban citizens. The data is
+                  aggregated and can be used by municipalities to evaluate how perceived safety
+                  changes over time and how additional infrastructure impacts the perceived safety.
+                </div>
+                <div className="flex flex-grow items-end">
+                  <Carousel
+                    images={[
+                      sensafetyPic1,
+                      sensafetyPic2,
+                      sensafetyPic3,
+                      sensafetyPic4,
+                      sensafetyPic5,
+                    ]}
+                  />
                 </div>
               </div>
             </div>
