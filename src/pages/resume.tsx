@@ -7,7 +7,7 @@ export const Resume: React.FC = () => {
   return (
     <Layout pageTitle="Resumé">
       <div className="page-title">Resumé</div>
-      <div className="mb-10 -mt-12 text-center">
+      {/* <div className="mb-10 -mt-12 text-center">
         <a
           href="/cv.pdf"
           className="text-blue-700 hover:text-blue-500"
@@ -17,7 +17,7 @@ export const Resume: React.FC = () => {
         >
           Download
         </a>
-      </div>
+      </div> */}
       <div className="space-y-10">
         <SectionTitle text="Experience" />
         <div className="divide-y-1">
