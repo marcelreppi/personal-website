@@ -39,14 +39,16 @@ export const Resume: React.FC = () => {
               </div>
             }
             location="Tel Aviv, Israel"
-            duration="09/2022 - today"
+            duration="09/2022 - 01/2026"
             details={[
               "Fullstack software development in the platform infrastructure department",
-              "Working on product-critical features such as authorization, authentication and user management",
+              "Working on product-critical features such as authentication, authorization and user management",
+              "Migrating from single-tenancy to multi-tenancy",
+              "Improving testing and CI/CD automation stability",
               "Handling production issues and customer escalations",
-              "Promoted to Senior Full Stack Developer in July 2025",
-              "Building new crucial innovative microservices and components for the JFrog Platform",
-              "Lead developer for new AppTrust product presented at SwampUp 2025 conference",
+              "Contributing and maintaining company-wide shared libraries for frontend, backend and automation",
+              "Lead developer for new AppTrust product presented at SwampUp November 2025 conference",
+              "Java, Node.js, Go, Python, TypeScript, Vue.js, K8s, Playwright, Cypress", "Coralogix", "Graphana"
             ]}
           />
           <Activity

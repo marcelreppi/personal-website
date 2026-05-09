@@ -45,10 +45,11 @@ const IndexPage: React.FC = () => {
         </div>
 
         {/* Intro Text */}
-        <h1 className="flex flex-col items-center space-y-2">
-          <span>Senior Full Stack Developer</span>
+        <h1 className="flex flex-col items-center space-y-2 text-xl">
+          <span className="mb-10 text-2xl">Senior Full Stack Developer</span>
+          <span>Previously</span>
           <span>@</span>
-          <div className="w-28 h-28">
+          <div className="w-20 h-20">
             <a
               href="https://jfrog.com"
               target="_blank"
