@@ -12,8 +12,8 @@ const username = "marcelreppi"
 const url = "https://marcelreppi.com";
 const defaultDescription = `
 Hi, I'm Marcel
-Software Developer @ JFrog
-Information Systems Management
+Senior Full Stack Developer
+Engineering with curiosity, passion and purpose
 Master Graduate from Technical University of Berlin
 `.trim();
 

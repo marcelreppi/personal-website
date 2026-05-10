@@ -7,7 +7,7 @@ import profilePicture from "../../public/images/me.jpg";
 const SEODescription = `
 Hi, my name is Marcel Reppenhagen 🙋‍♂️👋
 
-I am a curious person with a passion for programming, web technologies and ☁️-computing. I love exploring today's ever-evolving technologies and continuously learn new things. 💡
+I am a curious person with a passion for programming, web technologies and ☁️-computing. I love exploring today's ever-evolving technologies and build purposeful software with great attention to detail. 💡
 `;
 
 export const About: React.FC = () => {
