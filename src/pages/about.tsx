@@ -42,8 +42,7 @@ export const About: React.FC = () => {
             <span role="img" aria-label="cloud">
               ☁️
             </span>
-            -computing. I love exploring today's ever-evolving technologies and continuously learn
-            new things.{" "}
+            -computing. I love exploring today's ever-evolving technologies and build purposeful software with great attention to detail.{" "}
             <span role="img" aria-label="book">
               💡
             </span>
