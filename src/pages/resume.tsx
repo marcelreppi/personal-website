@@ -48,7 +48,7 @@ export const Resume: React.FC = () => {
               "Handling production issues and customer escalations",
               "Contributing and maintaining company-wide shared libraries for frontend, backend and automation",
               "Lead developer for new AppTrust product presented at SwampUp November 2025 conference",
-              "Java, Node.js, Go, Python, TypeScript, Vue.js, K8s, Playwright, Cypress", "Coralogix", "Graphana"
+              "Java, Node.js, Go, Python, TypeScript, Vue.js, Playwright, Cypress, K8s, Coralogix, Graphana",
             ]}
           />
           <Activity
